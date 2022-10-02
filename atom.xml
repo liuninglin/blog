@@ -443,9 +443,9 @@
     
     <category term="Ambari" scheme="https://liuninglin.github.io/tags/Ambari/"/>
     
-    <category term="Flume" scheme="https://liuninglin.github.io/tags/Flume/"/>
-    
     <category term="Kafka" scheme="https://liuninglin.github.io/tags/Kafka/"/>
+    
+    <category term="Flume" scheme="https://liuninglin.github.io/tags/Flume/"/>
     
   </entry>
   
