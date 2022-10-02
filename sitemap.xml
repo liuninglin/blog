@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/posts/a833198.html</loc>
+    <loc>https://liuninglin.github.io/blog/posts/dc7e5002.html</loc>
     
     <lastmod>2022-10-02</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/posts/dc7e5002.html</loc>
+    <loc>https://liuninglin.github.io/blog/posts/a833198.html</loc>
     
     <lastmod>2022-10-02</lastmod>
     
@@ -326,6 +326,13 @@
 
   
   <url>
+    <loc>https://liuninglin.github.io/blog/tags/AWS/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/blog/tags/Markdown/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -341,13 +348,6 @@
   
   <url>
     <loc>https://liuninglin.github.io/blog/tags/Blog/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/AWS/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -389,27 +389,6 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/AWS-SAA/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Architect/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Mysql/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/blog/tags/Hive/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -424,6 +403,13 @@
   </url>
   
   <url>
+    <loc>https://liuninglin.github.io/blog/tags/Mysql/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/blog/tags/life/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -431,7 +417,21 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Shanghai/</loc>
+    <loc>https://liuninglin.github.io/blog/tags/Kafka/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/AWS-SAA/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Architect/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -452,14 +452,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Flume/</loc>
+    <loc>https://liuninglin.github.io/blog/tags/Shanghai/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Kafka/</loc>
+    <loc>https://liuninglin.github.io/blog/tags/Flume/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -503,14 +503,14 @@
 
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Language/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Front-end/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Front-end/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Language/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -531,13 +531,6 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Language/Markdown/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/blog/categories/Front-end/React/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -545,7 +538,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Cloud/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Language/Markdown/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -587,14 +580,21 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Cloud/AWS/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Database/Mysql/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Database/Mysql/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Cloud/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/categories/Cloud/AWS/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
