@@ -335,6 +335,13 @@
 
   
   <url>
+    <loc>https://liuninglin.github.io/tags/AWS/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/tags/Markdown/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -350,13 +357,6 @@
   
   <url>
     <loc>https://liuninglin.github.io/tags/Blog/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/tags/AWS/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -391,13 +391,6 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Kerberos/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/tags/AWS-SAA/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -412,7 +405,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Mysql/</loc>
+    <loc>https://liuninglin.github.io/tags/Kerberos/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -433,6 +426,13 @@
   </url>
   
   <url>
+    <loc>https://liuninglin.github.io/tags/Mysql/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/tags/life/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -440,14 +440,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Shanghai/</loc>
+    <loc>https://liuninglin.github.io/tags/Kafka/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Kafka/</loc>
+    <loc>https://liuninglin.github.io/tags/Shanghai/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -475,6 +475,13 @@
   </url>
   
   <url>
+    <loc>https://liuninglin.github.io/tags/Docker/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/tags/Python/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -496,13 +503,6 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Docker/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/tags/Spark/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -512,14 +512,14 @@
 
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Language/</loc>
+    <loc>https://liuninglin.github.io/categories/Front-end/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Front-end/</loc>
+    <loc>https://liuninglin.github.io/categories/Language/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -540,28 +540,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Language/Markdown/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/categories/Front-end/React/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/categories/Front-end/Hexo/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/categories/Operation/Linux/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -575,7 +554,21 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Database/</loc>
+    <loc>https://liuninglin.github.io/categories/Language/Markdown/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/categories/Operation/Linux/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/categories/Front-end/Hexo/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -589,7 +582,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Life-log/</loc>
+    <loc>https://liuninglin.github.io/categories/Database/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -603,6 +596,13 @@
   </url>
   
   <url>
+    <loc>https://liuninglin.github.io/categories/Life-log/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/categories/Database/Mysql/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -610,14 +610,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Back-end/Django/</loc>
+    <loc>https://liuninglin.github.io/categories/Operation/Docker/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Operation/Docker/</loc>
+    <loc>https://liuninglin.github.io/categories/Back-end/Django/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
