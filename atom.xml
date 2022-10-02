@@ -236,9 +236,9 @@
     
     <category term="Ambari" scheme="https://liuninglin.github.io/tags/Ambari/"/>
     
-    <category term="Hive" scheme="https://liuninglin.github.io/tags/Hive/"/>
-    
     <category term="NiFi" scheme="https://liuninglin.github.io/tags/NiFi/"/>
+    
+    <category term="Hive" scheme="https://liuninglin.github.io/tags/Hive/"/>
     
   </entry>
   
