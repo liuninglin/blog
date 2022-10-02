@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/posts/b0e85a85.html</loc>
+    <loc>https://liuninglin.github.io/blog/posts/3d8e0aef.html</loc>
     
     <lastmod>2022-10-02</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/posts/3d8e0aef.html</loc>
+    <loc>https://liuninglin.github.io/blog/posts/b0e85a85.html</loc>
     
     <lastmod>2022-10-02</lastmod>
     
@@ -466,20 +466,6 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Docker/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Spark/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/blog/tags/Python/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -495,6 +481,20 @@
   
   <url>
     <loc>https://liuninglin.github.io/blog/tags/CI-CD/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Spark/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Docker/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -601,14 +601,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Operation/Docker/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Back-end/Django/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Back-end/Django/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Operation/Docker/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

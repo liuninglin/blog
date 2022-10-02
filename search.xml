@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>Amplify POC</title>
-    <url>/posts/1998f291.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/1998f291/amplify_banner.png" alt="amplify image"></p>
+    <url>/blog/posts/1998f291.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/1998f291/Amplify-POC/amplify_banner.png" alt="amplify image"></p>
 <p>This document is aimed to help you familiar with Amplify quickly. In addition, I’ll take you to go through the code structure and deployment architecture of my POC.</p>
 <h2 id="What-is-Amplify"><a href="#What-is-Amplify" class="headerlink" title="What is Amplify"></a>What is Amplify</h2><p>Amplify is an all-in-one platform for frontend developers to develop, test, and deploy the whole website or mobile app. The frontend developers only need to know vanilla JavaScript or React or Vue.js, the knowledge of RestAPI, and database management is not necessary for this platform cause Amplify Studio can help frontend developers to maintain these through the UI.</p>
 <span id="more"></span>
@@ -97,7 +97,7 @@
 </li>
 <li><p>Data model design</p>
 <p>Login to Amplify Studio, then you can design your data model in this online platform.</p>
-<p><img src="/blog/posts/1998f291/amplify-johnny%20-%20staging%20-%20Amplify%20Studio%202022-08-10%2014-37-20.png" alt="amplify-johnny - staging - Amplify Studio 2022-08-10 14-37-20"></p>
+<p><img src="/blog/blog/posts/1998f291/Amplify-POC/amplify-johnny%20-%20staging%20-%20Amplify%20Studio%202022-08-10%2014-37-20.png" alt="amplify-johnny - staging - Amplify Studio 2022-08-10 14-37-20"></p>
 </li>
 <li><p>S3 configuration</p>
 <p>Follow instructions on AWS Amplify.</p>
@@ -106,14 +106,14 @@
 <li><p>Frontend development</p>
 <p>Develop in your local machine, and you can preview by using the npm command <code>npm start</code></p>
 <p>For your frontend development, all codes are located in the src folder.</p>
-<img src="/blog/posts/1998f291/Get Started — amplify-johnny 2022-08-10 14-41-53.png" alt="Get Started — amplify-johnny 2022-08-10 14-41-53" style="zoom:50%;">
+<img src="/blog/blog/posts/1998f291/Get Started — amplify-johnny 2022-08-10 14-41-53.png" alt="Get Started — amplify-johnny 2022-08-10 14-41-53" style="zoom:50%;">
 </li>
 <li><p>API development</p>
 <p>After you finished data model creation, Amplify Studio will create all related GraphQL queries for you automatically.</p>
 <ol>
 <li><p>Write and test your GrahQL script in Amplify Studio.</p>
-<p><img src="/blog/posts/1998f291/amplify-johnny%20-%20staging%20-%20Amplify%20Studio%202022-08-10%2014-45-15.png" alt="amplify-johnny - staging - Amplify Studio 2022-08-10 14-45-15"></p>
-<p><img src="/blog/posts/1998f291/AppSyncConsole%202022-08-10%2014-48-56.png" alt="AppSyncConsole 2022-08-10 14-48-56"></p>
+<p><img src="/blog/blog/posts/1998f291/Amplify-POC/amplify-johnny%20-%20staging%20-%20Amplify%20Studio%202022-08-10%2014-45-15.png" alt="amplify-johnny - staging - Amplify Studio 2022-08-10 14-45-15"></p>
+<p><img src="/blog/blog/posts/1998f291/Amplify-POC/AppSyncConsole%202022-08-10%2014-48-56.png" alt="AppSyncConsole 2022-08-10 14-48-56"></p>
 </li>
 <li><p>Copy scripts into your local codes.</p>
 </li>
@@ -128,7 +128,7 @@
 </li>
 <li><p>Development in your local machine</p>
 <p>Find your created Lambda function, and write your features in the src folder.</p>
-<img src="/blog/posts/1998f291/Get Started — amplify-johnny 2022-08-10 14-51-22.png" alt="Get Started — amplify-johnny 2022-08-10 14-51-22" style="zoom:50%;">
+<img src="/blog/blog/posts/1998f291/Get Started — amplify-johnny 2022-08-10 14-51-22.png" alt="Get Started — amplify-johnny 2022-08-10 14-51-22" style="zoom:50%;">
 </li>
 <li><p>Add endpoint for Lambda</p>
 <p>Using Amplify CLI and choosing REST as the calling method</p>
@@ -136,7 +136,7 @@
 
 <p>Then, in your React codes, you can call this API by <code>API.get</code></p>
 <p>In addition, we can also use DynanomoDB to trigger a Lambda function. Just like the screenshot below.</p>
-<p><img src="/blog/posts/1998f291/image-20220810150705985.png" alt="image-20220810150705985"></p>
+<p><img src="/blog/blog/posts/1998f291/Amplify-POC/image-20220810150705985.png" alt="image-20220810150705985"></p>
 </li>
 </ol>
 </li>
@@ -144,14 +144,14 @@
 <h2 id="Amplify-POC"><a href="#Amplify-POC" class="headerlink" title="Amplify POC"></a>Amplify POC</h2><h3 id="Business-Requirements"><a href="#Business-Requirements" class="headerlink" title="Business Requirements"></a>Business Requirements</h3><p>This POC is aimed to recreate a Quant Portal website that is originally created based on SharePoint.</p>
 <p>You can treat this Quant Portal as an online file management system.</p>
 <p>The main business requirements show below.</p>
-<img src="/blog/posts/1998f291/Quant Portal POC@2x.png" alt="Quant Portal POC@2x" style="zoom: 33%;">
+<img src="/blog/blog/posts/1998f291/Quant Portal POC@2x.png" alt="Quant Portal POC@2x" style="zoom: 33%;">
 
 <h3 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h3><p>This is the whole architecture of this Amplify POC.</p>
 <p>Before calling GraphQL each time, the frontend will get a token from Cognito automatically for authentication. After successful verification, it will transfer requests to AppSync, API Gateway, or S3 built-in REST API.</p>
 <p>In your React codes, you need to use <code>API.get</code> to call AppSync through QraphQL or use <code>API.get</code> to call a REST API through API Gateway.</p>
 <p>There are two ways of Lambda integration, one is triggered by the DynamoDB table, and another is triggered by API Gateway.</p>
-<p><img src="/blog/posts/1998f291/Amplify%20POC.png" alt="Amplify POC"></p>
-<h3 id="Code-Structure"><a href="#Code-Structure" class="headerlink" title="Code Structure"></a>Code Structure</h3><img src="/blog/posts/1998f291/index.py — amplify-johnny 2022-08-11 13-44-12.png" alt="index.py — amplify-johnny 2022-08-11 13-44-12" style="zoom:50%;">
+<p><img src="/blog/blog/posts/1998f291/Amplify-POC/Amplify%20POC.png" alt="Amplify POC"></p>
+<h3 id="Code-Structure"><a href="#Code-Structure" class="headerlink" title="Code Structure"></a>Code Structure</h3><img src="/blog/blog/posts/1998f291/index.py — amplify-johnny 2022-08-11 13-44-12.png" alt="index.py — amplify-johnny 2022-08-11 13-44-12" style="zoom:50%;">
 
 <ul>
 <li>amplify<ul>
@@ -170,7 +170,7 @@
 <p>Next, I’ll dive into each item above to explain.</p>
 <ol>
 <li><p>src</p>
-<img src="/blog/posts/1998f291/index.js — amplify-johnny 2022-08-11 13-58-04.png" alt="index.js — amplify-johnny 2022-08-11 13-58-04" style="zoom:50%;">
+<img src="/blog/blog/posts/1998f291/index.js — amplify-johnny 2022-08-11 13-58-04.png" alt="index.js — amplify-johnny 2022-08-11 13-58-04" style="zoom:50%;">
 
 <ul>
 <li>components (self-created)<ul>
@@ -210,7 +210,7 @@
 </ul>
 </li>
 <li><p>amplify</p>
-<img src="/blog/posts/1998f291/aws-exports.js — amplify-johnny 2022-08-11 14-01-57.png" alt="aws-exports.js — amplify-johnny 2022-08-11 14-01-57" style="zoom:50%;">
+<img src="/blog/blog/posts/1998f291/aws-exports.js — amplify-johnny 2022-08-11 14-01-57.png" alt="aws-exports.js — amplify-johnny 2022-08-11 14-01-57" style="zoom:50%;">
 
 <p>In folder amplify, you only need to write your codes under function, and don’t change other folders.</p>
 <p>Under folder function, it contains all Lambda functions you created by using the command <code>amplify add function</code>, and you need to choose the Lambda name you created, and write your codes in the index.py file if you choose the python platform for your Lambda.</p>
@@ -218,7 +218,7 @@
 </ol>
 <h3 id="Authentication-Configuration"><a href="#Authentication-Configuration" class="headerlink" title="Authentication Configuration"></a>Authentication Configuration</h3><p>For integrating with AWS Cognito, you not only need to configure by using the command <code>amplify add auth</code>, but also you need to add these codes into your App.js file for authentication configuration.</p>
 <p>Because AWS Cognito User Pool has a redirect URL, it’s not convenient to use the same authentication configuration for the local development environment and remote test environment. It’s better to add two sets of authentication configurations. BTW, you need to pay attention to whether the authentication configuration belongs to the test environment or not when you push your codes to the remote branch for CI&#x2F;CD.</p>
-<img src="/blog/posts/1998f291/code.png" alt="code" style="zoom:40%;">
+<img src="/blog/blog/posts/1998f291/code.png" alt="code" style="zoom:40%;">
 
 <h2 id="Links-you-can-refer-to"><a href="#Links-you-can-refer-to" class="headerlink" title="Links you can refer to"></a>Links you can refer to</h2><ul>
 <li><p>Amplify Immersion Day Workshop</p>
@@ -245,10 +245,10 @@
   </entry>
   <entry>
     <title>Attention for Using Markdown code block</title>
-    <url>/posts/d2fb4425.html</url>
+    <url>/blog/posts/d2fb4425.html</url>
     <content><![CDATA[<p>When you are using markdown code block, you may meet a strange circumstance that disorder within code blocks. Just like the image below.  </p>
 <span id="more"></span>  
-<p><img src="/blog/posts/d2fb4425/Attention-for-Using-Markdown-code-block%5Cattention_for_using_code_block.png" alt="attention_for_using_code_block"><br>So, when you confront the same problem like me, you just need to <strong>delete your space symbols after your end of code block</strong>. If you put one more space after your code block, the system will not recognize that’s an end signal of the code block.</p>
+<p><img src="/blog/blog/posts/d2fb4425/Attention-for-Using-Markdown-code-block%5Cattention_for_using_code_block.png" alt="attention_for_using_code_block"><br>So, when you confront the same problem like me, you just need to <strong>delete your space symbols after your end of code block</strong>. If you put one more space after your code block, the system will not recognize that’s an end signal of the code block.</p>
 ]]></content>
       <categories>
         <category>Language</category>
@@ -262,7 +262,7 @@
   </entry>
   <entry>
     <title>Auto-start Services on Boot in Linux</title>
-    <url>/posts/857f09d5.html</url>
+    <url>/blog/posts/857f09d5.html</url>
     <content><![CDATA[<h2 id="CentOS6"><a href="#CentOS6" class="headerlink" title="CentOS6"></a>CentOS6</h2><ol>
 <li><p>Show the list of services that start on boot.</p>
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chkconfig --list</span><br></pre></td></tr></table></figure>
@@ -300,12 +300,12 @@
   </entry>
   <entry>
     <title>Cannot Start Namenode with Safemode Error</title>
-    <url>/posts/ab80d8c6.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/ab80d8c6/namenodestarterror_1.png" alt="cannot start namenode"></p>
+    <url>/blog/posts/ab80d8c6.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/ab80d8c6/Cannot-start-Namenode-with-Safemode-Error/namenodestarterror_1.png" alt="cannot start namenode"></p>
 <span id="more"></span>
 <p>It’s so annoying when you see the namenode error above, and always showing the same error after restarting several times.</p>
 <p>Fortunately, I found <a href="Cannot-start-Namenode-with-Safemode-Error/https://community.hortonworks.com/questions/14058/safe-mode-is-off.html">an answer</a> online writen by a hortonworks staff.</p>
-<p><img src="/blog/posts/ab80d8c6/namenodestarterror_2.png" alt="cannot start namenode"></p>
+<p><img src="/blog/blog/posts/ab80d8c6/Cannot-start-Namenode-with-Safemode-Error/namenodestarterror_2.png" alt="cannot start namenode"></p>
 <p>So, we don’t need to worry about this kind of error, and we can use the command below to ignore this error.</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hadoop dfsadmin -safemode leave </span><br></pre></td></tr></table></figure>
 
@@ -333,16 +333,16 @@
   </entry>
   <entry>
     <title>Cannot start ambari services with 400 status code</title>
-    <url>/posts/7449623f.html</url>
+    <url>/blog/posts/7449623f.html</url>
     <content><![CDATA[<h2 id="Error-Message"><a href="#Error-Message" class="headerlink" title="Error Message"></a>Error Message</h2><p>You maybe meet this kind of error message showing below when you click the button “Start All”.</p>
-<p><img src="/blog/posts/7449623f/cannotstartambari_1.png" alt="cannotstartambari"></p>
+<p><img src="/blog/blog/posts/7449623f/Cannot-start-ambari-services-with-400-status-code/cannotstartambari_1.png" alt="cannotstartambari"></p>
 <span id="more"></span>
 <blockquote>
 <p>Error message: java.lang.IllegalArgumentException: Invalid transition for servicecomponenthost, clusterName&#x3D;ambari, clusterId&#x3D;2, serviceName&#x3D;SMARTSENSE, componentName&#x3D;ACTIVITY_EXPLORER, hostname&#x3D;ambari.com, currentState&#x3D;STOPPING, newDesiredState&#x3D;STARTED</p>
 </blockquote>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>It’s so annoying I cannot find any great solutions online until I saw <a href="Cannot-start-ambari-services-with-400-status-code/https://community.hortonworks.com/questions/215008/cannot-start-secondary-namenode-currentstatestoppi.html">this article</a> in the hortonworks community.</p>
-<p><img src="/blog/posts/7449623f/cannotstartambari_2.png" alt="cannotstartambari"></p>
-<h3 id="Step1-Update-the-state-of-components-in-Ambari"><a href="#Step1-Update-the-state-of-components-in-Ambari" class="headerlink" title="Step1: Update the state of components in Ambari"></a>Step1: Update the state of components in Ambari</h3><p><img src="/blog/posts/7449623f/cannotstartambari_3.png" alt="cannotstartambari"></p>
+<p><img src="/blog/blog/posts/7449623f/Cannot-start-ambari-services-with-400-status-code/cannotstartambari_2.png" alt="cannotstartambari"></p>
+<h3 id="Step1-Update-the-state-of-components-in-Ambari"><a href="#Step1-Update-the-state-of-components-in-Ambari" class="headerlink" title="Step1: Update the state of components in Ambari"></a>Step1: Update the state of components in Ambari</h3><p><img src="/blog/blog/posts/7449623f/Cannot-start-ambari-services-with-400-status-code/cannotstartambari_3.png" alt="cannotstartambari"></p>
 <p>So, update the table hostcomponentstate.</p>
 <h3 id="Step2-Restart-Ambari-agents-and-server"><a href="#Step2-Restart-Ambari-agents-and-server" class="headerlink" title="Step2: Restart Ambari agents and server"></a>Step2: Restart Ambari agents and server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ambari-agent restart</span><br><span class="line"></span><br><span class="line">ambari-server restart</span><br></pre></td></tr></table></figure>
 
@@ -369,8 +369,8 @@
   </entry>
   <entry>
     <title>Enable Kerberos on Ambari</title>
-    <url>/posts/3f0454be.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/3f0454be/kerberos.jpg" alt="kerberos"></p>
+    <url>/blog/posts/3f0454be.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/kerberos.jpg" alt="kerberos"></p>
 <h2 id="Install-a-new-MIT-KDC"><a href="#Install-a-new-MIT-KDC" class="headerlink" title="Install a new MIT KDC"></a>Install a new MIT KDC</h2><h3 id="Install-the-KDC-server"><a href="#Install-the-KDC-server" class="headerlink" title="Install the KDC server"></a>Install the KDC server</h3><ol>
 <li><p>Install a new version of the KDC server</p>
  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install -y krb5-server krb5-libs krb5-workstation</span><br></pre></td></tr></table></figure></li>
@@ -416,40 +416,40 @@
 <h2 id="Enabling-the-Kerberos"><a href="#Enabling-the-Kerberos" class="headerlink" title="Enabling the Kerberos"></a>Enabling the Kerberos</h2><ol>
 <li>Enter into the configuration of the kerberos</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/Enable-Kerberos-on-Ambarik1.png" alt="click the top of the website"></p>
-<p>  <img src="/blog/posts/3f0454be/k2.png" alt="enable the kerberos"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/Enable-Kerberos-on-Ambarik1.png" alt="click the top of the website"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k2.png" alt="enable the kerberos"></p>
 <ol start="2">
 <li>Choose the type of KDC</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k3.png" alt="choose the type of the KDC"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k3.png" alt="choose the type of the KDC"></p>
 <ol start="3">
 <li>Configure the Kerberos</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k4.png" alt="configure the kerberos"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k4.png" alt="configure the kerberos"></p>
 <ol start="4">
 <li>Install and test the Kerberos client</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k5.png" alt="install and test the kerberos client"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k5.png" alt="install and test the kerberos client"></p>
 <ol start="5">
 <li>Configure identities<br>  <strong>You can just click the button “next”.</strong></li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k6.png" alt="configure identities"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k6.png" alt="configure identities"></p>
 <ol start="6">
 <li>Confirm Configuration<br>  <strong>You need to download the CSV file that contains a list of the principals and keytabs.</strong></li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k7.png" alt="confirm configuration"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k7.png" alt="confirm configuration"></p>
 <ol start="7">
 <li>Stop services</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k8.png" alt="stop services"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k8.png" alt="stop services"></p>
 <ol start="8">
 <li>Kerberos cluster</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k9.png" alt="kerberize cluster"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k9.png" alt="kerberize cluster"></p>
 <ol start="9">
 <li>Start and test services</li>
 </ol>
-<p>  <img src="/blog/posts/3f0454be/k10.png" alt="start and test services"></p>
+<p>  <img src="/blog/blog/posts/3f0454be/Enable-Kerberos-on-Ambari/k10.png" alt="start and test services"></p>
 ]]></content>
       <categories>
         <category>Back-end</category>
@@ -461,9 +461,93 @@
       </tags>
   </entry>
   <entry>
+    <title>Comparison between Hortonworks and Alibaba</title>
+    <url>/blog/posts/720bb0c8.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/720bb0c8/Comparison-between-Hortonworks-and-Alibaba/comparison.png" alt="comparison"></p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>Hortonworks</th>
+<th>Alibaba</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>大数据产品</td>
+<td>Ambari (提供Hadoop生态的管理、运维、升级等功能)<br>HDP (提供大部分Hadoop相关开源组件)<br>HDF (提供数据流相关的开源组件)</td>
+<td>Dataworks (大数据开发平台，提供在线编辑工具)<br>Dataphin (新一代大数据平台，为阿里的数据中台业务中台铺路)<br>QuickBI (提供全面的报表展示服务，为Martech助力)</td>
+</tr>
+<tr>
+<td>市场占有率</td>
+<td>国际市场的三驾马车之一（Cloudera, MapR），18年底完成与Cloudera公司的合并</td>
+<td>国际市场占有率低（有一部分Flink的原因，Flink16年出现）</td>
+</tr>
+<tr>
+<td>收费模式</td>
+<td>100%开源，提供收费技术支持及培训</td>
+<td>具体需要联系售前</td>
+</tr>
+<tr>
+<td>产品特点</td>
+<td>100%开源，使用不受任何限制</td>
+<td>基础架构及上层服务均需要全套阿里产品，同时数据留存在阿里</td>
+</tr>
+<tr>
+<td>技术栈</td>
+<td>Hadoop<br>HDFS<br>Yarn<br>Spark2(DataFrame + SQL)<br>Nifi<br>Kafka<br>Kerberos<br>ZooKeeper<br>Ranger<br>Oozie<br>….</td>
+<td>MaxCompute(阿里大数据处理引擎，基于Hadoop早期版本定制)<br>Blink(基于Flink的定制版，做batch及streaming处理)<br></td>
+</tr>
+<tr>
+<td>主要开发语言</td>
+<td>Java, Scala, SQL, 部分可视化拖拽（Nifi）</td>
+<td>可视化拖拽, SQL</td>
+</tr>
+<tr>
+<td>开发成本</td>
+<td>高(需要部署开发环境，同时需要IDE开发工具)</td>
+<td>低(配置+SQL，所有开发均在阿里在线开发环境完成)</td>
+</tr>
+<tr>
+<td>运维成本</td>
+<td>高(对Hadoop生态的优化需要自己完成)</td>
+<td>低</td>
+</tr>
+<tr>
+<td>第三方服务&#x2F;系统对接</td>
+<td>容易实现</td>
+<td>需要看阿里是否支持</td>
+</tr>
+<tr>
+<td>技术支持</td>
+<td>有成熟的社区及非常完善的文档，基本上遇到的问题都能解决<br>同时Ambari还提供智能支持的收费服务，也有收费培训等</td>
+<td>具体暂不清楚，应该会有对应的技术工程师提供完备的服务，省去了花时间自己找解决方案</td>
+</tr>
+<tr>
+<td>数据安全</td>
+<td>Kerberos+Ranger</td>
+<td>阿里产品</td>
+</tr>
+<tr>
+<td>部署方式</td>
+<td>基于虚机&#x2F;Docker的部署，微软Azure提供深度支持</td>
+<td>独立部署（需要有千万级数据的体量）<br>多租户方式 (适于小体量同时价格便宜)</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Back-end</category>
+        <category>BigData</category>
+      </categories>
+      <tags>
+        <tag>BigData</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[Hexo]Create a blog with hexo in github</title>
-    <url>/posts/fe740d97.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/fe740d97/hexo.png" alt="hexo">  </p>
+    <url>/blog/posts/fe740d97.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/fe740d97/Hexo-Create-a-blog-with-hexo-in-github/hexo.png" alt="hexo">  </p>
 <ol>
 <li><p>copy local ssh public key to github  </p>
 </li>
@@ -510,8 +594,8 @@
   </entry>
   <entry>
     <title>Several Tricks for Using Hexo Efficiently</title>
-    <url>/posts/eacbb695.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/eacbb695/github_hexo_blog.png" alt="github_hexo_blog">  </p>
+    <url>/blog/posts/eacbb695.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/eacbb695/Hexo-Some-tricks-for-using-hexo-efficiently/github_hexo_blog.png" alt="github_hexo_blog">  </p>
 <h2 id="change-theme"><a href="#change-theme" class="headerlink" title="change theme"></a>change theme</h2><ol>
 <li><p>add a theme to your Hexo (eg. theme next)</p>
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
@@ -581,19 +665,19 @@
 <li><p>create an application for your comment system  </p>
 </li>
 <li><p>copy AppID and AppKey from your dashboard  </p>
-<p> <img src="/blog/posts/eacbb695/hexo_comment_module1.png" alt="hexo_comment_module1"></p>
+<p> <img src="/blog/blog/posts/eacbb695/Hexo-Some-tricks-for-using-hexo-efficiently/hexo_comment_module1.png" alt="hexo_comment_module1"></p>
 </li>
 <li><p>paste AppID and AppKey into your theme config file  </p>
  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.</span></span><br><span class="line">    <span class="attr">appid:</span>  <span class="string">xxxxxxxxxx</span> <span class="comment"># your leancloud application appid</span></span><br><span class="line">    <span class="attr">appkey:</span>  <span class="string">xxxxxxxxxx</span> <span class="comment"># your leancloud application appkey</span></span><br><span class="line">    <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># mail notifier, See: https://github.com/xCss/Valine/wiki</span></span><br><span class="line">    <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># Verification code</span></span><br><span class="line">    <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># comment box placeholder</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># gravatar style</span></span><br><span class="line">    <span class="attr">guest_info:</span> <span class="string">nick,mail</span> <span class="comment"># custom comment header</span></span><br><span class="line">    <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># pagination size</span></span><br><span class="line">    <span class="attr">visitor:</span> <span class="literal">true</span> <span class="comment"># leancloud-counter-security is not supported for now. When a visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#x27; for counter compatibility. Article reading statistic https://valine.js.org/visitor.html</span></span><br><span class="line">    <span class="attr">comment_count:</span> <span class="literal">true</span> <span class="comment"># if false, comment count will only be displayed in post page, not in home page</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>create classes in your leancloud account to store your data  </p>
-<p> <img src="/blog/posts/eacbb695/hexo_comment_module2.png" alt="hexo_comment_module2"></p>
+<p> <img src="/blog/blog/posts/eacbb695/Hexo-Some-tricks-for-using-hexo-efficiently/hexo_comment_module2.png" alt="hexo_comment_module2"></p>
 </li>
 <li><p><strong>[not required]</strong> you can change your valine lanuage (themes&#x2F;next&#x2F;layout&#x2F;_third-party&#x2F;comments&#x2F;valine.swig)  </p>
  <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Valine</span>(&#123;</span><br><span class="line">    <span class="attr">el</span>: <span class="string">&#x27;#comments&#x27;</span>,</span><br><span class="line">    <span class="attr">lang</span>: <span class="string">&#x27;en&#x27;</span>,</span><br><span class="line">    <span class="attr">verify</span>: &#123;&#123; theme.<span class="property">valine</span>.<span class="property">verify</span> &#125;&#125;,</span><br><span class="line">    <span class="attr">notify</span>: &#123;&#123; theme.<span class="property">valine</span>.<span class="property">notify</span> &#125;&#125;,</span><br><span class="line">    <span class="attr">appId</span>: <span class="string">&#x27;&#123;&#123; theme.valine.appid &#125;&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">appKey</span>: <span class="string">&#x27;&#123;&#123; theme.valine.appkey &#125;&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">placeholder</span>: <span class="string">&#x27;&#123;&#123; theme.valine.placeholder &#125;&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;&#123;&#123; theme.valine.avatar &#125;&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">meta</span>: guest,</span><br><span class="line">    <span class="attr">pageSize</span>: <span class="string">&#x27;&#123;&#123; theme.valine.pageSize &#125;&#125;&#x27;</span> || <span class="number">10</span>,</span><br><span class="line">    <span class="attr">visitor</span>: &#123;&#123; theme.<span class="property">valine</span>.<span class="property">visitor</span> &#125;&#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>[not required]</strong> you can also add a white list for security</p>
-<p> <img src="/blog/posts/eacbb695/hexo_comment_module3.png" alt="hexo_comment_module3"></p>
+<p> <img src="/blog/blog/posts/eacbb695/Hexo-Some-tricks-for-using-hexo-efficiently/hexo_comment_module3.png" alt="hexo_comment_module3"></p>
 </li>
 </ol>
 <h2 id="use-image-plugin"><a href="#use-image-plugin" class="headerlink" title="use image plugin"></a>use image plugin</h2><ol>
@@ -626,8 +710,8 @@
   </entry>
   <entry>
     <title>Hive-based Enterprise Data Warehouse(EDW)</title>
-    <url>/posts/3465d938.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/3465d938/810x430-hadoop-vs-data-warehouse.jpg" alt="Image result for Hive-based EDW"></p>
+    <url>/blog/posts/3465d938.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/810x430-hadoop-vs-data-warehouse.jpg" alt="Image result for Hive-based EDW"></p>
 <h2 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h2><ol>
 <li><p>Establishing a complete Hadoop ecosystem such as using Ambari.</p>
 <p>For how to establish a complete Hadoop ecosystem by Ambari, you can check the posts - “Step by Step Tutorial for Ambari Installation” or “Tutorial for Latest Ambari(2.7.1)”.</p>
@@ -641,7 +725,7 @@
 </ol>
 <span id="more"></span>
 
-<h2 id="Technical-Architecture"><a href="#Technical-Architecture" class="headerlink" title="Technical Architecture"></a>Technical Architecture</h2><p><img src="/blog/posts/3465d938/Cloud-based%20EDW.jpg" alt="Cloud-based EDW"></p>
+<h2 id="Technical-Architecture"><a href="#Technical-Architecture" class="headerlink" title="Technical Architecture"></a>Technical Architecture</h2><p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/Cloud-based%20EDW.jpg" alt="Cloud-based EDW"></p>
 <h2 id="Business-Requirements"><a href="#Business-Requirements" class="headerlink" title="Business Requirements"></a>Business Requirements</h2><ol>
 <li>Sync order data from external MySQL database into Hive daily</li>
 <li>Compute order amount by orderID daily</li>
@@ -652,15 +736,15 @@
 <li>Creating databases and tables for Hive of Hadoop ecosystem and MySQL of the external database separately.</li>
 <li>Inserting several order data into the external MySQL database for syncing.</li>
 </ol>
-<h2 id="Design-of-a-series-of-NiFi-flow"><a href="#Design-of-a-series-of-NiFi-flow" class="headerlink" title="Design of a series of NiFi flow"></a>Design of a series of NiFi flow</h2><p><img src="/blog/posts/3465d938/2019-12-06%20at%2013.27.png" alt="2019-12-06 at 13.27"></p>
+<h2 id="Design-of-a-series-of-NiFi-flow"><a href="#Design-of-a-series-of-NiFi-flow" class="headerlink" title="Design of a series of NiFi flow"></a>Design of a series of NiFi flow</h2><p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2013.27.png" alt="2019-12-06 at 13.27"></p>
 <p>Firstly, we can create a processor group to package overall processors for easy management.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.00.png" alt="2019-12-06 at 10.00"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.00.png" alt="2019-12-06 at 10.00"></p>
 <p>Based on business requirements, I split requirements into main three tasks - syncing data from the external database, computing and analyzing data and syncing data to the external database.  </p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.01.png" alt="2019-12-06 at 10.01"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.01.png" alt="2019-12-06 at 10.01"></p>
 <p>The image above shows the main four NiFi processor groups which contain a series of NiFi processor and I will illustrate all four NiFi processor groups separately.</p>
-<h4 id="NiFi-Group-1-Group-SynOrdersFromMySQL"><a href="#NiFi-Group-1-Group-SynOrdersFromMySQL" class="headerlink" title="NiFi Group 1 : Group_SynOrdersFromMySQL"></a>NiFi Group 1 : Group_SynOrdersFromMySQL</h4><p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.07.png" alt="2019-12-06 at 10.07"></p>
+<h4 id="NiFi-Group-1-Group-SynOrdersFromMySQL"><a href="#NiFi-Group-1-Group-SynOrdersFromMySQL" class="headerlink" title="NiFi Group 1 : Group_SynOrdersFromMySQL"></a>NiFi Group 1 : Group_SynOrdersFromMySQL</h4><p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.07.png" alt="2019-12-06 at 10.07"></p>
 <p>This flow which consists of processor ReplaceText, processor PutHive3QL, processor ExecuteSQL, and processor PutHive3Streaming shows how to grab data from the external MySQL database. Before showing the configuration of each processor, I want to shows a chart to explain the tasks of this flow.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.21.png" alt="2019-12-06 at 10.21"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.21.png" alt="2019-12-06 at 10.21"></p>
 <p>Next, I will state the configuration of each processor in each task step by step.</p>
 <ol>
 <li><p>Dropping Hive table partition which belongs to that day.</p>
@@ -669,7 +753,7 @@
 <li><p>Processor ReplaceText</p>
 <p>This processor can replace the identified text segment to an alternative one. But, why we need this processor in task 1? Because the next processor does not provide a SQL input source, so we need a container for loading SQL to the Hive processor.</p>
 <p>Adding drop SQL to blank “Replacement Value”.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.30.png" alt="2019-12-06 at 10.30"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.30.png" alt="2019-12-06 at 10.30"></p>
 <p>Drop SQL: </p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> s_shop_sephora_order_delta_orc <span class="keyword">DROP</span> IF <span class="keyword">EXISTS</span> <span class="keyword">PARTITION</span>(dt<span class="operator">=</span><span class="string">&#x27;$&#123;now():format(&#x27;</span>yyyyMMdd<span class="string">&#x27;)&#125;&#x27;</span>);</span><br></pre></td></tr></table></figure>
 
@@ -677,86 +761,86 @@
 </li>
 <li><p>Processor PutHive3QL </p>
 <p>PutHive3QL can connect to Hive and execute SQL generated from the previous processor.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.38.png" alt="2019-12-06 at 10.38"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.38.png" alt="2019-12-06 at 10.38"></p>
 <p>Clicking the right arrow in the pic above to configure the Hive3ConnectionPool.</p>
 <p>If you do not have that connection pool, you need to create a new one.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.40.png" alt="2019-12-06 at 10.40"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.40.png" alt="2019-12-06 at 10.40"></p>
 <p>The configuration of this connection pool shows blow.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.40-5600059.png" alt="2019-12-06 at 10.40"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.40-5600059.png" alt="2019-12-06 at 10.40"></p>
 </li>
 </ol>
 </li>
 <li><p>Querying order data from the external database.</p>
 <p>Using processor ExecuteSQL and configuration shows below.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.51.png" alt="2019-12-06 at 10.51"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.51.png" alt="2019-12-06 at 10.51"></p>
 <p>And DBConnectionPool shows below.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.54.png" alt="2019-12-06 at 10.54"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.54.png" alt="2019-12-06 at 10.54"></p>
 <p>Querying SQL: </p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> test.sephora_order <span class="keyword">where</span> <span class="number">1</span><span class="operator">=</span><span class="number">1</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Saving data to a specific Hive table.</p>
 <p>Using processor PutHive3Streaming for inserting dataset to a specific Hive table.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.56.png" alt="2019-12-06 at 10.56"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.56.png" alt="2019-12-06 at 10.56"></p>
 <p>Configuring AvroReader because of the type of the previous dataset.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2010.58.png" alt="2019-12-06 at 10.58"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2010.58.png" alt="2019-12-06 at 10.58"></p>
 </li>
 </ol>
 <p>Until now, we can test the whole flow for accuracy.</p>
-<h4 id="NiFi-Group-2-Group-ComputePaymentNumberByOrder"><a href="#NiFi-Group-2-Group-ComputePaymentNumberByOrder" class="headerlink" title="NiFi Group 2 : Group_ComputePaymentNumberByOrder"></a>NiFi Group 2 : Group_ComputePaymentNumberByOrder</h4><p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.03.png" alt="2019-12-06 at 11.03"></p>
+<h4 id="NiFi-Group-2-Group-ComputePaymentNumberByOrder"><a href="#NiFi-Group-2-Group-ComputePaymentNumberByOrder" class="headerlink" title="NiFi Group 2 : Group_ComputePaymentNumberByOrder"></a>NiFi Group 2 : Group_ComputePaymentNumberByOrder</h4><p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.03.png" alt="2019-12-06 at 11.03"></p>
 <p>In this flow, we just use the processor to execute Hive SQL for computing data or analyzing data.</p>
 <ol>
 <li><p>Processor ReplaceText</p>
 <p>The same with the previous processor in the last task, this processor just used for storing SQL.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.08.png" alt="2019-12-06 at 11.08"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.08.png" alt="2019-12-06 at 11.08"></p>
 <p>Computing SQL:</p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> overwrite <span class="keyword">table</span> default.temp_order_result_orc <span class="keyword">partition</span>(dt<span class="operator">=</span><span class="string">&#x27;$&#123;now():format(&#x27;</span>yyyyMMdd<span class="string">&#x27;)&#125;&#x27;</span>)</span><br><span class="line"><span class="keyword">select</span> order_num,province,city,region,address,(<span class="built_in">cast</span>(order_amount <span class="keyword">AS</span> <span class="type">FLOAT</span>) <span class="operator">+</span> <span class="number">1</span>) <span class="keyword">from</span> default.s_shop_sephora_order_delta_orc <span class="keyword">where</span> dt<span class="operator">=</span><span class="string">&#x27;$&#123;now():format(&#x27;</span>yyyyMMdd<span class="string">&#x27;)&#125;&#x27;</span>;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Processor PutHive3QL</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.11.png" alt="2019-12-06 at 11.11"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.11.png" alt="2019-12-06 at 11.11"></p>
 </li>
 </ol>
-<h4 id="NiFi-Group-3-Group-ConvergePaymentNumByOrder"><a href="#NiFi-Group-3-Group-ConvergePaymentNumByOrder" class="headerlink" title="NiFi Group 3 : Group_ConvergePaymentNumByOrder"></a>NiFi Group 3 : Group_ConvergePaymentNumByOrder</h4><p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.12.png" alt="2019-12-06 at 11.12"></p>
+<h4 id="NiFi-Group-3-Group-ConvergePaymentNumByOrder"><a href="#NiFi-Group-3-Group-ConvergePaymentNumByOrder" class="headerlink" title="NiFi Group 3 : Group_ConvergePaymentNumByOrder"></a>NiFi Group 3 : Group_ConvergePaymentNumByOrder</h4><p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.12.png" alt="2019-12-06 at 11.12"></p>
 <p>In this step, we need to compute the total order amount.</p>
 <ol>
 <li><p>Processor ReplaceText</p>
 <p>The Configuration shows below.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.14.png" alt="2019-12-06 at 11.14"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.14.png" alt="2019-12-06 at 11.14"></p>
 <p>Computing SQL:</p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> overwrite <span class="keyword">table</span> t_order_convergence_orc <span class="keyword">partition</span>(dt<span class="operator">=</span><span class="string">&#x27;$&#123;now():format(&#x27;</span>yyyyMMdd<span class="string">&#x27;)&#125;&#x27;</span>)</span><br><span class="line"><span class="keyword">select</span> order_num,<span class="built_in">sum</span>(total) <span class="keyword">from</span> temp_order_result_orc <span class="keyword">where</span> dt<span class="operator">=</span><span class="string">&#x27;$&#123;now():format(&#x27;</span>yyyyMMdd<span class="string">&#x27;)&#125;&#x27;</span> <span class="keyword">group</span> <span class="keyword">by</span> order_num;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Processor PutHive3QL</p>
 <p>The configuration shows below.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.15.png" alt="2019-12-06 at 11.15"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.15.png" alt="2019-12-06 at 11.15"></p>
 </li>
 </ol>
 <h4 id="NiFi-Group-4-Group-SynTotalPaymentNum2MySQL"><a href="#NiFi-Group-4-Group-SynTotalPaymentNum2MySQL" class="headerlink" title="NiFi Group 4 : Group_SynTotalPaymentNum2MySQL"></a>NiFi Group 4 : Group_SynTotalPaymentNum2MySQL</h4><p>This is the last step for this whole POC and the overview flow chart shows below.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.18.png" alt="2019-12-06 at 11.18"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.18.png" alt="2019-12-06 at 11.18"></p>
 <p>In this step, I split into five processors for querying result data from the Hive table and saving them to the specific external MySQL table. Next, I will state the function and the configuration of each processor respectively. </p>
 <ol>
 <li><p>Processor SelectHive3QL</p>
 <p>Querying analysis result data from the Hive table and qualifying output format “Avro”.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.30.png" alt="2019-12-06 at 11.30"></p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.30-5603039.png" alt="2019-12-06 at 11.30"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.30.png" alt="2019-12-06 at 11.30"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.30-5603039.png" alt="2019-12-06 at 11.30"></p>
 <p>Since we only have two output formats - Avro and CSV, we can convert Avro to SQL successively.</p>
 <p>Querying Data:</p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> order_num_str,total,<span class="built_in">CURRENT_TIMESTAMP</span> <span class="keyword">as</span> update_time <span class="keyword">from</span> default.t_order_convergence_orc <span class="keyword">where</span> dt <span class="operator">=</span> <span class="string">&#x27;$&#123;now():format(&#x27;</span>yyyyMMdd<span class="string">&#x27;)&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Processor SplitAvro</p>
 <p>In this processor, we need to split the Avro dataset because the next processors cannot process the dataset.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.45.png" alt="2019-12-06 at 11.45"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.45.png" alt="2019-12-06 at 11.45"></p>
 </li>
 <li><p>Processor ConvertAvroToJSON</p>
 <p>Before converting to SQL, we need to convert to JSON firstly.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.47.png" alt="2019-12-06 at 11.47"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.47.png" alt="2019-12-06 at 11.47"></p>
 </li>
 <li><p>Processor ConvertJSONToSQL</p>
 <p>Specifying table name of the external MySQL database in this processor.</p>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2011.47-5604065.png" alt="2019-12-06 at 11.47"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2011.47-5604065.png" alt="2019-12-06 at 11.47"></p>
 </li>
 <li><p>Processor PutSQL</p>
 </li>
 </ol>
-<p><img src="/blog/posts/3465d938/2019-12-06%20at%2012.46.png" alt="2019-12-06 at 12.46"></p>
+<p><img src="/blog/blog/posts/3465d938/Hive-based-Enterprise-Data-Warehouse-EDW/2019-12-06%20at%2012.46.png" alt="2019-12-06 at 12.46"></p>
 <h4 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h4><p>To sum up, we can use NiFi as a scheduling tool to process data itinerantly since NiFi provides abundant processors for distinct processing. </p>
 <p>For now, we can run and test this whole processor group. </p>
 ]]></content>
@@ -772,9 +856,36 @@
       </tags>
   </entry>
   <entry>
+    <title>How to Recover a Crashed Mysql Database</title>
+    <url>/blog/posts/4cf6882d.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/4cf6882d/How-to-Recover-a-Crashed-Mysql-Database/crash.jpg" alt="crash"></p>
+<span id="more"></span>
+<p>Among the operation of Ambari, we may confront some annoying failure, such as a crashed MySQL database. So, we can run commands below to recover this kind of problem.</p>
+<ol>
+<li><p>Check the status of the crashed table.</p>
+ <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">check</span> <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Repair crashed table.</p>
+ <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">repaire <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>On the other hand, you can use commands below to repair whole crashed tables.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysqlcheck -uroot -p --repair --all-databases</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">myisamchk --recover *.MYI</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Database</category>
+        <category>Mysql</category>
+      </categories>
+      <tags>
+        <tag>Ambari</tag>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Installing HDF on Ambari 2.7.1 + HDP 3.0.1</title>
-    <url>/posts/8c49992b.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/8c49992b/hdfandhdp.png" alt="hdfandhdp"></p>
+    <url>/blog/posts/8c49992b.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/8c49992b/Installing-HDF-on-Ambari-2-7-1-HDP-3-0-1/hdfandhdp.png" alt="hdfandhdp"></p>
 <p>Installed Ambari and HDP are prerequisites for installing HDF on HDP clusters. So, after that, you can follow the steps below to complete installing HDF.</p>
 <span id="more"></span>
 
@@ -802,10 +913,10 @@
 <li><p>Unzipping your HDF installation package to your HTTP server and ensure that you can access the HDF installation resources.</p>
 </li>
 <li><p>Signing in your Ambari by user admin and registering HDF-3.2.</p>
-<p><img src="/blog/posts/8c49992b/registerhdf.png" alt="registerhdf"></p>
+<p><img src="/blog/blog/posts/8c49992b/Installing-HDF-on-Ambari-2-7-1-HDP-3-0-1/registerhdf.png" alt="registerhdf"></p>
 </li>
 <li><p>After that, you will notice a brand new stack component named “HDF-3.2.0.0” appearing on the page “Versions”.</p>
-<p><img src="/blog/posts/8c49992b/appearhdf.png" alt="appearhdf"></p>
+<p><img src="/blog/blog/posts/8c49992b/Installing-HDF-on-Ambari-2-7-1-HDP-3-0-1/appearhdf.png" alt="appearhdf"></p>
 </li>
 </ol>
 </li>
@@ -825,8 +936,8 @@
   </entry>
   <entry>
     <title>Introduction of NiFi</title>
-    <url>/posts/60c88280.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/60c88280/nifi-logo-horizontal.png" alt="img"></p>
+    <url>/blog/posts/60c88280.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/60c88280/Introduction-of-NiFi/nifi-logo-horizontal.png" alt="img"></p>
 <h3 id="Brief-of-NiFi"><a href="#Brief-of-NiFi" class="headerlink" title="Brief of NiFi"></a>Brief of NiFi</h3><p>Apache NiFi is a software project from the Apache Software Foundation designed to automate the flow of data between software systems. </p>
 <p>Software development and the commercial support is currently offered by Hortonworks (now merged into Cloudera), who acquired NiFi’s originator, Onyara Inc.</p>
 <p>Apache NiFi supports powerful and scalable directed graphs of data routing, transformation, and system mediation logic. Some of the high-level capabilities and objectives of Apache NiFi include:</p>
@@ -881,7 +992,7 @@
 </li>
 <li><p>Processor Group</p>
 <p>Combining disparate processors into one group for easy management.</p>
-<p><img src="/blog/posts/60c88280/2019-12-06%20at%2013.49.png" alt="2019-12-06 at 13.49"></p>
+<p><img src="/blog/blog/posts/60c88280/Introduction-of-NiFi/2019-12-06%20at%2013.49.png" alt="2019-12-06 at 13.49"></p>
 </li>
 </ol>
 ]]></content>
@@ -895,73 +1006,9 @@
       </tags>
   </entry>
   <entry>
-    <title>How to Recover a Crashed Mysql Database</title>
-    <url>/posts/4cf6882d.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/4cf6882d/crash.jpg" alt="crash"></p>
-<span id="more"></span>
-<p>Among the operation of Ambari, we may confront some annoying failure, such as a crashed MySQL database. So, we can run commands below to recover this kind of problem.</p>
-<ol>
-<li><p>Check the status of the crashed table.</p>
- <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">check</span> <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Repair crashed table.</p>
- <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">repaire <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>On the other hand, you can use commands below to repair whole crashed tables.</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysqlcheck -uroot -p --repair --all-databases</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">myisamchk --recover *.MYI</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Database</category>
-        <category>Mysql</category>
-      </categories>
-      <tags>
-        <tag>Ambari</tag>
-        <tag>Mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux Command - netstat</title>
-    <url>/posts/187005a0.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/187005a0/netstat.jpg" alt="netstat"></p>
-<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><blockquote>
-<p>source: <a href>https://www.tecmint.com/20-netstat-commands-for-linux-network-management/</a></p>
-</blockquote>
-<p>netstat(network statistics) is a command line tool for monitoring connections both incoming and outgoing as well as viewing routing tables, interface statistics, etc.</p>
-<span id="more"></span>
-
-<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><p>So, let’s begin to learn some useful options for netstat.</p>
-<ol>
-<li><p>-a</p>
-<p>Show all.</p>
-</li>
-<li><p>-n</p>
-<p>Show networks as numbers, not hostnames.</p>
-</li>
-<li><p>-p</p>
-<p>Show protocol.</p>
-</li>
-</ol>
-<h2 id="Most-repeated-command"><a href="#Most-repeated-command" class="headerlink" title="Most repeated command"></a>Most repeated command</h2><p>You can use the practical command below to find listening programs</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -anp | grep 8080</span><br></pre></td></tr></table></figure>
-
-<p>And you also can use telnet to check specific port.</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">telnet [hostname or ip] [port]</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Operation</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Linux Command</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Kerberos Authentication Explained</title>
-    <url>/posts/bfaac82a.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/bfaac82a/kerberos.png" alt="kerberos"></p>
+    <url>/blog/posts/bfaac82a.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/bfaac82a/Kerberos-Authentication-Explained/kerberos.png" alt="kerberos"></p>
 <h2 id="What-is-Kerberos"><a href="#What-is-Kerberos" class="headerlink" title="What is Kerberos"></a>What is Kerberos</h2><p>In Greek mythology, Kerberos is a creature that is a three-headed dog that guards the gate toward the underworld. In a nutshell, it’s a security guardian.<br>Back to our network world, Kerberos is a computer network authorization protocol that allows clients and servers to communicate in a secure manner (symmetric key cryptography). It is designed by MIT. </p>
 <span id="more"></span>
 
@@ -992,7 +1039,7 @@
 <li>Client</li>
 </ul>
 <p>So, let’s begin to cross this mysterious jungle.</p>
-<p><img src="/blog/posts/bfaac82a/Kerberos-Authentication-Explained%5Ckerberos_authentication_process.png" alt="kerberos_authentication_process"></p>
+<p><img src="/blog/blog/posts/bfaac82a/Kerberos-Authentication-Explained%5Ckerberos_authentication_process.png" alt="kerberos_authentication_process"></p>
 <h3 id="Process-1-Getting-TGT"><a href="#Process-1-Getting-TGT" class="headerlink" title="Process 1: Getting TGT"></a>Process 1: Getting TGT</h3><ol>
 <li><p>The client sends the plaintext to AS.<br> The plaintext contains:</p>
 <ul>
@@ -1083,43 +1130,9 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Meeting 401 Http Status Code when Visting Oozie UI by a browser in a Kerberos environment</title>
-    <url>/posts/3f9aa226.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/3f9aa226/401_webui_1.png" alt="401 webui"></p>
-<p>Using your browser such as Firefox or Chrome to access your component services in Ambari with Kerberos Authorization may confront the error message above.</p>
-<span id="more"></span>
-
-<p>The Http status code 401 showing that lacking the authorization to access specific resources. So solving this error is to assign specific authorization for the resource that you need to access.</p>
-<blockquote>
-<p><a href="https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html">https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html</a></p>
-</blockquote>
-<h2 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h2><ol>
-<li><p>Configuring Firefox</p>
-<p> Open Firefox and type the “about:config” in the address bar.</p>
-<p> <img src="/blog/posts/3f9aa226/401_webui_2.png" alt="401 webui"></p>
-<p> Specify the hostname of your Ambari cluster to the properties(“network.negotiate-auth.delegation-uris” and “network.negotiate-auth.trusted-uris”)</p>
-</li>
-<li><p>Typing Command “kinit”<br> Assigning authorization to specific service which you want to access.</p>
- <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kinit -kt [the file path of specific keytab file] [the principle of specific service]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="Other-Browsers"><a href="#Other-Browsers" class="headerlink" title="Other Browsers"></a>Other Browsers</h2><p>Accessing the website to get concrete solutions for specific browsers.</p>
-<blockquote>
-<p><a href="https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM">https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Back-end</category>
-        <category>BigData</category>
-      </categories>
-      <tags>
-        <tag>BigData</tag>
-        <tag>Ambari</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cheat Sheet for AWS SAA-02</title>
-    <url>/posts/a60a7db0.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/a60a7db0/image-20210919194848724.png" alt="image-20210919194848724"></p>
+    <url>/blog/posts/a60a7db0.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210919194848724.png" alt="image-20210919194848724"></p>
 <h2 id="IAM"><a href="#IAM" class="headerlink" title="IAM"></a>IAM</h2><ol>
 <li>IAM role policy only define <strong>which API actions</strong> can be made to that role.</li>
 </ol>
@@ -1212,7 +1225,7 @@ The authenticator which encrypted by TGS session key contains:
 <li>LAG stands for Link Aggregation Groups</li>
 <li>You can use multiple connections for redundancy.</li>
 <li>A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple connections at a single AWS Direct Connect endpoint, allowing you to treat them as a single, managed connection.</li>
-<li><img src="/blog/posts/a60a7db0/IMG_410A544D389B-1.jpeg" alt="IMG_410A544D389B-1"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/IMG_410A544D389B-1.jpeg" alt="IMG_410A544D389B-1"></li>
 <li><strong>For higher throughput, LAG can aggregate multiple DX connections to give a maximum of 50 Gig bandwidth.</strong></li>
 </ul>
 </li>
@@ -1408,7 +1421,7 @@ The authenticator which encrypted by TGS session key contains:
 <li>By default as soon as an instance is lanched in an ASG it’s in service</li>
 <li>You have the ability to perform extra steps before the instance goes in service (Pending State)</li>
 <li>You have the ability to perform some actions before the instance is terminated (Terminating State)</li>
-<li><img src="/blog/posts/a60a7db0/IMG_0994.jpg" alt="IMG_0994"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/IMG_0994.jpg" alt="IMG_0994"></li>
 </ul>
 </li>
 <li><p><strong>Salcing Cooldown</strong></p>
@@ -1801,7 +1814,7 @@ The authenticator which encrypted by TGS session key contains:
 <li><p>Bucket Policy for OAI</p>
 </li>
 </ol>
-<p>   <img src="/blog/posts/a60a7db0/IMG_981A4CE6475E-1.jpeg" alt="IMG_981A4CE6475E-1"></p>
+<p>   <img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/IMG_981A4CE6475E-1.jpeg" alt="IMG_981A4CE6475E-1"></p>
 <ol start="25">
 <li>Object Lock<ul>
 <li>Object Lock should be enabled to store objects using write once and read many (WORM) models.</li>
@@ -5116,17 +5129,17 @@ The authenticator which encrypted by TGS session key contains:
 <li>RPO: Recovery Point Objective</li>
 <li>RTO: Recovery Time Objective</li>
 </ul>
-<p><img src="/blog/posts/a60a7db0/image-20210529133605147.png" alt="image-20210529133605147"></p>
+<p><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529133605147.png" alt="image-20210529133605147"></p>
 </li>
 <li><p>Disaster Recovery Strategies</p>
 <ul>
 <li>Backup and Restore<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529134022829.png" alt="image-20210529134022829"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529134022829.png" alt="image-20210529134022829"></li>
 <li>Easy, cheap, high RPO, high RTO</li>
 </ul>
 </li>
 <li>Pilot Light<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529134216840.png" alt="image-20210529134216840"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529134216840.png" alt="image-20210529134216840"></li>
 <li>A small version of the app is always running in the cloud</li>
 <li>Useful for the critical core (pilot light)</li>
 <li>Very similar to Backup and Restore</li>
@@ -5135,23 +5148,23 @@ The authenticator which encrypted by TGS session key contains:
 </ul>
 </li>
 <li>Warm Standby<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529134335039.png" alt="image-20210529134335039"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529134335039.png" alt="image-20210529134335039"></li>
 <li>Full system is up and running, but at minimum size</li>
 <li>Upon disaster, we can scale to production load</li>
 </ul>
 </li>
 <li>Hot Site &#x2F; Multi Site Approach<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529134517347.png" alt="image-20210529134517347"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529134517347.png" alt="image-20210529134517347"></li>
 <li>Very low RTO (minutes or seconds) - very expensive</li>
 <li>Full production Scale is running AWS and On-premise</li>
 </ul>
 </li>
 <li>All AWS Multi Region<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529134601180.png" alt="image-20210529134601180"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529134601180.png" alt="image-20210529134601180"></li>
 </ul>
 </li>
 </ul>
-<p><img src="/blog/posts/a60a7db0/image-20210529133717204.png" alt="image-20210529133717204"></p>
+<p><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529133717204.png" alt="image-20210529133717204"></p>
 </li>
 <li><p>DR Tips</p>
 <ul>
@@ -5238,13 +5251,13 @@ The authenticator which encrypted by TGS session key contains:
 </ul>
 </li>
 <li><p>Tech Stack for CI&#x2F;CD</p>
-<p><img src="/blog/posts/a60a7db0/image-20210529140801950.png" alt="image-20210529140801950"></p>
+<p><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529140801950.png" alt="image-20210529140801950"></p>
 </li>
 </ul>
 <h2 id="Classic-Solution-Architecture"><a href="#Classic-Solution-Architecture" class="headerlink" title="Classic Solution Architecture"></a>Classic Solution Architecture</h2><ol>
 <li><p>Stateless Web App</p>
 <ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529142846543.png" alt="image-20210529142846543"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529142846543.png" alt="image-20210529142846543"></li>
 <li>Progressively<ol>
 <li>Public EC2 + Elastic IP</li>
 <li>Multi Public EC2s + Elastic IP for each one</li>
@@ -5261,7 +5274,7 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 <li><p>Stateful Web App</p>
 <ul>
-<li><img src="/blog/posts/a60a7db0/image-20210529144252708.png" alt="image-20210529144252708"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529144252708.png" alt="image-20210529144252708"></li>
 <li>Progressively<ol>
 <li>Route 53 + ELB + Private EC2s in different AZs</li>
 <li>Route 53 + ELB (with Stickness) + Private EC2s in diff AZs</li>
@@ -5306,7 +5319,7 @@ The authenticator which encrypted by TGS session key contains:
 </ul>
 </li>
 <li><p>Typical Architecture</p>
-<p><img src="/blog/posts/a60a7db0/image-20210529145000881.png" alt="image-20210529145000881"></p>
+<p><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210529145000881.png" alt="image-20210529145000881"></p>
 </li>
 <li><p>Application Shards</p>
 <ul>
@@ -5318,7 +5331,7 @@ The authenticator which encrypted by TGS session key contains:
 </ol>
 <h2 id="Serverless-Solution-Architecture"><a href="#Serverless-Solution-Architecture" class="headerlink" title="Serverless Solution Architecture"></a>Serverless Solution Architecture</h2><ol>
 <li>Mobile App<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531111508777.png" alt="image-20210531111508777"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531111508777.png" alt="image-20210531111508777"></li>
 <li>Progressively<ol>
 <li>API Gateway + Cognito + Lambda + DynamoDB</li>
 <li>S3 + STS (giving users access to S3, using Cognito to generate temporary credentials with STS to access S3 bucket with restricted policy)</li>
@@ -5330,56 +5343,56 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 <li>Serverless hosted website<ul>
 <li>Serving static content, globally<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531112930778.png" alt="image-20210531112930778"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531112930778.png" alt="image-20210531112930778"></li>
 </ul>
 </li>
 <li>Serving static content, globally, securely<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113011355.png" alt="image-20210531113011355"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113011355.png" alt="image-20210531113011355"></li>
 </ul>
 </li>
 <li>Adding a public serverless REST API<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113047249.png" alt="image-20210531113047249"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113047249.png" alt="image-20210531113047249"></li>
 </ul>
 </li>
 <li>Leveraging DynamoDB Global Tables<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113116352.png" alt="image-20210531113116352"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113116352.png" alt="image-20210531113116352"></li>
 </ul>
 </li>
 <li>User Welcome email flow<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113151894.png" alt="image-20210531113151894"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113151894.png" alt="image-20210531113151894"></li>
 </ul>
 </li>
 <li>Thumnail generation flow<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113237277.png" alt="image-20210531113237277"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113237277.png" alt="image-20210531113237277"></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Microservices <ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113409185.png" alt="image-20210531113409185"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113409185.png" alt="image-20210531113409185"></li>
 <li>Synchronous patterns: API Gateway, ELB</li>
 <li>Asynchronous patterns: SQS, Kinesis, SNS, Lambda</li>
 </ul>
 </li>
 <li>Distributing Paid Content<ul>
 <li>Simple, premium user service<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113736231.png" alt="image-20210531113736231"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113736231.png" alt="image-20210531113736231"></li>
 </ul>
 </li>
 <li>Add authentication<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113753060.png" alt="image-20210531113753060"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113753060.png" alt="image-20210531113753060"></li>
 </ul>
 </li>
 <li>Add Video Storage Service<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113814850.png" alt="image-20210531113814850"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113814850.png" alt="image-20210531113814850"></li>
 </ul>
 </li>
 <li>Distribute Globally and Securely<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113846532.png" alt="image-20210531113846532"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113846532.png" alt="image-20210531113846532"></li>
 </ul>
 </li>
 <li>Distribute Content only to Premium Users<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531113939305.png" alt="image-20210531113939305"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531113939305.png" alt="image-20210531113939305"></li>
 </ul>
 </li>
 <li>Summary<ul>
@@ -5399,11 +5412,11 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 <li>Software updates offloading<ul>
 <li>Current Architecture<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531114544031.png" alt="image-20210531114544031"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531114544031.png" alt="image-20210531114544031"></li>
 </ul>
 </li>
 <li>Using CloudFront to fix<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531114609126.png" alt="image-20210531114609126"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531114609126.png" alt="image-20210531114609126"></li>
 </ul>
 </li>
 <li>Why CloudFront?<ul>
@@ -5420,7 +5433,7 @@ The authenticator which encrypted by TGS session key contains:
 </ul>
 </li>
 <li>Big Data Ingestion Pipeline<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531114914272.png" alt="image-20210531114914272"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531114914272.png" alt="image-20210531114914272"></li>
 <li>Summary<ul>
 <li>Kinesis is great for real-time data collection</li>
 <li>Firehose helps with data delivery to S3 in near real-time (1 min)</li>
@@ -5444,18 +5457,18 @@ The authenticator which encrypted by TGS session key contains:
 </ul>
 </li>
 <li>Fan Out Pattern (deliver to multiple SQS)<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531120517296.png" alt="image-20210531120517296"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531120517296.png" alt="image-20210531120517296"></li>
 </ul>
 </li>
 <li>S3 Event<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531120538426.png" alt="image-20210531120538426"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531120538426.png" alt="image-20210531120538426"></li>
 <li>if you want to ensure that an event notification is sent for every successful write, you can enable versioning on your bucket</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Caching Strategies<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531120748355.png" alt="image-20210531120748355"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531120748355.png" alt="image-20210531120748355"></li>
 <li>Using TTL for renewing the cache of CloudFront</li>
 <li>API Gateway also have some caching capability</li>
 <li>Since API Gateway is a regional service, so the cache of API Gateway is also regional</li>
@@ -5480,11 +5493,11 @@ The authenticator which encrypted by TGS session key contains:
 </ul>
 </li>
 <li>Client -&gt; ALB + WAF -&gt; EC2<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531121512438.png" alt="image-20210531121512438"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531121512438.png" alt="image-20210531121512438"></li>
 </ul>
 </li>
 <li>Client -&gt; CloudFront + WAF -&gt; ALB -&gt; EC2<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531121538192.png" alt="image-20210531121538192"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531121538192.png" alt="image-20210531121538192"></li>
 <li>If the CloudFront stands before ALB, the NACL cannot get the IP address of the client. So, using NACL to block IP address will fail</li>
 </ul>
 </li>
@@ -5581,18 +5594,18 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 <li>Creating a highly available EC2 instance<ol>
 <li>Using CloudWatch Event to trigger<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531123136227.png" alt="image-20210531123136227"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531123136227.png" alt="image-20210531123136227"></li>
 <li>Using CloudWatch to monitoring the metrics of EC2 instances. After that CloudWatch Event can trigger a Lambda Function to do whatever you want</li>
 </ul>
 </li>
 <li>ASG<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531123231048.png" alt="image-20210531123231048"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531123231048.png" alt="image-20210531123231048"></li>
 <li>EC2 instance attaching User Data which contains scripts for attaching Elastic IP to that instance</li>
 <li>When one instance is terminated, other one will be created by ASG, and this new instance will run User Data automatically</li>
 </ul>
 </li>
 <li>ASG + EBS<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531123341341.png" alt="image-20210531123341341"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531123341341.png" alt="image-20210531123341341"></li>
 <li>EBS is AZ specific service</li>
 <li>Using ASG lifecycle hooks for creating a new EBS volume in another AZ</li>
 </ul>
@@ -5600,7 +5613,7 @@ The authenticator which encrypted by TGS session key contains:
 </ol>
 </li>
 <li>HA for Bastion Host<ul>
-<li><img src="/blog/posts/a60a7db0/image-20210531123542632.png" alt="image-20210531123542632"></li>
+<li><img src="/blog/blog/posts/a60a7db0/Cheat-Sheet-for-AWS-SAA-02/image-20210531123542632.png" alt="image-20210531123542632"></li>
 <li>HA Options for the bastion host<ul>
 <li>Run 2 across 2 AZ</li>
 <li>Run 1 across 2 AZ with 1 ASG 1:1:1</li>
@@ -6027,9 +6040,63 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
+    <title>Linux Command - netstat</title>
+    <url>/blog/posts/187005a0.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/187005a0/Linux-Command-netstat/netstat.jpg" alt="netstat"></p>
+<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><blockquote>
+<p>source: <a href>https://www.tecmint.com/20-netstat-commands-for-linux-network-management/</a></p>
+</blockquote>
+<p>netstat(network statistics) is a command line tool for monitoring connections both incoming and outgoing as well as viewing routing tables, interface statistics, etc.</p>
+<span id="more"></span>
+
+<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><p>So, let’s begin to learn some useful options for netstat.</p>
+<ol>
+<li><p>-a</p>
+<p>Show all.</p>
+</li>
+<li><p>-n</p>
+<p>Show networks as numbers, not hostnames.</p>
+</li>
+<li><p>-p</p>
+<p>Show protocol.</p>
+</li>
+</ol>
+<h2 id="Most-repeated-command"><a href="#Most-repeated-command" class="headerlink" title="Most repeated command"></a>Most repeated command</h2><p>You can use the practical command below to find listening programs</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -anp | grep 8080</span><br></pre></td></tr></table></figure>
+
+<p>And you also can use telnet to check specific port.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">telnet [hostname or ip] [port]</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Operation</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Linux Command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Odyssey</title>
+    <url>/blog/posts/56e69a1d.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/56e69a1d/odyssey/odyssey.jpg" alt="odyssey"><br>It is really a great determination for me to give up a comfortable and easy environment where I can complete all tasks successfully. Now, I had been to Shanghai for almost one month. And I need to study new development technology and make new friends in this unfamiliar city where I will be surrounded by loneliness.</p>
+<span id="more"></span>
+
+<p>Nevertheless, I really hope that I can meet all kinds of difficulties which offer me the huge experience to upgrade myself. So, I choose to jump out of my comfortable cage and forage challenges. In my opinion, It is a true tiger that runs above Africa prairie not one in the fancy cage.  </p>
+<p>Finally, I literally hope that my goal will be hit after one year and start with a more rough journey (Odyssey).</p>
+]]></content>
+      <categories>
+        <category>Life log</category>
+      </categories>
+      <tags>
+        <tag>Shanghai</tag>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL Basic Operations for User Account Management</title>
-    <url>/posts/f4c81e09.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/f4c81e09/mysql.jpg" alt="mysql">  </p>
+    <url>/blog/posts/f4c81e09.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/f4c81e09/Mysql-Basic-operations-for-User-Account-Management/mysql.jpg" alt="mysql">  </p>
 <ol>
 <li><p>Install MySQL server (not MySQL package)</p>
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum -y install mysql-server</span><br></pre></td></tr></table></figure>
@@ -6071,32 +6138,49 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Odyssey</title>
-    <url>/posts/56e69a1d.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/56e69a1d/odyssey.jpg" alt="odyssey"><br>It is really a great determination for me to give up a comfortable and easy environment where I can complete all tasks successfully. Now, I had been to Shanghai for almost one month. And I need to study new development technology and make new friends in this unfamiliar city where I will be surrounded by loneliness.</p>
+    <title>Meeting 401 Http Status Code when Visting Oozie UI by a browser in a Kerberos environment</title>
+    <url>/blog/posts/3f9aa226.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/3f9aa226/Meeting-401-Http-Status-Code-when-Visting-Oozie-UI-by-a-browser-in-a-Kerberos-environment/401_webui_1.png" alt="401 webui"></p>
+<p>Using your browser such as Firefox or Chrome to access your component services in Ambari with Kerberos Authorization may confront the error message above.</p>
 <span id="more"></span>
 
-<p>Nevertheless, I really hope that I can meet all kinds of difficulties which offer me the huge experience to upgrade myself. So, I choose to jump out of my comfortable cage and forage challenges. In my opinion, It is a true tiger that runs above Africa prairie not one in the fancy cage.  </p>
-<p>Finally, I literally hope that my goal will be hit after one year and start with a more rough journey (Odyssey).</p>
+<p>The Http status code 401 showing that lacking the authorization to access specific resources. So solving this error is to assign specific authorization for the resource that you need to access.</p>
+<blockquote>
+<p><a href="https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html">https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html</a></p>
+</blockquote>
+<h2 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h2><ol>
+<li><p>Configuring Firefox</p>
+<p> Open Firefox and type the “about:config” in the address bar.</p>
+<p> <img src="/blog/blog/posts/3f9aa226/Meeting-401-Http-Status-Code-when-Visting-Oozie-UI-by-a-browser-in-a-Kerberos-environment/401_webui_2.png" alt="401 webui"></p>
+<p> Specify the hostname of your Ambari cluster to the properties(“network.negotiate-auth.delegation-uris” and “network.negotiate-auth.trusted-uris”)</p>
+</li>
+<li><p>Typing Command “kinit”<br> Assigning authorization to specific service which you want to access.</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kinit -kt [the file path of specific keytab file] [the principle of specific service]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="Other-Browsers"><a href="#Other-Browsers" class="headerlink" title="Other Browsers"></a>Other Browsers</h2><p>Accessing the website to get concrete solutions for specific browsers.</p>
+<blockquote>
+<p><a href="https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM">https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM</a></p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>Life log</category>
+        <category>Back-end</category>
+        <category>BigData</category>
       </categories>
       <tags>
-        <tag>Shanghai</tag>
-        <tag>life</tag>
+        <tag>BigData</tag>
+        <tag>Ambari</tag>
       </tags>
   </entry>
   <entry>
     <title>Running Kafka consumer and producer in Kerberos Authorization</title>
-    <url>/posts/2d304b2.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/2d304b2/kafka.jpeg" alt="kafka"></p>
+    <url>/blog/posts/2d304b2.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/2d304b2/Running-Kafka-consumer-and-producer-in-Kerberos-Authorization/kafka.jpeg" alt="kafka"></p>
 <span id="more"></span>
 
 
 
 <p>No! No! No! Not this guy, we are talking about Apache Kafka.</p>
-<p><img src="/blog/posts/2d304b2/apachekafka.jpeg" alt="apachekafka"></p>
+<p><img src="/blog/blog/posts/2d304b2/Running-Kafka-consumer-and-producer-in-Kerberos-Authorization/apachekafka.jpeg" alt="apachekafka"></p>
 <h2 id="What-is-Kafka"><a href="#What-is-Kafka" class="headerlink" title="What is Kafka"></a>What is Kafka</h2><blockquote>
 <p>Kafka is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies.</p>
 </blockquote>
@@ -6165,8 +6249,8 @@ The authenticator which encrypted by TGS session key contains:
   </entry>
   <entry>
     <title>Several Pivotal Conceptions about Hive</title>
-    <url>/posts/449d41fb.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/449d41fb/Hive-feature-2.jpg" alt="Image result for Hive feature"></p>
+    <url>/blog/posts/449d41fb.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/449d41fb/Several-Pivotal-Conceptions-about-Hive/Hive-feature-2.jpg" alt="Image result for Hive feature"></p>
 <h3 id="What-is-Apache-Hive"><a href="#What-is-Apache-Hive" class="headerlink" title="What is Apache Hive?"></a>What is Apache Hive?</h3><p>As the data grew in size, there was also the scarcity of Java developers who can write complex MapReduce jobs for Hadoop. Hence the advent of Hive comes which is created on top of Hadoop itself. Hive provides a SQL like a language termed HiveQL interface for users to extract data from a Hadoop system. With the simplicity provided by Hive to transform simple SQL queries into Hadoop’s MapReduce jobs, and runs them against a Hadoop cluster.</p>
 <span id="more"></span>
 
@@ -6285,50 +6369,9 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Some terms in Big Data Ecosystem</title>
-    <url>/posts/aa930aca.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/aa930aca/biddata.jpg" alt="bigdata"></p>
-<ul>
-<li><p><strong>DMP(Data Management Platform)</strong><br>A platform for collecting and managing data for digital marketing purposes.</p>
-</li>
-<li><p><strong>DSP(Demand-side Platform)</strong><br>A platform that allows buyers of online advertising to manage ad exchange and pay to buy some advertising banners according to Real-time bidding.</p>
-</li>
-<li><p><strong>SSP(Supply-side Plateform)</strong><br>A platform that allows web publishers or digital media owners to manage their advertising banners and receive money from this platform.</p>
-</li>
-</ul>
-<span id="more"></span>
-<ul>
-<li><strong>MDM(Master Data Management)</strong><br>A business method that helps companies or enterprises to integrate, manage, store critical data in a single point of reference.<br>These data can provide for other business platforms or business systems(B2B, B2C, CRM, OMS, etc).<br>And master data also are useful for marketing decisions and marketing analysis.<br>In China, Alibaba announced a business term(“数据中台”) that is based on MDM.<br>So, in the next few years, we need to build a digital smart platform to collect all sources of business data that can provide<br>information for all kinds of business systems or platforms and bread down obstacles between business systems in companies or enterprises.</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Back-end</category>
-        <category>BigData</category>
-      </categories>
-      <tags>
-        <tag>BigData</tag>
-        <tag>DMP</tag>
-        <tag>MDM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MIO Internship</title>
-    <url>/posts/658d19d2.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/658d19d2/dinner_photo.jpeg" alt="MIO internship"></p>
-<p>I have really enjoyed working with IT team at MIO last two months. Through this internship, I have been able to learn not only what the US working style is like, but also some real AWS projects. Now, I’m sure to continue brushing up on my AWS skills to find a full-time role.</p>
-<p>Thank you all guys helped me and supported me! I hope you all the best!</p>
-]]></content>
-      <categories>
-        <category>Life log</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Step by Step Tutorial for Ambari Installation</title>
-    <url>/posts/7f0f012a.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/7f0f012a/features.png" alt="features"> </p>
+    <url>/blog/posts/7f0f012a.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/features.png" alt="features"> </p>
 <h2 id="System-Requirements"><a href="#System-Requirements" class="headerlink" title="System Requirements"></a>System Requirements</h2><p>At first, we need to think about the setups of VMs. So, I list a table for VMs below.</p>
 <table>
 <thead>
@@ -6386,20 +6429,20 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 <li><p>Power on the VM</p>
 <ol start="2">
-<li>Choose the first one.<br><img src="/blog/posts/7f0f012a/li_1.png" alt="Choose the first one"></li>
+<li>Choose the first one.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_1.png" alt="Choose the first one"></li>
 </ol>
 </li>
-<li><p>Click “skip” to continue.<br>  <img src="/blog/posts/7f0f012a/li_2.png" alt="Click &quot;skip&quot; to continue"></p>
+<li><p>Click “skip” to continue.<br>  <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_2.png" alt="Click &quot;skip&quot; to continue"></p>
 </li>
-<li><p>Choose language, keyborad and timezone.<br><img src="/blog/posts/7f0f012a/li_3.png" alt="Choose language"><br>  <img src="/blog/posts/7f0f012a/li_4.png" alt="Choose keyboard"><br>  <img src="/blog/posts/7f0f012a/li_5.png" alt="Choose timezone"></p>
+<li><p>Choose language, keyborad and timezone.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_3.png" alt="Choose language"><br>  <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_4.png" alt="Choose keyboard"><br>  <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_5.png" alt="Choose timezone"></p>
 </li>
-<li><p>Set root password.<br>  <img src="/blog/posts/7f0f012a/li_6.png" alt="Set root password">  </p>
+<li><p>Set root password.<br>  <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_6.png" alt="Set root password">  </p>
 </li>
-<li><p>Click “Using entire drive” to continue.<br><img src="/blog/posts/7f0f012a/li_7.png" alt="Click &quot;Using entire drive&quot; to continue">  </p>
+<li><p>Click “Using entire drive” to continue.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_7.png" alt="Click &quot;Using entire drive&quot; to continue">  </p>
 </li>
-<li><p>Choose “Write changes to disk” to continue.<br> <img src="/blog/posts/7f0f012a/li_8.png" alt="Choose &quot;Write changes to disk&quot; to continue">  </p>
+<li><p>Choose “Write changes to disk” to continue.<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_8.png" alt="Choose &quot;Write changes to disk&quot; to continue">  </p>
 </li>
-<li><p>Reboot.<br><img src="/blog/posts/7f0f012a/li_9.png" alt="Reboot"></p>
+<li><p>Reboot.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/li_9.png" alt="Reboot"></p>
 </li>
 </ol>
 <h2 id="VM-Preparation"><a href="#VM-Preparation" class="headerlink" title="VM Preparation"></a>VM Preparation</h2><h3 id="1-Configuration-and-Installation-for-VMs-master-and-slave-servers"><a href="#1-Configuration-and-Installation-for-VMs-master-and-slave-servers" class="headerlink" title="1. Configuration and Installation for VMs(master and slave servers)"></a>1. Configuration and Installation for VMs(master and slave servers)</h3><ol>
@@ -6536,31 +6579,31 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 <li><p>Start the ambari-server on the master server and ambari-agent on slave servers.<br> If you want to start quickly, it is advisable to choose default options.</p>
 </li>
-<li><p>Open your browser, then access to the WebUI and click the item (“Launch Install Wizard”)<br> URL: 192.168.110.150:8080<br> Account: admin<br> Password: admin<br> <img src="/blog/posts/7f0f012a/ai_1.png" alt="login"><br> <img src="/blog/posts/7f0f012a/ai_2.png" alt="login_success">  </p>
+<li><p>Open your browser, then access to the WebUI and click the item (“Launch Install Wizard”)<br> URL: 192.168.110.150:8080<br> Account: admin<br> Password: admin<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_1.png" alt="login"><br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_2.png" alt="login_success">  </p>
 </li>
-<li><p>Get Started<br> <img src="/blog/posts/7f0f012a/ai_3.png" alt="Get Started">  </p>
+<li><p>Get Started<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_3.png" alt="Get Started">  </p>
 </li>
-<li><p>Select Version<br> Choose local repository, then input base URL of HDP and HDP-UTILS.<br> <img src="/blog/posts/7f0f012a/ai_4.png" alt="Select Version">  </p>
+<li><p>Select Version<br> Choose local repository, then input base URL of HDP and HDP-UTILS.<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_4.png" alt="Select Version">  </p>
 </li>
-<li><p>Install Options<br> Input your master’s hostname and slaves’ hostnames. Then copy your master’s ssh private key into the item.<br> <img src="/blog/posts/7f0f012a/ai_5.png" alt="Install Options">  </p>
+<li><p>Install Options<br> Input your master’s hostname and slaves’ hostnames. Then copy your master’s ssh private key into the item.<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_5.png" alt="Install Options">  </p>
 </li>
-<li><p>Confirm Hosts<br> <img src="/blog/posts/7f0f012a/ai_6.png" alt="Confirm Hosts"> </p>
-<p> Just click “ok” to continue.<br> <img src="/blog/posts/7f0f012a/ai_7.png" alt="click ok"> </p>
+<li><p>Confirm Hosts<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_6.png" alt="Confirm Hosts"> </p>
+<p> Just click “ok” to continue.<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_7.png" alt="click ok"> </p>
 </li>
-<li><p>Choose Services<br> Choose what service you want to add to your system. You can add new services to your system later on.<br> <img src="/blog/posts/7f0f012a/ai_8.png" alt="Choose Services"> </p>
-<p> Just click “ok” to continue.<br> <img src="/blog/posts/7f0f012a/ai_9.png" alt="click ok"> </p>
+<li><p>Choose Services<br> Choose what service you want to add to your system. You can add new services to your system later on.<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_8.png" alt="Choose Services"> </p>
+<p> Just click “ok” to continue.<br> <img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_9.png" alt="click ok"> </p>
 </li>
-<li><p>Assign Masters<br><img src="/blog/posts/7f0f012a/ai_10.png" alt="Assign Masters"> </p>
+<li><p>Assign Masters<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_10.png" alt="Assign Masters"> </p>
 </li>
-<li><p>Assign Slaves and Clients<br><img src="/blog/posts/7f0f012a/ai_11.png" alt="Assign Slaves and Clients"> </p>
+<li><p>Assign Slaves and Clients<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_11.png" alt="Assign Slaves and Clients"> </p>
 </li>
-<li><p>Customize Services<br>You just need to input info for items with a red exclamation mark.<br><img src="/blog/posts/7f0f012a/ai_12.png" alt="Customize Services"> </p>
+<li><p>Customize Services<br>You just need to input info for items with a red exclamation mark.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_12.png" alt="Customize Services"> </p>
 </li>
-<li><p>Review<br><img src="/blog/posts/7f0f012a/ai_13.png" alt="Review"> </p>
+<li><p>Review<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_13.png" alt="Review"> </p>
 </li>
-<li><p>Install, Start and Test<br>If you get to this step successfully, you can drink a cup of coffee and enjoy this time.<br><img src="/blog/posts/7f0f012a/ai_14.png" alt="Install, Start and Test"> </p>
+<li><p>Install, Start and Test<br>If you get to this step successfully, you can drink a cup of coffee and enjoy this time.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_14.png" alt="Install, Start and Test"> </p>
 </li>
-<li><p>Summary<br>So now, say hello world to Ambari.<br><img src="/blog/posts/7f0f012a/ai_15.png" alt="Install, Start and Test"></p>
+<li><p>Summary<br>So now, say hello world to Ambari.<br><img src="/blog/blog/posts/7f0f012a/Step-by-Step-Tutorial-for-Ambari-Installation/ai_15.png" alt="Install, Start and Test"></p>
 </li>
 </ol>
 ]]></content>
@@ -6574,9 +6617,86 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
+    <title>MIO Internship</title>
+    <url>/blog/posts/658d19d2.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/658d19d2/MIO-Internship/dinner_photo.jpeg" alt="MIO internship"></p>
+<p>I have really enjoyed working with IT team at MIO last two months. Through this internship, I have been able to learn not only what the US working style is like, but also some real AWS projects. Now, I’m sure to continue brushing up on my AWS skills to find a full-time role.</p>
+<p>Thank you all guys helped me and supported me! I hope you all the best!</p>
+]]></content>
+      <categories>
+        <category>Life log</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tar command in Linux</title>
+    <url>/blog/posts/d36bfb53.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/d36bfb53/Tar-command-in-Linux/tar.png" alt="tar">  </p>
+<p>options:<br>-c: create the archive<br>-x: extract the archive<br>-f: create or extract with the specific archive filename<br>-t: displays or lists files in an archived file<br>-v: display info<br>-z: using gzip</p>
+<p>-C: extract files into a specific directory, not the current directory</p>
+<span id="more"></span>
+<ol>
+<li><p>Creating an uncompressed tar archive.  </p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -cvf file.tar directory</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Creating a compressed tar archive by using gzip.</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -cvzf file.tar.gz directory</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Extracting files from archive.</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xvf file.tar</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Extracting gzip tar archive.</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xvzf file.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Extracting files into a specific directory.</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xvf file.tar -C /var/html/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Displays or lists files in the archived file.</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -tvf file.tar</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Operation</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Linux Command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Some terms in Big Data Ecosystem</title>
+    <url>/blog/posts/aa930aca.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/aa930aca/Some-terms-in-Big-Data-Ecosystem/biddata.jpg" alt="bigdata"></p>
+<ul>
+<li><p><strong>DMP(Data Management Platform)</strong><br>A platform for collecting and managing data for digital marketing purposes.</p>
+</li>
+<li><p><strong>DSP(Demand-side Platform)</strong><br>A platform that allows buyers of online advertising to manage ad exchange and pay to buy some advertising banners according to Real-time bidding.</p>
+</li>
+<li><p><strong>SSP(Supply-side Plateform)</strong><br>A platform that allows web publishers or digital media owners to manage their advertising banners and receive money from this platform.</p>
+</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><strong>MDM(Master Data Management)</strong><br>A business method that helps companies or enterprises to integrate, manage, store critical data in a single point of reference.<br>These data can provide for other business platforms or business systems(B2B, B2C, CRM, OMS, etc).<br>And master data also are useful for marketing decisions and marketing analysis.<br>In China, Alibaba announced a business term(“数据中台”) that is based on MDM.<br>So, in the next few years, we need to build a digital smart platform to collect all sources of business data that can provide<br>information for all kinds of business systems or platforms and bread down obstacles between business systems in companies or enterprises.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Back-end</category>
+        <category>BigData</category>
+      </categories>
+      <tags>
+        <tag>BigData</tag>
+        <tag>DMP</tag>
+        <tag>MDM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The Two Ways of Connecting Hive For Developing or Testing</title>
-    <url>/posts/87dabd80.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/87dabd80/hive.jpg" alt="hive"></p>
+    <url>/blog/posts/87dabd80.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/87dabd80/The-Two-Ways-of-Connecting-Hive-For-Developing-or-Testing/hive.jpg" alt="hive"></p>
 <span id="more"></span>
 
 <h2 id="Hive-CLI"><a href="#Hive-CLI" class="headerlink" title="Hive CLI"></a>Hive CLI</h2><p>Hive CLI a legacy tool that had two main use cases. The first is that it served as a thick client for SQL on Hadoop. And the second is that it served as a command-line tool for Hiver Server. Hive Server had been deprecated and removed from Hive. So, it is not an ideal way to connect Hive by using Hive CLI.</p>
@@ -6594,21 +6714,21 @@ The authenticator which encrypted by TGS session key contains:
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">beeline </span><br><span class="line"></span><br><span class="line">!connect jdbc:hive2://bigdata.com:2181/sephora;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;principal=hive/bigdata.com@CONNEXT.COM</span><br></pre></td></tr></table></figure>
 
 <p>So, you maybe want to get your own JDBC connection URL by using zookeeper. You can visit your own Ambari UI, then click “[Services]-&gt;[Hive]”. In your hive dashboard, you can get your own URL.</p>
-<p><img src="/blog/posts/87dabd80/hive-connect-zookeeper-url.png" alt="JDBC URL by using zookeeper"></p>
+<p><img src="/blog/blog/posts/87dabd80/The-Two-Ways-of-Connecting-Hive-For-Developing-or-Testing/hive-connect-zookeeper-url.png" alt="JDBC URL by using zookeeper"></p>
 <p>After this, we may be encounter a bug that needs to input username and password. So, just click “Enter” two times because of owning the authorization for hive service.</p>
 <blockquote>
 <p><a href="https://issues.apache.org/jira/browse/HIVE-9144">https://issues.apache.org/jira/browse/HIVE-9144</a></p>
 </blockquote>
-<p><img src="/blog/posts/87dabd80/hive-connect-zookeeper.png" alt="zookeeper"></p>
+<p><img src="/blog/blog/posts/87dabd80/The-Two-Ways-of-Connecting-Hive-For-Developing-or-Testing/hive-connect-zookeeper.png" alt="zookeeper"></p>
 <ol start="2">
 <li>Thrift Server</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">beeline</span><br><span class="line"></span><br><span class="line">!connect jdbc:hive2://bigdata.com:10001/sephora;transportMode=http;httpPath=cliservice;principal=hive/bigdata.com@CONNEXT.COM</span><br></pre></td></tr></table></figure>
 
 <p>We can get parameter values by visiting Ambari UI and checking the configuration of Hive.</p>
-<p><img src="/blog/posts/87dabd80/hive-connect-thrift-url.png" alt="jdbc url by using thrift"></p>
+<p><img src="/blog/blog/posts/87dabd80/The-Two-Ways-of-Connecting-Hive-For-Developing-or-Testing/hive-connect-thrift-url.png" alt="jdbc url by using thrift"></p>
 <p>Just like using zookeeper, we also encounter that bug. So, just click “Enter” two times.</p>
-<p><img src="/blog/posts/87dabd80/hive-connect-thrift.png" alt="thrift"></p>
+<p><img src="/blog/blog/posts/87dabd80/The-Two-Ways-of-Connecting-Hive-For-Developing-or-Testing/hive-connect-thrift.png" alt="thrift"></p>
 ]]></content>
       <categories>
         <category>Back-end</category>
@@ -6622,8 +6742,8 @@ The authenticator which encrypted by TGS session key contains:
   </entry>
   <entry>
     <title>Tutorial for Latest Ambari(2.7.1)</title>
-    <url>/posts/937f0590.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/937f0590/ambari-2.7-12.png" alt="ambari-2.7-12"></p>
+    <url>/blog/posts/937f0590.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-12.png" alt="ambari-2.7-12"></p>
 <span id="more"></span>
 
 
@@ -6672,57 +6792,57 @@ The authenticator which encrypted by TGS session key contains:
 <h2 id="VM-Setting-and-CentOS7-Installation"><a href="#VM-Setting-and-CentOS7-Installation" class="headerlink" title="VM Setting and CentOS7 Installation"></a>VM Setting and CentOS7 Installation</h2><h3 id="VM-Setting"><a href="#VM-Setting" class="headerlink" title="VM Setting"></a>VM Setting</h3><h4 id="Upload-the-IOS-file"><a href="#Upload-the-IOS-file" class="headerlink" title="Upload the IOS file"></a>Upload the IOS file</h4><p>Before we start to create VMs and install CentOS7, we ought to upload CentOS7 installation file (using minimal version) to Datacenter in VMware Vsphere. </p>
 <ol>
 <li><p>Choose a specific data node in your Datacenter, then upload files.</p>
-<p><img src="/blog/posts/937f0590/10.png" alt="10"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/10.png" alt="10"></p>
 </li>
 </ol>
 <h4 id="Create-VMs"><a href="#Create-VMs" class="headerlink" title="Create VMs"></a>Create VMs</h4><ol>
 <li><p>Visit and login vsphere Web Client.</p>
-<p><img src="/blog/posts/937f0590/1.png" alt="1"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/1.png" alt="1"></p>
 </li>
 <li><p>Create a folder for collecting all nodes.</p>
-<p><img src="/blog/posts/937f0590/2.png" alt="2"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/2.png" alt="2"></p>
 </li>
 <li><p>Create a VM node in a specific folder that created in the last step.</p>
-<p><img src="/blog/posts/937f0590/3.png" alt="3"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/3.png" alt="3"></p>
 </li>
 <li><p>Input the name of VM</p>
-<p><img src="/blog/posts/937f0590/4.png" alt="4"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/4.png" alt="4"></p>
 </li>
 <li><p>Choose computing resources.</p>
-<p><img src="/blog/posts/937f0590/5.png" alt="5"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/5.png" alt="5"></p>
 </li>
 <li><p>Choose the storage node.</p>
-<p><img src="/blog/posts/937f0590/6.png" alt="6"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/6.png" alt="6"></p>
 </li>
 <li><p>Choose the compatibility of your VM.</p>
-<p><img src="/blog/posts/937f0590/7.png" alt="7"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/7.png" alt="7"></p>
 </li>
 <li><p>Choose the version of your VM.</p>
-<p><img src="/blog/posts/937f0590/8.png" alt="8"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/8.png" alt="8"></p>
 </li>
 <li><p>Input the number of your CPU cores, the memory size, the hard-drive size and the IOS file path of your CentOS7.</p>
-<p><img src="/blog/posts/937f0590/9.png" alt="9"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/9.png" alt="9"></p>
 </li>
 </ol>
 <h3 id="CentOS7-Installation"><a href="#CentOS7-Installation" class="headerlink" title="CentOS7 Installation"></a>CentOS7 Installation</h3><ol>
 <li><p>Power on the VM.</p>
-<p><img src="/blog/posts/937f0590/11.png" alt="11"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/11.png" alt="11"></p>
 </li>
 <li><p>Choose the language, then click the button “Continue”.</p>
-<p><img src="/blog/posts/937f0590/12.png" alt="12"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/12.png" alt="12"></p>
 </li>
 <li><p>Start to update setting(changing date&amp;time, specifying installation destination, turning on the network).</p>
-<p><img src="/blog/posts/937f0590/13.png" alt="13"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/13.png" alt="13"></p>
 </li>
 <li><p>Specify the installation destination.</p>
-<p><img src="/blog/posts/937f0590/14.png" alt="14"></p>
-<p><img src="/blog/posts/937f0590/15.png" alt="15"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/14.png" alt="14"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/15.png" alt="15"></p>
 </li>
 <li><p>Turn on the network or update the configuration of the network.</p>
-<p><img src="/blog/posts/937f0590/16.png" alt="16"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/16.png" alt="16"></p>
 </li>
 <li><p>Finally, update the password of the user root.</p>
-<p><img src="/blog/posts/937f0590/17.png" alt="17"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/17.png" alt="17"></p>
 </li>
 </ol>
 <h2 id="File-Preparation"><a href="#File-Preparation" class="headerlink" title="File Preparation"></a>File Preparation</h2><p>We can download the requisite installation file from the official website below.</p>
@@ -6870,7 +6990,7 @@ The authenticator which encrypted by TGS session key contains:
 <p>Then, start to set up ambari-server.</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ambari-server setup</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/posts/937f0590/18.png" alt="18"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/18.png" alt="18"></p>
 </li>
 <li><p>Run the SQL script.</p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql <span class="operator">-</span>uambari <span class="operator">-</span>p</span><br><span class="line"></span><br><span class="line">use ambari;</span><br><span class="line"></span><br><span class="line">source <span class="operator">/</span>var<span class="operator">/</span>lib<span class="operator">/</span>ambari<span class="operator">-</span>server<span class="operator">/</span>resources<span class="operator">/</span>Ambari<span class="operator">-</span>DDL<span class="operator">-</span>MySQL<span class="operator">-</span>CREATE.sql</span><br></pre></td></tr></table></figure>
@@ -6878,61 +6998,61 @@ The authenticator which encrypted by TGS session key contains:
 <li><p>Start Ambari-server.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ambari-server start</span><br></pre></td></tr></table></figure></li>
 </ol>
-<p><img src="/blog/posts/937f0590/19.png" alt="19"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/19.png" alt="19"></p>
 <h2 id="Installing-Ambari-Cluster"><a href="#Installing-Ambari-Cluster" class="headerlink" title="Installing Ambari Cluster"></a>Installing Ambari Cluster</h2><ol>
 <li><p>Browse Ambari WebUI, then use account admin to log in.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-1.png" alt="ambari-2.7-1"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-1.png" alt="ambari-2.7-1"></p>
 </li>
 <li><p>Launch Install Wizard.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-2.png" alt="ambari-2.7-2"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-2.png" alt="ambari-2.7-2"></p>
 </li>
 <li><p>Step 0: Name your cluster.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-3.png" alt="ambari-2.7-3"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-3.png" alt="ambari-2.7-3"></p>
 </li>
 <li><p>Step 1: Edit BaseURL to your local repository.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-4.png" alt="ambari-2.7-4"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-4.png" alt="ambari-2.7-4"></p>
 </li>
 <li><p>Step 2: Input a list of hosts using the hostname and input your ssh private key of <strong>the Ambari server host</strong>.</p>
 </li>
 </ol>
-<p><img src="/blog/posts/937f0590/ambari-2.7-5.png" alt="ambari-2.7-5"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-5.png" alt="ambari-2.7-5"></p>
 <ol start="6">
 <li><p>Step 3: Confirm Hosts.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-6.png" alt="ambari-2.7-6"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-6.png" alt="ambari-2.7-6"></p>
 </li>
 <li><p>Step 4: Choose Services.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-7.png" alt="ambari-2.7-7"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-7.png" alt="ambari-2.7-7"></p>
 </li>
 <li><p>Step 5: Assign Masters.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-8.png" alt="ambari-2.7-8"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-8.png" alt="ambari-2.7-8"></p>
 </li>
 <li><p>Step 6: Assign Slaves and Clients.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-9.png" alt="ambari-2.7-9"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-9.png" alt="ambari-2.7-9"></p>
 </li>
 <li><p>Step 7-1: Input usernames and passwords for your services.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-10-1.png" alt="ambari-2.7-10-1"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-10-1.png" alt="ambari-2.7-10-1"></p>
 </li>
 <li><p>Step 7-2: Create Databases and users for services, then input information for login.</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#Ranger</span><br><span class="line">create database ranger;</span><br><span class="line">create user &#x27;ranger&#x27;@&#x27;localhost&#x27; identified by &#x27;ranger&#x27;;</span><br><span class="line">create user &#x27;ranger&#x27;@&#x27;master01.ambari.com&#x27; identified by &#x27;ranger&#x27;;</span><br><span class="line">grant all on ranger.* to &#x27;ranger&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">grant all on ranger.* to &#x27;ranger&#x27;@&#x27;master01.ambari.com&#x27;;</span><br><span class="line"></span><br><span class="line">#RangerKMS</span><br><span class="line">create database rangerkms;</span><br><span class="line">create user &#x27;rangerkms&#x27;@&#x27;localhost&#x27; identified by &#x27;rangerkms&#x27;;</span><br><span class="line">create user &#x27;rangerkms&#x27;@&#x27;master01.ambari.com&#x27; identified by &#x27;rangerkms&#x27;;</span><br><span class="line">grant all on rangerkms.* to &#x27;rangerkms&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">grant all on rangerkms.* to &#x27;rangerkms&#x27;@&#x27;master01.ambari.com&#x27;;</span><br><span class="line"></span><br><span class="line">#Oozie</span><br><span class="line">create database oozie;</span><br><span class="line">create user &#x27;oozie&#x27;@&#x27;localhost&#x27; identified by &#x27;oozie&#x27;;</span><br><span class="line">create user &#x27;oozie&#x27;@&#x27;master01.ambari.com&#x27; identified by &#x27;oozie&#x27;;</span><br><span class="line">grant all on oozie.* to &#x27;oozie&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">grant all on oozie.* to &#x27;oozie&#x27;@&#x27;master01.ambari.com&#x27;;</span><br><span class="line"></span><br><span class="line">#Hive</span><br><span class="line">create database hive;</span><br><span class="line">create user &#x27;hive&#x27;@&#x27;localhost&#x27; identified by &#x27;hive&#x27;;</span><br><span class="line">create user &#x27;hive&#x27;@&#x27;master01.ambari.com&#x27; identified by &#x27;hive&#x27;;</span><br><span class="line">grant all on hive.* to &#x27;hive&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">grant all on hive.* to &#x27;hive&#x27;@&#x27;master01.ambari.com&#x27;;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/posts/937f0590/ambari-2.7-10-2.png" alt="ambari-2.7-10-2"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-10-2.png" alt="ambari-2.7-10-2"></p>
 </li>
 <li><p>Step 7-3: Follow other steps to complete.</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-10-3-2989180.png" alt="ambari-2.7-10-3"></p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-10-4.png" alt="ambari-2.7-10-4"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-10-3-2989180.png" alt="ambari-2.7-10-3"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-10-4.png" alt="ambari-2.7-10-4"></p>
 </li>
 </ol>
-<p><img src="/blog/posts/937f0590/ambari-2.7-10-5.png" alt="ambari-2.7-10-5"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-10-5.png" alt="ambari-2.7-10-5"></p>
 <ol start="13">
 <li><p>Step 8: Review</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-11.png" alt="ambari-2.7-11"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-11.png" alt="ambari-2.7-11"></p>
 </li>
 <li><p>Step 9: Install, Start, and Test.</p>
 </li>
 <li><p>Summary.</p>
 </li>
 <li><p>Completion</p>
-<p><img src="/blog/posts/937f0590/ambari-2.7-12.png" alt="ambari-2.7-12"></p>
+<p><img src="/blog/blog/posts/937f0590/Tutorial-for-Latest-Ambari-2-7-1/ambari-2.7-12.png" alt="ambari-2.7-12"></p>
 </li>
 </ol>
 <h2 id="Installing-HDF-on-Ambari-2-7-1-HDP-3-0-1"><a href="#Installing-HDF-on-Ambari-2-7-1-HDP-3-0-1" class="headerlink" title="Installing HDF on Ambari 2.7.1 + HDP 3.0.1"></a>Installing HDF on Ambari 2.7.1 + HDP 3.0.1</h2><p>Regarding the HDF installation, I will write another post to describe specifically.</p>
@@ -6948,15 +7068,15 @@ The authenticator which encrypted by TGS session key contains:
   </entry>
   <entry>
     <title>Using Flume in Ambari with Kerberos</title>
-    <url>/posts/a833198.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/a833198/flume.jpeg" alt="flume"></p>
+    <url>/blog/posts/a833198.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/a833198/Using-Flume-in-Ambari-with-Kerberos/flume.jpeg" alt="flume"></p>
 <h2 id="What-is-Flume"><a href="#What-is-Flume" class="headerlink" title="What is Flume"></a>What is Flume</h2><blockquote>
 <p>Flume is a distributed, reliable, and available service for efficiently <strong>collecting, aggregating, and moving</strong> large amounts of log data.	</p>
 </blockquote>
 <p>An <strong>Event</strong> is a unit of data, and events that carrying payloads flows from source to channel to sink. All above running in a flume agent that runs in a JVM.</p>
 <span id="more"></span>
 
-<p><img src="/blog/posts/a833198/flume_principle.png" alt="flume_principle"></p>
+<p><img src="/blog/blog/posts/a833198/Using-Flume-in-Ambari-with-Kerberos/flume_principle.png" alt="flume_principle"></p>
 <p>Three key components of Flume:  </p>
 <ol>
 <li>Source</li>
@@ -6972,7 +7092,7 @@ The authenticator which encrypted by TGS session key contains:
 <p>Sinks can consume data from a channel and deliver it to another destination. The destination of the sink might be another agent or storage.</p>
 <p><strong>Attention:</strong><br>In HDP3.0, Ambari doesn’t use Flume continuously instead of using Nifi.</p>
 <h2 id="Kerberos-authorization"><a href="#Kerberos-authorization" class="headerlink" title="Kerberos authorization"></a>Kerberos authorization</h2><p>Before we use flume, we need to configure it in Ambari with Kerberos. Visit Ambari UI and click the “Flume” service to change the configuration file.</p>
-<p><img src="/blog/posts/a833198/flume_configuration.png" alt="flume_configuration"></p>
+<p><img src="/blog/blog/posts/a833198/Using-Flume-in-Ambari-with-Kerberos/flume_configuration.png" alt="flume_configuration"></p>
 <p>More importantly, you need to append security content at the end of the property “flume-env template” when you using Kafka components with Kerberos. Every Kafka client needs a JAAS file to get a TGT from TGS. </p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export JAVA_OPTS=&quot;$JAVA_OPTS -Djava.security.auth.login.config=/home/flume/kafka-jaas.conf&quot;</span><br></pre></td></tr></table></figure>
 
@@ -6995,45 +7115,9 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Tar command in Linux</title>
-    <url>/posts/d36bfb53.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/d36bfb53/tar.png" alt="tar">  </p>
-<p>options:<br>-c: create the archive<br>-x: extract the archive<br>-f: create or extract with the specific archive filename<br>-t: displays or lists files in an archived file<br>-v: display info<br>-z: using gzip</p>
-<p>-C: extract files into a specific directory, not the current directory</p>
-<span id="more"></span>
-<ol>
-<li><p>Creating an uncompressed tar archive.  </p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -cvf file.tar directory</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Creating a compressed tar archive by using gzip.</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -cvzf file.tar.gz directory</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Extracting files from archive.</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xvf file.tar</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Extracting gzip tar archive.</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xvzf file.tar.gz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Extracting files into a specific directory.</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xvf file.tar -C /var/html/</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Displays or lists files in the archived file.</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -tvf file.tar</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Operation</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Linux Command</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Using Flume to transfer data from Kafka to HDFS in Ambari(2.4.2) with Kerberos</title>
-    <url>/posts/dc7e5002.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/dc7e5002/flume+kafka.png" alt="flume+kafka"></p>
+    <url>/blog/posts/dc7e5002.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos/flume+kafka.png" alt="flume+kafka"></p>
 <p>Firstly, you don’t need to read the following post if your Flume upper than 1.5.2. You can complete your configuration file by following official documents.**</p>
 <span id="more"></span>
 
@@ -7047,11 +7131,11 @@ The authenticator which encrypted by TGS session key contains:
 </li>
 </ul>
 <h2 id="Unpredictable-problem"><a href="#Unpredictable-problem" class="headerlink" title="Unpredictable problem"></a>Unpredictable problem</h2><p>Assume that using Kafka to receive data from a topic, then store data to HDFS. It is obviously a good choice using Kafka source, memory channel, and HDFS sink. Nevertheless, it’s not easy like that after searching <a href="https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.5/ds_flume/FlumeUserGuide.html">User Guide(1.5.2)</a>. </p>
-<p><img src="/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos%5Cflume_kafka_source.png" alt="flume_kafka_source.png"></p>
+<p><img src="/blog/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos%5Cflume_kafka_source.png" alt="flume_kafka_source.png"></p>
 <p>After reading the contents above, it is pitiful that Kafka source not supporting Kerberos environment because of no properties for specifying principle and keytab file path. So why Flume 1.5.2 not supporting Kafka source? OK. Let’s check out the library within Flume (&#x2F;user&#x2F;hdp&#x2F;2.4.3.0-227&#x2F;flume&#x2F;lib). There are some libs specifying Kafka(0.8.2).</p>
-<p><img src="/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos%5Cflume_kafka_version.png" alt="flume_kafka_version"></p>
+<p><img src="/blog/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos%5Cflume_kafka_version.png" alt="flume_kafka_version"></p>
 <p>Well, it’s so weird that Ambari-2.4.2 using Kafka-0.9.0, but Flume-1.5.2 in Ambari-2.4.2 not using Kafka-0.9.0 instead of using Kafka-0.8.2. I don’t know why, but I also found <a href="https://community.hortonworks.com/questions/6332/how-to-read-from-a-kafka-topic-using-spark-streami.html">similary problem</a> after googling. <a href="https://www.confluent.io/blog/apache-kafka-security-authorization-authentication-encryption/">Kafka starts to support Kerberos authorization after version 0.9.</a> So it’s obvious that we can’t use Kafka source in Flume in Ambari-2.4.2 with Kerberos. </p>
-<p><img src="/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos%5Ckafka_kerberos.png" alt="kafka_start_to_support_kerberos"></p>
+<p><img src="/blog/blog/posts/dc7e5002/Using-Flume-to-transfer-data-from-Kafka-to-HDFS-in-Ambari-2-4-2-with-Kerberos%5Ckafka_kerberos.png" alt="kafka_start_to_support_kerberos"></p>
 <p>From this moment, we got stuck by this annoying version of conflict. After complaining, we also need to solve this problem. But, how?<br>Although Kafka-0.8.2 not supporting Kerberos, it ought to create a custom Kafka source. Appending Kerberos authorization code within your custom Kafka source that is a reasonable solution for this situation.</p>
 <h2 id="Reasonable-solution"><a href="#Reasonable-solution" class="headerlink" title="Reasonable solution"></a>Reasonable solution</h2><h3 id="Creating-custom-Kafka-0-9-0-source"><a href="#Creating-custom-Kafka-0-9-0-source" class="headerlink" title="Creating custom Kafka(0.9.0) source"></a>Creating custom Kafka(0.9.0) source</h3><p>Writing your custom Kafka source which inheriting class AbstractSource<br>is just like a Kafka consumer.  </p>
 <p><strong>Attention: The dependencies of Kafka need to use the version of 0.9.0.</strong></p>
@@ -7089,111 +7173,101 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Comparison between Hortonworks and Alibaba</title>
-    <url>/posts/720bb0c8.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/720bb0c8/comparison.png" alt="comparison"></p>
+    <title>Using Github + Travis + Heroku + Slack for team development</title>
+    <url>/blog/posts/3d8e0aef.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/3d8e0aef/Using-Github-Travis-Heroku-Slack-for-team-development/image-20210919192821128.png" alt="image-20210919192821128"></p>
+<p>Traditionally, using Gitlab + Jenkins + K8s + Docker may better for some e-commerce systems development. But you need to put more time to configure and maintain this setup. This is not easy and some unfortunate issues may comes frequently. </p>
 <span id="more"></span>
 
-<table>
-<thead>
-<tr>
-<th>公司</th>
-<th>Hortonworks</th>
-<th>Alibaba</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>大数据产品</td>
-<td>Ambari (提供Hadoop生态的管理、运维、升级等功能)<br>HDP (提供大部分Hadoop相关开源组件)<br>HDF (提供数据流相关的开源组件)</td>
-<td>Dataworks (大数据开发平台，提供在线编辑工具)<br>Dataphin (新一代大数据平台，为阿里的数据中台业务中台铺路)<br>QuickBI (提供全面的报表展示服务，为Martech助力)</td>
-</tr>
-<tr>
-<td>市场占有率</td>
-<td>国际市场的三驾马车之一（Cloudera, MapR），18年底完成与Cloudera公司的合并</td>
-<td>国际市场占有率低（有一部分Flink的原因，Flink16年出现）</td>
-</tr>
-<tr>
-<td>收费模式</td>
-<td>100%开源，提供收费技术支持及培训</td>
-<td>具体需要联系售前</td>
-</tr>
-<tr>
-<td>产品特点</td>
-<td>100%开源，使用不受任何限制</td>
-<td>基础架构及上层服务均需要全套阿里产品，同时数据留存在阿里</td>
-</tr>
-<tr>
-<td>技术栈</td>
-<td>Hadoop<br>HDFS<br>Yarn<br>Spark2(DataFrame + SQL)<br>Nifi<br>Kafka<br>Kerberos<br>ZooKeeper<br>Ranger<br>Oozie<br>….</td>
-<td>MaxCompute(阿里大数据处理引擎，基于Hadoop早期版本定制)<br>Blink(基于Flink的定制版，做batch及streaming处理)<br></td>
-</tr>
-<tr>
-<td>主要开发语言</td>
-<td>Java, Scala, SQL, 部分可视化拖拽（Nifi）</td>
-<td>可视化拖拽, SQL</td>
-</tr>
-<tr>
-<td>开发成本</td>
-<td>高(需要部署开发环境，同时需要IDE开发工具)</td>
-<td>低(配置+SQL，所有开发均在阿里在线开发环境完成)</td>
-</tr>
-<tr>
-<td>运维成本</td>
-<td>高(对Hadoop生态的优化需要自己完成)</td>
-<td>低</td>
-</tr>
-<tr>
-<td>第三方服务&#x2F;系统对接</td>
-<td>容易实现</td>
-<td>需要看阿里是否支持</td>
-</tr>
-<tr>
-<td>技术支持</td>
-<td>有成熟的社区及非常完善的文档，基本上遇到的问题都能解决<br>同时Ambari还提供智能支持的收费服务，也有收费培训等</td>
-<td>具体暂不清楚，应该会有对应的技术工程师提供完备的服务，省去了花时间自己找解决方案</td>
-</tr>
-<tr>
-<td>数据安全</td>
-<td>Kerberos+Ranger</td>
-<td>阿里产品</td>
-</tr>
-<tr>
-<td>部署方式</td>
-<td>基于虚机&#x2F;Docker的部署，微软Azure提供深度支持</td>
-<td>独立部署（需要有千万级数据的体量）<br>多租户方式 (适于小体量同时价格便宜)</td>
-</tr>
-</tbody></table>
+<p>For small development team, espcially for Django development, we need some quick and easy CI&#x2F;CD to help the small team to get out of thee burdensome maintainance. </p>
+<p>Here, I tried some online tools below to ahiceve this goal.</p>
+<p>Django</p>
+<ul>
+<li>Quick development</li>
+<li>Some basic function without configuration, out-of-box</li>
+<li>Quick to learn</li>
+</ul>
+<p>Github</p>
+<ul>
+<li>Code Repository </li>
+<li>Set a clear commit rule and branch management</li>
+</ul>
+<p>Travis</p>
+<ul>
+<li>Linting, testing and CI</li>
+<li>Easy connect with Github</li>
+</ul>
+<p>Heroku</p>
+<ul>
+<li>CD</li>
+<li>Easy connect with Github</li>
+</ul>
+<p>Slack</p>
+<ul>
+<li>Team Communication</li>
+<li>Get notification after CI&#x2F;CD</li>
+</ul>
+<h3 id="Workflow"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow</h3><p>​	Github -&gt; Travis -&gt; Heroku -&gt; Slack</p>
+<p>​	After you push your code to the Github, Travis will automatically run CI process and test your codes. After that, Heroku can fetch your codes from a specific git branch for CD. Finally, the notification can send to Slack for notifying the result of CI&#x2F;CD.</p>
+<h3 id="Travis-Configuration"><a href="#Travis-Configuration" class="headerlink" title="Travis Configuration"></a>Travis Configuration</h3><ol>
+<li><p>Connect with Github (follow the steps in Travis)</p>
+</li>
+<li><p>Travis configuration file (.travis.yml)</p>
+<ul>
+<li>For specifying the development language, the commands for CI, and the script</li>
+<li>Put this file in the root of your Django project</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">python</span></span><br><span class="line"><span class="attr">python:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">3.6</span></span><br><span class="line"><span class="attr">install:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">pip</span> <span class="string">install</span> <span class="string">-r</span> <span class="string">requirements.txt</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">python</span> <span class="string">manage.py</span> <span class="string">test</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>PIP install list file (requirements.txt)</p>
+<ul>
+<li>Put this file in the root of your Django project</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">django&gt;=2.0.11</span><br><span class="line">psycopg2</span><br><span class="line">psycopg2-binary</span><br><span class="line">dj-database-url==0.5.0</span><br><span class="line">gunicorn</span><br><span class="line">whitenoise</span><br><span class="line">django-heroku</span><br><span class="line">pytz</span><br><span class="line">sqlparse</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="Heroku-Configuraion"><a href="#Heroku-Configuraion" class="headerlink" title="Heroku Configuraion"></a>Heroku Configuraion</h3><ol>
+<li><p>Connect with Github (you can specify the git branch for code hook monitored)</p>
+</li>
+<li><p>Heroku configuration file (Procfile)</p>
+<ul>
+<li>For specifying the web server (Gunicorn)</li>
+<li>Put this file in the root of your Django project</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">web:</span> <span class="string">gunicorn</span> <span class="string">webapps.wsgi</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="Some-possible-issues"><a href="#Some-possible-issues" class="headerlink" title="Some possible issues"></a>Some possible issues</h3><h4 id="Failed-to-deploy-for-collectstatic-directory"><a href="#Failed-to-deploy-for-collectstatic-directory" class="headerlink" title="Failed to deploy for collectstatic directory"></a>Failed to deploy for collectstatic directory</h4><p><img src="/blog/blog/posts/3d8e0aef/Using-Github-Travis-Heroku-Slack-for-team-development/image-20210919190053772.png" alt="image-20210919190053772"></p>
+<p>Two options for resolving </p>
+<ol>
+<li><p>Disable collectstatic</p>
+<p>run heroku command:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">heroku config:set DISABLE_COLLECTSTATIC=1 </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Configure collectstatic in “settings.py”</p>
+<ol>
+<li>configure settings.py</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Static files (CSS, JavaScript, Images)</span></span><br><span class="line"><span class="comment"># https://docs.djangoproject.com/en/1.9/howto/static-files/</span></span><br><span class="line">STATIC_ROOT = os.path.join(BASE_DIR, <span class="string">&#x27;staticfiles&#x27;</span>)</span><br><span class="line">STATIC_URL = <span class="string">&#x27;/static/&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extra places for collectstatic to find static files.</span></span><br><span class="line">STATICFILES_DIRS = (</span><br><span class="line">    os.path.join(BASE_DIR, <span class="string">&#x27;static&#x27;</span>),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>create static directory in the root of your project (not to create collectstatic folder, this will create automatically by heroku)</li>
+</ol>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Back-end</category>
-        <category>BigData</category>
+        <category>Django</category>
       </categories>
       <tags>
-        <tag>BigData</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Using docker command to obtain dockers&#39; IP</title>
-    <url>/posts/de75b356.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/de75b356/docker.jpg" alt="docker"></p>
-<p><strong>check specific container’s ip address:</strong>  </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker inspect -f <span class="string">&#x27;&#123;&#123;range.NetworkSettings.Networks&#125;&#125;&#123;&#123;.IPAddress&#125;&#125;&#123;&#123;end&#125;&#125;&#x27;</span> your_container_name_or_id</span><br></pre></td></tr></table></figure>
-
-<p><strong>check all containers’ ip address:</strong>  </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker inspect -f <span class="string">&#x27;&#123;&#123;.Name&#125;&#125; - &#123;&#123;range.NetworkSettings.Networks&#125;&#125;&#123;&#123;.IPAddress&#125;&#125;&#123;&#123;end&#125;&#125;&#x27;</span> $(docker ps -aq)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Operation</category>
-        <category>Docker</category>
-      </categories>
-      <tags>
-        <tag>Docker</tag>
+        <tag>Python</tag>
+        <tag>Django</tag>
+        <tag>CI/CD</tag>
       </tags>
   </entry>
   <entry>
     <title>Using spark-submit to submit a Spark application in Kerberos environment</title>
-    <url>/posts/b0e85a85.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/b0e85a85/spark.jpg" alt="spark"></p>
+    <url>/blog/posts/b0e85a85.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/b0e85a85/Using-spark-submit-to-submit-a-spark-application-in-kerberos-environment/spark.jpg" alt="spark"></p>
 <span id="more"></span>
 
 
@@ -7262,95 +7336,21 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Using Github + Travis + Heroku + Slack for team development</title>
-    <url>/posts/3d8e0aef.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/3d8e0aef/image-20210919192821128.png" alt="image-20210919192821128"></p>
-<p>Traditionally, using Gitlab + Jenkins + K8s + Docker may better for some e-commerce systems development. But you need to put more time to configure and maintain this setup. This is not easy and some unfortunate issues may comes frequently. </p>
-<span id="more"></span>
+    <title>Using docker command to obtain dockers&#39; IP</title>
+    <url>/blog/posts/de75b356.html</url>
+    <content><![CDATA[<p><img src="/blog/blog/posts/de75b356/Using-docker-command-to-obtain-dockers-IP/docker.jpg" alt="docker"></p>
+<p><strong>check specific container’s ip address:</strong>  </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker inspect -f <span class="string">&#x27;&#123;&#123;range.NetworkSettings.Networks&#125;&#125;&#123;&#123;.IPAddress&#125;&#125;&#123;&#123;end&#125;&#125;&#x27;</span> your_container_name_or_id</span><br></pre></td></tr></table></figure>
 
-<p>For small development team, espcially for Django development, we need some quick and easy CI&#x2F;CD to help the small team to get out of thee burdensome maintainance. </p>
-<p>Here, I tried some online tools below to ahiceve this goal.</p>
-<p>Django</p>
-<ul>
-<li>Quick development</li>
-<li>Some basic function without configuration, out-of-box</li>
-<li>Quick to learn</li>
-</ul>
-<p>Github</p>
-<ul>
-<li>Code Repository </li>
-<li>Set a clear commit rule and branch management</li>
-</ul>
-<p>Travis</p>
-<ul>
-<li>Linting, testing and CI</li>
-<li>Easy connect with Github</li>
-</ul>
-<p>Heroku</p>
-<ul>
-<li>CD</li>
-<li>Easy connect with Github</li>
-</ul>
-<p>Slack</p>
-<ul>
-<li>Team Communication</li>
-<li>Get notification after CI&#x2F;CD</li>
-</ul>
-<h3 id="Workflow"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow</h3><p>​	Github -&gt; Travis -&gt; Heroku -&gt; Slack</p>
-<p>​	After you push your code to the Github, Travis will automatically run CI process and test your codes. After that, Heroku can fetch your codes from a specific git branch for CD. Finally, the notification can send to Slack for notifying the result of CI&#x2F;CD.</p>
-<h3 id="Travis-Configuration"><a href="#Travis-Configuration" class="headerlink" title="Travis Configuration"></a>Travis Configuration</h3><ol>
-<li><p>Connect with Github (follow the steps in Travis)</p>
-</li>
-<li><p>Travis configuration file (.travis.yml)</p>
-<ul>
-<li>For specifying the development language, the commands for CI, and the script</li>
-<li>Put this file in the root of your Django project</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">python</span></span><br><span class="line"><span class="attr">python:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">3.6</span></span><br><span class="line"><span class="attr">install:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">pip</span> <span class="string">install</span> <span class="string">-r</span> <span class="string">requirements.txt</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">python</span> <span class="string">manage.py</span> <span class="string">test</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>PIP install list file (requirements.txt)</p>
-<ul>
-<li>Put this file in the root of your Django project</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">django&gt;=2.0.11</span><br><span class="line">psycopg2</span><br><span class="line">psycopg2-binary</span><br><span class="line">dj-database-url==0.5.0</span><br><span class="line">gunicorn</span><br><span class="line">whitenoise</span><br><span class="line">django-heroku</span><br><span class="line">pytz</span><br><span class="line">sqlparse</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="Heroku-Configuraion"><a href="#Heroku-Configuraion" class="headerlink" title="Heroku Configuraion"></a>Heroku Configuraion</h3><ol>
-<li><p>Connect with Github (you can specify the git branch for code hook monitored)</p>
-</li>
-<li><p>Heroku configuration file (Procfile)</p>
-<ul>
-<li>For specifying the web server (Gunicorn)</li>
-<li>Put this file in the root of your Django project</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">web:</span> <span class="string">gunicorn</span> <span class="string">webapps.wsgi</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="Some-possible-issues"><a href="#Some-possible-issues" class="headerlink" title="Some possible issues"></a>Some possible issues</h3><h4 id="Failed-to-deploy-for-collectstatic-directory"><a href="#Failed-to-deploy-for-collectstatic-directory" class="headerlink" title="Failed to deploy for collectstatic directory"></a>Failed to deploy for collectstatic directory</h4><p><img src="/blog/posts/3d8e0aef/image-20210919190053772.png" alt="image-20210919190053772"></p>
-<p>Two options for resolving </p>
-<ol>
-<li><p>Disable collectstatic</p>
-<p>run heroku command:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">heroku config:set DISABLE_COLLECTSTATIC=1 </span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Configure collectstatic in “settings.py”</p>
-<ol>
-<li>configure settings.py</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Static files (CSS, JavaScript, Images)</span></span><br><span class="line"><span class="comment"># https://docs.djangoproject.com/en/1.9/howto/static-files/</span></span><br><span class="line">STATIC_ROOT = os.path.join(BASE_DIR, <span class="string">&#x27;staticfiles&#x27;</span>)</span><br><span class="line">STATIC_URL = <span class="string">&#x27;/static/&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extra places for collectstatic to find static files.</span></span><br><span class="line">STATICFILES_DIRS = (</span><br><span class="line">    os.path.join(BASE_DIR, <span class="string">&#x27;static&#x27;</span>),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>create static directory in the root of your project (not to create collectstatic folder, this will create automatically by heroku)</li>
-</ol>
-</li>
-</ol>
+<p><strong>check all containers’ ip address:</strong>  </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker inspect -f <span class="string">&#x27;&#123;&#123;.Name&#125;&#125; - &#123;&#123;range.NetworkSettings.Networks&#125;&#125;&#123;&#123;.IPAddress&#125;&#125;&#123;&#123;end&#125;&#125;&#x27;</span> $(docker ps -aq)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Back-end</category>
-        <category>Django</category>
+        <category>Operation</category>
+        <category>Docker</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-        <tag>Django</tag>
-        <tag>CI/CD</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
 </search>
