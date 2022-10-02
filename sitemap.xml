@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/posts/ab80d8c6.html</loc>
+    <loc>https://liuninglin.github.io/blog/posts/d2fb4425.html</loc>
     
     <lastmod>2022-10-02</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/posts/d2fb4425.html</loc>
+    <loc>https://liuninglin.github.io/blog/posts/ab80d8c6.html</loc>
     
     <lastmod>2022-10-02</lastmod>
     
@@ -326,20 +326,6 @@
 
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/BigData/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Ambari/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/blog/tags/Markdown/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -382,7 +368,42 @@
   </url>
   
   <url>
+    <loc>https://liuninglin.github.io/blog/tags/BigData/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Ambari/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/blog/tags/Kerberos/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/AWS-SAA/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Architect/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Mysql/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -410,28 +431,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Mysql/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/AWS-SAA/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Architect/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Kafka/</loc>
+    <loc>https://liuninglin.github.io/blog/tags/Shanghai/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -453,6 +453,13 @@
   
   <url>
     <loc>https://liuninglin.github.io/blog/tags/Flume/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/tags/Kafka/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -493,21 +500,7 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://liuninglin.github.io/blog/tags/Shanghai/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://liuninglin.github.io/blog/categories/Back-end/</loc>
-    <lastmod>2022-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://liuninglin.github.io/blog/categories/Language/</loc>
@@ -524,14 +517,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Back-end/BigData/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Operation/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Operation/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Back-end/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -552,7 +545,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Life-log/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Cloud/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -573,7 +566,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Cloud/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Back-end/BigData/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -581,6 +574,13 @@
   
   <url>
     <loc>https://liuninglin.github.io/blog/categories/Database/</loc>
+    <lastmod>2022-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/blog/categories/Life-log/</loc>
     <lastmod>2022-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
