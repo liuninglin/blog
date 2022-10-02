@@ -212,9 +212,9 @@
     
     <category term="Ambari" scheme="https://liuninglin.github.io/blog/tags/Ambari/"/>
     
-    <category term="Hive" scheme="https://liuninglin.github.io/blog/tags/Hive/"/>
-    
     <category term="NiFi" scheme="https://liuninglin.github.io/blog/tags/NiFi/"/>
+    
+    <category term="Hive" scheme="https://liuninglin.github.io/blog/tags/Hive/"/>
     
   </entry>
   
