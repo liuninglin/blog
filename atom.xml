@@ -212,9 +212,9 @@
     
     <category term="Ambari" scheme="https://liuninglin.github.io/blog/tags/Ambari/"/>
     
-    <category term="NiFi" scheme="https://liuninglin.github.io/blog/tags/NiFi/"/>
-    
     <category term="Hive" scheme="https://liuninglin.github.io/blog/tags/Hive/"/>
+    
+    <category term="NiFi" scheme="https://liuninglin.github.io/blog/tags/NiFi/"/>
     
   </entry>
   
@@ -817,9 +817,9 @@
     <category term="Life log" scheme="https://liuninglin.github.io/blog/categories/Life-log/"/>
     
     
-    <category term="life" scheme="https://liuninglin.github.io/blog/tags/life/"/>
-    
     <category term="Shanghai" scheme="https://liuninglin.github.io/blog/tags/Shanghai/"/>
+    
+    <category term="life" scheme="https://liuninglin.github.io/blog/tags/life/"/>
     
   </entry>
   
