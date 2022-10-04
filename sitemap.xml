@@ -496,14 +496,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Docker/</loc>
+    <loc>https://liuninglin.github.io/blog/tags/Spark/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/tags/Spark/</loc>
+    <loc>https://liuninglin.github.io/blog/tags/Docker/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -561,14 +561,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Operation/Linux/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Front-end/Hexo/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Front-end/Hexo/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Operation/Linux/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -603,14 +603,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Database/Mysql/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Back-end/Django/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/blog/categories/Back-end/Django/</loc>
+    <loc>https://liuninglin.github.io/blog/categories/Database/Mysql/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
