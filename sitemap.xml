@@ -398,7 +398,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Mysql/</loc>
+    <loc>https://liuninglin.github.io/tags/Hive/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -412,7 +412,21 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/tags/Hive/</loc>
+    <loc>https://liuninglin.github.io/tags/life/</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/tags/Mysql/</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/tags/Shanghai/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -427,20 +441,6 @@
   
   <url>
     <loc>https://liuninglin.github.io/tags/Architect/</loc>
-    <lastmod>2022-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/tags/life/</loc>
-    <lastmod>2022-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/tags/Shanghai/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -547,14 +547,14 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Front-end/Hexo/</loc>
+    <loc>https://liuninglin.github.io/categories/Language/Markdown/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Language/Markdown/</loc>
+    <loc>https://liuninglin.github.io/categories/Front-end/Hexo/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -568,21 +568,7 @@
   </url>
   
   <url>
-    <loc>https://liuninglin.github.io/categories/Database/</loc>
-    <lastmod>2022-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://liuninglin.github.io/categories/Back-end/BigData/</loc>
-    <lastmod>2022-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/categories/Cloud/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -596,7 +582,28 @@
   </url>
   
   <url>
+    <loc>https://liuninglin.github.io/categories/Database/</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/categories/Cloud/</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://liuninglin.github.io/categories/Database/Mysql/</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuninglin.github.io/categories/Cloud/AWS/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -611,13 +618,6 @@
   
   <url>
     <loc>https://liuninglin.github.io/categories/Operation/Docker/</loc>
-    <lastmod>2022-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuninglin.github.io/categories/Cloud/AWS/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

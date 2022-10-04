@@ -368,54 +368,6 @@
       </tags>
   </entry>
   <entry>
-    <title>[Hexo]Create a blog with hexo in github</title>
-    <url>/blog/posts/fe740d97.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/fe740d97/hexo.png" alt="hexo">  </p>
-<ol>
-<li><p>copy local ssh public key to github  </p>
-</li>
-<li><p>install npm, git</p>
-</li>
-<li><p>install hexo by npm  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>init hexo</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></tbody></table></figure>
-
- <span id="more"></span>
-</li>
-<li><p>install other softwares by npm</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>edit file “_config.yml” and write your git address</p>
- <figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span>  </span><br><span class="line">    <span class="attr">repository:</span> <span class="string">github项目地址</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>install hexo deployment tool</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>generate static pages by hexo</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>deploy static pages to github</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>using local tool to pre-check your blog</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>access to your github blog</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">http://用户名.github.io</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Front-end</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Comparison between Hortonworks and Alibaba</title>
     <url>/blog/posts/720bb0c8.html</url>
     <content><![CDATA[<p><img src="/blog/posts/720bb0c8/comparison.png" alt="comparison"></p>
@@ -593,6 +545,54 @@
       </tags>
   </entry>
   <entry>
+    <title>[Hexo]Create a blog with hexo in github</title>
+    <url>/blog/posts/fe740d97.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/fe740d97/hexo.png" alt="hexo">  </p>
+<ol>
+<li><p>copy local ssh public key to github  </p>
+</li>
+<li><p>install npm, git</p>
+</li>
+<li><p>install hexo by npm  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>init hexo</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></tbody></table></figure>
+
+ <span id="more"></span>
+</li>
+<li><p>install other softwares by npm</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>edit file “_config.yml” and write your git address</p>
+ <figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span>  </span><br><span class="line">    <span class="attr">repository:</span> <span class="string">github项目地址</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>install hexo deployment tool</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>generate static pages by hexo</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>deploy static pages to github</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>using local tool to pre-check your blog</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>access to your github blog</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">http://用户名.github.io</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Front-end</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Several Tricks for Using Hexo Efficiently</title>
     <url>/blog/posts/eacbb695.html</url>
     <content><![CDATA[<p><img src="/blog/posts/eacbb695/github_hexo_blog.png" alt="github_hexo_blog">  </p>
@@ -706,104 +706,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to Recover a Crashed Mysql Database</title>
-    <url>/blog/posts/4cf6882d.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/4cf6882d/crash.jpg" alt="crash"></p>
-<span id="more"></span>
-<p>Among the operation of Ambari, we may confront some annoying failure, such as a crashed MySQL database. So, we can run commands below to recover this kind of problem.</p>
-<ol>
-<li><p>Check the status of the crashed table.</p>
- <figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">check</span> <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>Repair crashed table.</p>
- <figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line">repaire <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<p>On the other hand, you can use commands below to repair whole crashed tables.</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">mysqlcheck -uroot -p --repair --all-databases</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">myisamchk --recover *.MYI</span><br></pre></td></tr></tbody></table></figure>
-]]></content>
-      <categories>
-        <category>Database</category>
-        <category>Mysql</category>
-      </categories>
-      <tags>
-        <tag>Ambari</tag>
-        <tag>Mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Introduction of NiFi</title>
-    <url>/blog/posts/60c88280.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/60c88280/nifi-logo-horizontal.png" alt="img"></p>
-<h3 id="Brief-of-NiFi"><a href="#Brief-of-NiFi" class="headerlink" title="Brief of NiFi"></a>Brief of NiFi</h3><p>Apache NiFi is a software project from the Apache Software Foundation designed to automate the flow of data between software systems. </p>
-<p>Software development and the commercial support is currently offered by Hortonworks (now merged into Cloudera), who acquired NiFi’s originator, Onyara Inc.</p>
-<p>Apache NiFi supports powerful and scalable directed graphs of data routing, transformation, and system mediation logic. Some of the high-level capabilities and objectives of Apache NiFi include:</p>
-<span id="more"></span>
-
-<ul>
-<li>Web-based user interface<ul>
-<li>Seamless experience between design, control, feedback, and monitoring</li>
-</ul>
-</li>
-<li>Highly configurable<ul>
-<li>Loss tolerant vs guaranteed delivery</li>
-<li>Low latency vs high throughput</li>
-<li>Dynamic prioritization</li>
-<li>Flow can be modified at runtime</li>
-<li>Back pressure</li>
-</ul>
-</li>
-<li>Data Provenance<ul>
-<li>Track dataflow from beginning to end</li>
-</ul>
-</li>
-<li>Designed for extension<ul>
-<li>Build your own processors and more</li>
-<li>Enables rapid development and effective testing</li>
-</ul>
-</li>
-<li>Secure<ul>
-<li>SSL, SSH, HTTPS, encrypted content, etc…</li>
-<li>Multi-tenant authorization and internal authorization/policy management</li>
-</ul>
-</li>
-</ul>
-<p>For more information about the usage of NiFi: </p>
-<p><a href="https://nifi.apache.org/docs/nifi-docs/html/getting-started.html">https://nifi.apache.org/docs/nifi-docs/html/getting-started.html</a></p>
-<h3 id="Components-of-NiFi"><a href="#Components-of-NiFi" class="headerlink" title="Components of NiFi"></a>Components of NiFi</h3><ol>
-<li><p>Processor</p>
-<p>Providing abundant processors for processing distinct data types, connecting processors or other data processing.</p>
-<p>Different purposes of the processor:</p>
-<ul>
-<li>Data Ingestion Processor such as GetXXX</li>
-<li>Data Transformation Processor</li>
-<li>Data Egress/Sending Processor such as PutXXX</li>
-<li>Routing and Mediation Processor</li>
-<li>Databases Access Processor</li>
-<li>Attribute Extraction Processor</li>
-<li>System Integration Processor</li>
-<li>Splitting and Aggregation Processor</li>
-<li>Http and UDP Processor</li>
-<li>AWS Processor</li>
-</ul>
-</li>
-<li><p>Processor Group</p>
-<p>Combining disparate processors into one group for easy management.</p>
-<p><img src="/blog/posts/60c88280/2019-12-06%20at%2013.49.png" alt="2019-12-06 at 13.49"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Back-end</category>
-        <category>BigData</category>
-      </categories>
-      <tags>
-        <tag>BigData</tag>
-        <tag>NiFi</tag>
       </tags>
   </entry>
   <entry>
@@ -949,8 +851,8 @@
       <tags>
         <tag>BigData</tag>
         <tag>Ambari</tag>
-        <tag>NiFi</tag>
         <tag>Hive</tag>
+        <tag>NiFi</tag>
       </tags>
   </entry>
   <entry>
@@ -1003,6 +905,77 @@
       <tags>
         <tag>BigData</tag>
         <tag>Ambari</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Introduction of NiFi</title>
+    <url>/blog/posts/60c88280.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/60c88280/nifi-logo-horizontal.png" alt="img"></p>
+<h3 id="Brief-of-NiFi"><a href="#Brief-of-NiFi" class="headerlink" title="Brief of NiFi"></a>Brief of NiFi</h3><p>Apache NiFi is a software project from the Apache Software Foundation designed to automate the flow of data between software systems. </p>
+<p>Software development and the commercial support is currently offered by Hortonworks (now merged into Cloudera), who acquired NiFi’s originator, Onyara Inc.</p>
+<p>Apache NiFi supports powerful and scalable directed graphs of data routing, transformation, and system mediation logic. Some of the high-level capabilities and objectives of Apache NiFi include:</p>
+<span id="more"></span>
+
+<ul>
+<li>Web-based user interface<ul>
+<li>Seamless experience between design, control, feedback, and monitoring</li>
+</ul>
+</li>
+<li>Highly configurable<ul>
+<li>Loss tolerant vs guaranteed delivery</li>
+<li>Low latency vs high throughput</li>
+<li>Dynamic prioritization</li>
+<li>Flow can be modified at runtime</li>
+<li>Back pressure</li>
+</ul>
+</li>
+<li>Data Provenance<ul>
+<li>Track dataflow from beginning to end</li>
+</ul>
+</li>
+<li>Designed for extension<ul>
+<li>Build your own processors and more</li>
+<li>Enables rapid development and effective testing</li>
+</ul>
+</li>
+<li>Secure<ul>
+<li>SSL, SSH, HTTPS, encrypted content, etc…</li>
+<li>Multi-tenant authorization and internal authorization/policy management</li>
+</ul>
+</li>
+</ul>
+<p>For more information about the usage of NiFi: </p>
+<p><a href="https://nifi.apache.org/docs/nifi-docs/html/getting-started.html">https://nifi.apache.org/docs/nifi-docs/html/getting-started.html</a></p>
+<h3 id="Components-of-NiFi"><a href="#Components-of-NiFi" class="headerlink" title="Components of NiFi"></a>Components of NiFi</h3><ol>
+<li><p>Processor</p>
+<p>Providing abundant processors for processing distinct data types, connecting processors or other data processing.</p>
+<p>Different purposes of the processor:</p>
+<ul>
+<li>Data Ingestion Processor such as GetXXX</li>
+<li>Data Transformation Processor</li>
+<li>Data Egress/Sending Processor such as PutXXX</li>
+<li>Routing and Mediation Processor</li>
+<li>Databases Access Processor</li>
+<li>Attribute Extraction Processor</li>
+<li>System Integration Processor</li>
+<li>Splitting and Aggregation Processor</li>
+<li>Http and UDP Processor</li>
+<li>AWS Processor</li>
+</ul>
+</li>
+<li><p>Processor Group</p>
+<p>Combining disparate processors into one group for easy management.</p>
+<p><img src="/blog/posts/60c88280/2019-12-06%20at%2013.49.png" alt="2019-12-06 at 13.49"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Back-end</category>
+        <category>BigData</category>
+      </categories>
+      <tags>
+        <tag>BigData</tag>
+        <tag>NiFi</tag>
       </tags>
   </entry>
   <entry>
@@ -1127,6 +1100,193 @@ The authenticator which encrypted by TGS session key contains:
       <tags>
         <tag>BigData</tag>
         <tag>Kerberos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MIO Internship</title>
+    <url>/blog/posts/658d19d2.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/658d19d2/dinner_photo.jpeg" alt="MIO internship"></p>
+<p>I have really enjoyed working with IT team at MIO last two months. Through this internship, I have been able to learn not only what the US working style is like, but also some real AWS projects. Now, I’m sure to continue brushing up on my AWS skills to find a full-time role.</p>
+<p>Thank you all guys helped me and supported me! I hope you all the best!</p>
+]]></content>
+      <categories>
+        <category>Life log</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to Recover a Crashed Mysql Database</title>
+    <url>/blog/posts/4cf6882d.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/4cf6882d/crash.jpg" alt="crash"></p>
+<span id="more"></span>
+<p>Among the operation of Ambari, we may confront some annoying failure, such as a crashed MySQL database. So, we can run commands below to recover this kind of problem.</p>
+<ol>
+<li><p>Check the status of the crashed table.</p>
+ <figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">check</span> <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>Repair crashed table.</p>
+ <figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line">repaire <span class="keyword">table</span> [<span class="keyword">table</span> name]</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<p>On the other hand, you can use commands below to repair whole crashed tables.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">mysqlcheck -uroot -p --repair --all-databases</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">myisamchk --recover *.MYI</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>Database</category>
+        <category>Mysql</category>
+      </categories>
+      <tags>
+        <tag>Ambari</tag>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Meeting 401 Http Status Code when Visting Oozie UI by a browser in a Kerberos environment</title>
+    <url>/blog/posts/3f9aa226.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/3f9aa226/401_webui_1.png" alt="401 webui"></p>
+<p>Using your browser such as Firefox or Chrome to access your component services in Ambari with Kerberos Authorization may confront the error message above.</p>
+<span id="more"></span>
+
+<p>The Http status code 401 showing that lacking the authorization to access specific resources. So solving this error is to assign specific authorization for the resource that you need to access.</p>
+<blockquote>
+<p><a href="https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html">https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html</a></p>
+</blockquote>
+<h2 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h2><ol>
+<li><p>Configuring Firefox</p>
+<p> Open Firefox and type the “about:config” in the address bar.</p>
+<p> <img src="/blog/posts/3f9aa226/401_webui_2.png" alt="401 webui"></p>
+<p> Specify the hostname of your Ambari cluster to the properties(“network.negotiate-auth.delegation-uris” and “network.negotiate-auth.trusted-uris”)</p>
+</li>
+<li><p>Typing Command “kinit”<br> Assigning authorization to specific service which you want to access.</p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">kinit -kt [the file path of specific keytab file] [the principle of specific service]</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<h2 id="Other-Browsers"><a href="#Other-Browsers" class="headerlink" title="Other Browsers"></a>Other Browsers</h2><p>Accessing the website to get concrete solutions for specific browsers.</p>
+<blockquote>
+<p><a href="https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM">https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Back-end</category>
+        <category>BigData</category>
+      </categories>
+      <tags>
+        <tag>BigData</tag>
+        <tag>Ambari</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL Basic Operations for User Account Management</title>
+    <url>/blog/posts/f4c81e09.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/f4c81e09/mysql.jpg" alt="mysql">  </p>
+<ol>
+<li><p>Install MySQL server (not MySQL package)</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install mysql-server</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>Start and launch MySQL</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">service mysqld start</span><br><span class="line"></span><br><span class="line">mysql -uroot -p</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<span id="more"></span>
+<ol start="3">
+<li><p>Add users.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">CREATE USER <span class="string">'user_name'</span>@<span class="string">'host'</span> IDENTIFIED BY <span class="string">'password'</span>;</span><br></pre></td></tr></tbody></table></figure>
+<p> The value of host:  </p>
+<ul>
+<li>%: connect to mysql server from any other machine    </li>
+<li>localhost: just local host  </li>
+<li>ip_address: specific ip address</li>
+</ul>
+</li>
+<li><p>Grant authority to users.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES on [db_name].[db_table_name] TO [mysql_user_name]@[the_value_of_host] IDENTIFIED BY <span class="string">'[mysql_user_password]'</span>;</span><br></pre></td></tr></tbody></table></figure>
+<p> [all privileges] can be set with specific authority(“select,delete,update,create,drop”)</p>
+<p> [db_name] can be set with all databases(“*”)</p>
+<p> [db_table_name] can be set with all tables(“*”)</p>
+</li>
+<li><p>Update password.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ALTER USER <span class="string">'user_name'</span>@<span class="string">'host'</span> IDENTIFIED BY <span class="string">'password'</span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>Delete users.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">DROP USER <span class="string">'user_name'</span>@<span class="string">'host'</span>;</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Operation</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Odyssey</title>
+    <url>/blog/posts/56e69a1d.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/56e69a1d/odyssey.jpg" alt="odyssey"><br>It is really a great determination for me to give up a comfortable and easy environment where I can complete all tasks successfully. Now, I had been to Shanghai for almost one month. And I need to study new development technology and make new friends in this unfamiliar city where I will be surrounded by loneliness.</p>
+<span id="more"></span>
+
+<p>Nevertheless, I really hope that I can meet all kinds of difficulties which offer me the huge experience to upgrade myself. So, I choose to jump out of my comfortable cage and forage challenges. In my opinion, It is a true tiger that runs above Africa prairie not one in the fancy cage.  </p>
+<p>Finally, I literally hope that my goal will be hit after one year and start with a more rough journey (Odyssey).</p>
+]]></content>
+      <categories>
+        <category>Life log</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+        <tag>Shanghai</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>New York Graffiti</title>
+    <url>/blog/posts/b4cea04c.html</url>
+    <content><![CDATA[<img src="/blog/posts/b4cea04c/IMG_5453Large.jpeg" alt="I and Jean-Michel Basquiat" style="zoom: 33%;">
+
+<p>I used my spare time to explore all kinds of graffiti in NYC. In my opinion, its inclusiveness is the main reason why street culture is prosperous in NYC. I also went to Pride Parade. They’re shining through the parade, and I can feel their confidence and passion coming out of their body. This is also a sign of inclusiveness in NYC.</p>
+<p>There are a bunch of photos I took below, and you click <a href="https://guides.apple.com/?ug=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">this link</a> to check out these locations. Just treat this as a treasure hunt game! Have fun!</p>
+<span id="more"></span>
+
+<p><strong>Banksy: Hammer Boy</strong><br><img src="/blog/posts/b4cea04c/IMG_5152Large.jpeg" alt="Banksy: Hammer Boy"></p>
+<br>
+
+<p><strong>Keith Haring: Crack Is Wack</strong><br><img src="/blog/posts/b4cea04c/IMG_5159Large.jpeg" alt="Keith Haring: Crack Is Wack"></p>
+<br>
+
+<p><strong>Eduardo Kobra: Empire Diner</strong><br><img src="/blog/posts/b4cea04c/IMG_5210Large.jpeg" alt="Kobra mural - Empire Diner"></p>
+<br>
+
+<p><strong>Eduardo Kobra: Gandhi and His Mother</strong><br><img src="/blog/posts/b4cea04c/IMG_5223Large.jpeg" alt="Mahatma Gandhi Mural"></p>
+<br>
+
+<p><strong>Love Vandal</strong><br><img src="/blog/posts/b4cea04c/IMG_5232Large.jpeg" alt="Love Vandal"></p>
+<br>
+
+<p><strong>The Houston Bowery Wall</strong><br><img src="/blog/posts/b4cea04c/IMG_5276Large.jpeg" alt="The Houston Bowery Wall"></p>
+<br>
+
+<p><strong>Supreme’s wall in the downtown</strong><br><img src="/blog/posts/b4cea04c/IMG_5297Large.jpeg" alt="Supreme's wall in the downtown"></p>
+<br>
+
+<p><strong>Supreme’s wall in the downtown</strong><br><img src="/blog/posts/b4cea04c/IMG_5298Large.jpeg" alt="Supreme's wall in the downtown"></p>
+<br>
+
+<p><strong>Gatsby Bar nearby Supreme</strong><br><img src="/blog/posts/b4cea04c/IMG_5301Large.jpeg" alt="Gatsby Bar nearby Supreme"></p>
+<br>
+
+<p><strong>Eduardo Kobra: Jean-Michel Basquiat and Andy Warhol</strong><br><img src="/blog/posts/b4cea04c/IMG_5448Large.jpeg" alt="Eduardo Kobra: Fight for Street(Jean-Michel Basquiat and Andy Warhol)"></p>
+<br>
+
+<p><strong>The King of NYC(Biggie)</strong><br><img src="/blog/posts/b4cea04c/IMG_5459Large.jpeg" alt="The King of NYC(Biggie)"></p>
+<br>
+
+<p><strong>A Graffiti at Jefferson Street</strong><br><img src="/blog/posts/b4cea04c/IMG_5489Large.jpeg" alt="A Graffiti at Jefferson Street"></p>
+]]></content>
+      <categories>
+        <category>Life log</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
       </tags>
   </entry>
   <entry>
@@ -6040,203 +6200,6 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Linux Command - netstat</title>
-    <url>/blog/posts/187005a0.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/187005a0/netstat.jpg" alt="netstat"></p>
-<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><blockquote>
-<p>source: <a href>https://www.tecmint.com/20-netstat-commands-for-linux-network-management/</a></p>
-</blockquote>
-<p>netstat(network statistics) is a command line tool for monitoring connections both incoming and outgoing as well as viewing routing tables, interface statistics, etc.</p>
-<span id="more"></span>
-
-<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><p>So, let’s begin to learn some useful options for netstat.</p>
-<ol>
-<li><p>-a</p>
-<p>Show all.</p>
-</li>
-<li><p>-n</p>
-<p>Show networks as numbers, not hostnames.</p>
-</li>
-<li><p>-p</p>
-<p>Show protocol.</p>
-</li>
-</ol>
-<h2 id="Most-repeated-command"><a href="#Most-repeated-command" class="headerlink" title="Most repeated command"></a>Most repeated command</h2><p>You can use the practical command below to find listening programs</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">netstat -anp | grep 8080</span><br></pre></td></tr></tbody></table></figure>
-
-<p>And you also can use telnet to check specific port.</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">telnet [hostname or ip] [port]</span><br></pre></td></tr></tbody></table></figure>
-]]></content>
-      <categories>
-        <category>Operation</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Linux Command</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MIO Internship</title>
-    <url>/blog/posts/658d19d2.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/658d19d2/dinner_photo.jpeg" alt="MIO internship"></p>
-<p>I have really enjoyed working with IT team at MIO last two months. Through this internship, I have been able to learn not only what the US working style is like, but also some real AWS projects. Now, I’m sure to continue brushing up on my AWS skills to find a full-time role.</p>
-<p>Thank you all guys helped me and supported me! I hope you all the best!</p>
-]]></content>
-      <categories>
-        <category>Life log</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL Basic Operations for User Account Management</title>
-    <url>/blog/posts/f4c81e09.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/f4c81e09/mysql.jpg" alt="mysql">  </p>
-<ol>
-<li><p>Install MySQL server (not MySQL package)</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install mysql-server</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>Start and launch MySQL</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">service mysqld start</span><br><span class="line"></span><br><span class="line">mysql -uroot -p</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<span id="more"></span>
-<ol start="3">
-<li><p>Add users.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">CREATE USER <span class="string">'user_name'</span>@<span class="string">'host'</span> IDENTIFIED BY <span class="string">'password'</span>;</span><br></pre></td></tr></tbody></table></figure>
-<p> The value of host:  </p>
-<ul>
-<li>%: connect to mysql server from any other machine    </li>
-<li>localhost: just local host  </li>
-<li>ip_address: specific ip address</li>
-</ul>
-</li>
-<li><p>Grant authority to users.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES on [db_name].[db_table_name] TO [mysql_user_name]@[the_value_of_host] IDENTIFIED BY <span class="string">'[mysql_user_password]'</span>;</span><br></pre></td></tr></tbody></table></figure>
-<p> [all privileges] can be set with specific authority(“select,delete,update,create,drop”)</p>
-<p> [db_name] can be set with all databases(“*”)</p>
-<p> [db_table_name] can be set with all tables(“*”)</p>
-</li>
-<li><p>Update password.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ALTER USER <span class="string">'user_name'</span>@<span class="string">'host'</span> IDENTIFIED BY <span class="string">'password'</span>;</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>Delete users.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">DROP USER <span class="string">'user_name'</span>@<span class="string">'host'</span>;</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Operation</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Odyssey</title>
-    <url>/blog/posts/56e69a1d.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/56e69a1d/odyssey.jpg" alt="odyssey"><br>It is really a great determination for me to give up a comfortable and easy environment where I can complete all tasks successfully. Now, I had been to Shanghai for almost one month. And I need to study new development technology and make new friends in this unfamiliar city where I will be surrounded by loneliness.</p>
-<span id="more"></span>
-
-<p>Nevertheless, I really hope that I can meet all kinds of difficulties which offer me the huge experience to upgrade myself. So, I choose to jump out of my comfortable cage and forage challenges. In my opinion, It is a true tiger that runs above Africa prairie not one in the fancy cage.  </p>
-<p>Finally, I literally hope that my goal will be hit after one year and start with a more rough journey (Odyssey).</p>
-]]></content>
-      <categories>
-        <category>Life log</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-        <tag>Shanghai</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>New York Graffiti</title>
-    <url>/blog/posts/b4cea04c.html</url>
-    <content><![CDATA[<img src="/blog/posts/b4cea04c/IMG_5453Large.jpeg" alt="I and Jean-Michel Basquiat" style="zoom: 33%;">
-
-<p>I used my spare time to explore all kinds of graffiti in NYC. In my opinion, its inclusiveness is the main reason why street culture is prosperous in NYC. I also went to Pride Parade. They’re shining through the parade, and I can feel their confidence and passion coming out of their body. This is also a sign of inclusiveness in NYC.</p>
-<p>There are a bunch of photos I took below, and you click <a href="https://guides.apple.com/?ug=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">this link</a> to check out these locations. Just treat this as a treasure hunt game! Have fun!</p>
-<span id="more"></span>
-
-<p><strong>Banksy: Hammer Boy</strong><br><img src="/blog/posts/b4cea04c/IMG_5152Large.jpeg" alt="Banksy: Hammer Boy"></p>
-<br>
-
-<p><strong>Keith Haring: Crack Is Wack</strong><br><img src="/blog/posts/b4cea04c/IMG_5159Large.jpeg" alt="Keith Haring: Crack Is Wack"></p>
-<br>
-
-<p><strong>Eduardo Kobra: Empire Diner</strong><br><img src="/blog/posts/b4cea04c/IMG_5210Large.jpeg" alt="Kobra mural - Empire Diner"></p>
-<br>
-
-<p><strong>Eduardo Kobra: Gandhi and His Mother</strong><br><img src="/blog/posts/b4cea04c/IMG_5223Large.jpeg" alt="Mahatma Gandhi Mural"></p>
-<br>
-
-<p><strong>Love Vandal</strong><br><img src="/blog/posts/b4cea04c/IMG_5232Large.jpeg" alt="Love Vandal"></p>
-<br>
-
-<p><strong>The Houston Bowery Wall</strong><br><img src="/blog/posts/b4cea04c/IMG_5276Large.jpeg" alt="The Houston Bowery Wall"></p>
-<br>
-
-<p><strong>Supreme’s wall in the downtown</strong><br><img src="/blog/posts/b4cea04c/IMG_5297Large.jpeg" alt="Supreme's wall in the downtown"></p>
-<br>
-
-<p><strong>Supreme’s wall in the downtown</strong><br><img src="/blog/posts/b4cea04c/IMG_5298Large.jpeg" alt="Supreme's wall in the downtown"></p>
-<br>
-
-<p><strong>Gatsby Bar nearby Supreme</strong><br><img src="/blog/posts/b4cea04c/IMG_5301Large.jpeg" alt="Gatsby Bar nearby Supreme"></p>
-<br>
-
-<p><strong>Eduardo Kobra: Jean-Michel Basquiat and Andy Warhol</strong><br><img src="/blog/posts/b4cea04c/IMG_5448Large.jpeg" alt="Eduardo Kobra: Fight for Street(Jean-Michel Basquiat and Andy Warhol)"></p>
-<br>
-
-<p><strong>The King of NYC(Biggie)</strong><br><img src="/blog/posts/b4cea04c/IMG_5459Large.jpeg" alt="The King of NYC(Biggie)"></p>
-<br>
-
-<p><strong>A Graffiti at Jefferson Street</strong><br><img src="/blog/posts/b4cea04c/IMG_5489Large.jpeg" alt="A Graffiti at Jefferson Street"></p>
-]]></content>
-      <categories>
-        <category>Life log</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Meeting 401 Http Status Code when Visting Oozie UI by a browser in a Kerberos environment</title>
-    <url>/blog/posts/3f9aa226.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/3f9aa226/401_webui_1.png" alt="401 webui"></p>
-<p>Using your browser such as Firefox or Chrome to access your component services in Ambari with Kerberos Authorization may confront the error message above.</p>
-<span id="more"></span>
-
-<p>The Http status code 401 showing that lacking the authorization to access specific resources. So solving this error is to assign specific authorization for the resource that you need to access.</p>
-<blockquote>
-<p><a href="https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html">https://community.hortonworks.com/questions/212654/nifi-processor-connection-to-schema-registry-with.html</a></p>
-</blockquote>
-<h2 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h2><ol>
-<li><p>Configuring Firefox</p>
-<p> Open Firefox and type the “about:config” in the address bar.</p>
-<p> <img src="/blog/posts/3f9aa226/401_webui_2.png" alt="401 webui"></p>
-<p> Specify the hostname of your Ambari cluster to the properties(“network.negotiate-auth.delegation-uris” and “network.negotiate-auth.trusted-uris”)</p>
-</li>
-<li><p>Typing Command “kinit”<br> Assigning authorization to specific service which you want to access.</p>
- <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">kinit -kt [the file path of specific keytab file] [the principle of specific service]</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<h2 id="Other-Browsers"><a href="#Other-Browsers" class="headerlink" title="Other Browsers"></a>Other Browsers</h2><p>Accessing the website to get concrete solutions for specific browsers.</p>
-<blockquote>
-<p><a href="https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM">https://ping.force.com/Support/PingFederate/Integrations/How-to-configure-supported-browsers-for-Kerberos-NTLM</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Back-end</category>
-        <category>BigData</category>
-      </categories>
-      <tags>
-        <tag>BigData</tag>
-        <tag>Ambari</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Running Kafka consumer and producer in Kerberos Authorization</title>
     <url>/blog/posts/2d304b2.html</url>
     <content><![CDATA[<p><img src="/blog/posts/2d304b2/kafka.jpeg" alt="kafka"></p>
@@ -6434,6 +6397,43 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
+    <title>Linux Command - netstat</title>
+    <url>/blog/posts/187005a0.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/187005a0/netstat.jpg" alt="netstat"></p>
+<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><blockquote>
+<p>source: <a href>https://www.tecmint.com/20-netstat-commands-for-linux-network-management/</a></p>
+</blockquote>
+<p>netstat(network statistics) is a command line tool for monitoring connections both incoming and outgoing as well as viewing routing tables, interface statistics, etc.</p>
+<span id="more"></span>
+
+<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><p>So, let’s begin to learn some useful options for netstat.</p>
+<ol>
+<li><p>-a</p>
+<p>Show all.</p>
+</li>
+<li><p>-n</p>
+<p>Show networks as numbers, not hostnames.</p>
+</li>
+<li><p>-p</p>
+<p>Show protocol.</p>
+</li>
+</ol>
+<h2 id="Most-repeated-command"><a href="#Most-repeated-command" class="headerlink" title="Most repeated command"></a>Most repeated command</h2><p>You can use the practical command below to find listening programs</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">netstat -anp | grep 8080</span><br></pre></td></tr></tbody></table></figure>
+
+<p>And you also can use telnet to check specific port.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">telnet [hostname or ip] [port]</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>Operation</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Linux Command</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Some terms in Big Data Ecosystem</title>
     <url>/blog/posts/aa930aca.html</url>
     <content><![CDATA[<p><img src="/blog/posts/aa930aca/biddata.jpg" alt="bigdata"></p>
@@ -6497,243 +6497,41 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>Step by Step Tutorial for Ambari Installation</title>
-    <url>/blog/posts/7f0f012a.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/7f0f012a/features.png" alt="features"> </p>
-<h2 id="System-Requirements"><a href="#System-Requirements" class="headerlink" title="System Requirements"></a>System Requirements</h2><p>At first, we need to think about the setups of VMs. So, I list a table for VMs below.</p>
-<table>
-<thead>
-<tr>
-<th align="center">hostname</th>
-<th align="center">ip</th>
-<th align="center">operating system</th>
-<th align="center">RAM</th>
-<th align="center">disk space</th>
-<th align="center">package</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">master1.bigdata.com</td>
-<td align="center">192.168.110.150</td>
-<td align="center">centos6.5 64 位</td>
-<td align="center"> 16g</td>
-<td align="center">50g</td>
-<td align="center">ambari-server<br>namenode</td>
-</tr>
-<tr>
-<td align="center">slave1.bigdata.com</td>
-<td align="center">192.168.110.151</td>
-<td align="center">centos6.5 64 位</td>
-<td align="center"> 16g</td>
-<td align="center">50g</td>
-<td align="center">ambari-agent<br>datanode</td>
-</tr>
-<tr>
-<td align="center">slave2.bigdata.com</td>
-<td align="center">192.168.110.152</td>
-<td align="center">centos6.5 64 位</td>
-<td align="center"> 16g</td>
-<td align="center">50g</td>
-<td align="center">ambari-agent<br>datanode</td>
-</tr>
-</tbody></table>
+    <title>The Two Ways of Connecting Hive For Developing or Testing</title>
+    <url>/blog/posts/87dabd80.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/87dabd80/hive.jpg" alt="hive"></p>
 <span id="more"></span>
-<h2 id="VM-Deployment"><a href="#VM-Deployment" class="headerlink" title="VM Deployment"></a>VM Deployment</h2><ol>
-<li><p>Login VMware vsphere client system</p>
-</li>
-<li><p>Create 3 VMs with specific system requirements</p>
-</li>
-<li><p>Set the name of VM  </p>
-</li>
-<li><p>Choose data storage  </p>
-</li>
-<li><p>Choose hardware configuration  </p>
-</li>
-<li><p>Load centos6 ios file into CD-ROM when booting<br> You can use the minimum version of the centos. Then you need to click the option “Running system installation with system booting”.</p>
-</li>
-<li><p>Configuration complete  </p>
-</li>
-<li><p>Operating system installation  </p>
-</li>
-<li><p>Power on the VM</p>
+
+<h2 id="Hive-CLI"><a href="#Hive-CLI" class="headerlink" title="Hive CLI"></a>Hive CLI</h2><p>Hive CLI a legacy tool that had two main use cases. The first is that it served as a thick client for SQL on Hadoop. And the second is that it served as a command-line tool for Hiver Server. Hive Server had been deprecated and removed from Hive. So, it is not an ideal way to connect Hive by using Hive CLI.</p>
+<p>Command below for using Hive CLI.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">hive</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Beeline-CLI"><a href="#Beeline-CLI" class="headerlink" title="Beeline CLI"></a>Beeline CLI</h2><p>It is a client tool for connecting Hive Server2 through JDBC. Then you can use SQL to obtain or process data.<br>Because of using JDBC, there are two tunnels for transmitting data. The first way is zookeeper which is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. The second way is the apache thrift server which is RPC framework for scalable cross-language service development.</p>
+<p>Before we use beeline, we need to get TGT from TGS for using hive service when your Hadoop clusters using Kerberos authorization. After that, you can use Hive directly.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">kinit -kt [your hive service keytab file path] [your hive service principal]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>You can checkout your kerberos.csv file to get a specific service keytab file path and service principal.</p>
+<ol>
+<li>Zookeeper</li>
+</ol>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">beeline </span><br><span class="line"></span><br><span class="line">!connect jdbc:hive2://bigdata.com:2181/sephora;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;principal=hive/bigdata.com@CONNEXT.COM</span><br></pre></td></tr></tbody></table></figure>
+
+<p>So, you maybe want to get your own JDBC connection URL by using zookeeper. You can visit your own Ambari UI, then click “[Services]-&gt;[Hive]”. In your hive dashboard, you can get your own URL.</p>
+<p><img src="/blog/posts/87dabd80/hive-connect-zookeeper-url.png" alt="JDBC URL by using zookeeper"></p>
+<p>After this, we may be encounter a bug that needs to input username and password. So, just click “Enter” two times because of owning the authorization for hive service.</p>
+<blockquote>
+<p><a href="https://issues.apache.org/jira/browse/HIVE-9144">https://issues.apache.org/jira/browse/HIVE-9144</a></p>
+</blockquote>
+<p><img src="/blog/posts/87dabd80/hive-connect-zookeeper.png" alt="zookeeper"></p>
 <ol start="2">
-<li>Choose the first one.<br><img src="/blog/posts/7f0f012a/li_1.png" alt="Choose the first one"></li>
+<li>Thrift Server</li>
 </ol>
-</li>
-<li><p>Click “skip” to continue.<br>  <img src="/blog/posts/7f0f012a/li_2.png" alt="Click &quot;skip&quot; to continue"></p>
-</li>
-<li><p>Choose language, keyborad and timezone.<br><img src="/blog/posts/7f0f012a/li_3.png" alt="Choose language"><br>  <img src="/blog/posts/7f0f012a/li_4.png" alt="Choose keyboard"><br>  <img src="/blog/posts/7f0f012a/li_5.png" alt="Choose timezone"></p>
-</li>
-<li><p>Set root password.<br>  <img src="/blog/posts/7f0f012a/li_6.png" alt="Set root password">  </p>
-</li>
-<li><p>Click “Using entire drive” to continue.<br><img src="/blog/posts/7f0f012a/li_7.png" alt="Click &quot;Using entire drive&quot; to continue">  </p>
-</li>
-<li><p>Choose “Write changes to disk” to continue.<br> <img src="/blog/posts/7f0f012a/li_8.png" alt="Choose &quot;Write changes to disk&quot; to continue">  </p>
-</li>
-<li><p>Reboot.<br><img src="/blog/posts/7f0f012a/li_9.png" alt="Reboot"></p>
-</li>
-</ol>
-<h2 id="VM-Preparation"><a href="#VM-Preparation" class="headerlink" title="VM Preparation"></a>VM Preparation</h2><h3 id="1-Configuration-and-Installation-for-VMs-master-and-slave-servers"><a href="#1-Configuration-and-Installation-for-VMs-master-and-slave-servers" class="headerlink" title="1. Configuration and Installation for VMs(master and slave servers)"></a>1. Configuration and Installation for VMs(master and slave servers)</h3><ol>
-<li><p>Install java.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install java</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>Enable network adapter.  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth0</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth1</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth2</span><br></pre></td></tr></tbody></table></figure>
-<p> Then, enable it to run after system booting</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ONBOOT=<span class="built_in">yes</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Using tool ping to check the status of accessing public network and local network.   </p>
-</li>
-<li><p>Change the system’s hostname on all servers.</p>
-<ol>
-<li><p>Update file(/etc/sysctl.conf), add a item </p>
- <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">kernel.domainname=master1.bigdata.com</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Update file(/etc/hosts), add doamins.</p>
- <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">192.168.110.150 master1.bigdata.com master1</span><br><span class="line">192.168.110.151 slave1.bigdata.com slave1</span><br><span class="line">192.168.110.152 slave2.bigdata.com slave2</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Update file(/etc/sysconfig/network)</p>
- <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=master1.bigdata.com</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Reboot systems</p>
-</li>
-<li><p>Check the correction of hostname</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hostname</span><br><span class="line">hostname -f</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-</li>
-<li><p>Set up password-less SSH on all servers</p>
-<ol>
-<li><p>Disable SELinux</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/selinux/config</span><br></pre></td></tr></tbody></table></figure>
-<p> Set disabled for SELinux:</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">SELINUX=disabled</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Enable access for using public key.<br> <strong>Warning: Filename is sshd_config, not ssh_config.</strong>  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></tbody></table></figure>
-<p> Delete comment signal(“#”) blow:  </p>
- <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">RSAAuthentication yes</span><br><span class="line">PubkeyAuthentication yes</span><br><span class="line">AuthorizedKeysFile .ssh/authorized_keys</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Generate public key and private key on master server.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></tbody></table></figure>
-<p> Then, click the default option for configuration.</p>
-</li>
-<li><p>Create directories and copy the public key to slave servers.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">slave$ <span class="built_in">mkdir</span> ~/.ssh</span><br><span class="line">slave$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">slave$ <span class="built_in">touch</span> authorized_keys</span><br></pre></td></tr></tbody></table></figure>
-<p> Login to master server, then copy public key:  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">maseter$ scp ~/.ssh/id_rsa.pub root@slave1:~/.ssh</span><br></pre></td></tr></tbody></table></figure>
-<p> Login to slave server, then copy content from public key to a file(authorized_keys):  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">slave$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span><br></pre></td></tr></tbody></table></figure>
-<p> <strong>Notice: You need to copy your content of local ssh public key to your local authorized_keys if you use standalone mode.</strong></p>
-</li>
-</ol>
-</li>
-<li><p>Install ntpd on all servers.</p>
-<ol>
-<li><p>Check to see if you have installed ntpd.   </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">rpm -qa | grep ntp   </span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>If not, install ntpd  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install ntp </span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-</li>
-<li><p>Close transparent huge page on all servers.</p>
-<ol>
-<li><p>Append code block to file(/etc/rc.local) for closing transparent huge page. 		</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/rc.local</span><br></pre></td></tr></tbody></table></figure>
-<p> code block:  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -f /sys/kernel/mm/transparent_hugepage/enabled; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> never &gt; /sys/kernel/mm/transparent_hugepage/enabled</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -f /sys/kernel/mm/transparent_hugepage/defrag; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> never &gt; /sys/kernel/mm/transparent_hugepage/defrag</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Reboot operating system.</p>
-</li>
-<li><p>Check the status of the transparent huge page to ensure the status is “never”.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> /sys/kernel/mm/transparent_hugepage/enabled</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-</li>
-</ol>
-<h3 id="2-Set-up-a-local-repository-on-master-server"><a href="#2-Set-up-a-local-repository-on-master-server" class="headerlink" title="2. Set up a local repository on master server."></a>2. Set up a local repository on master server.</h3><ol>
-<li><p>Install local repository tool.  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install yum-utils createrepo</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Install the http service.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install httpd</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Start the http service.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">service httpd start</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Install tool wget.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install wget</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Download Ambari &amp; HDP package files to the master server.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">wget http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.4.2.0/ambari-2.4.2.0-centos6.tar.gz</span><br><span class="line">wget http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.20/repos/centos6/HDP-UTILS-1.1.0.20-centos6.tar.gz</span><br><span class="line">wget http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.4.3.0/HDP-2.4.3.0-centos6-rpm.tar.gz</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Copy Ambari and HDP packages to http dir, then untar them.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /var/www/html</span><br><span class="line"><span class="built_in">mkdir</span> hdp</span><br><span class="line">tar -xvf ambari-2.4.2.0-centos6.tar.gz -C /var/www/html</span><br><span class="line">tar -xvf HDP-2.4.3.0-centos6-rpm.tar.gz -C /var/www/html/hdp</span><br><span class="line">tar -xvf HDP-UTILS-1.1.0.20-centos6.tar.gz -C /var/www/html/hdp</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Check repository address for next step.</p>
-<p> Ambari base URL and gpgkey:  </p>
- <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">http://192.168.110.150/AMBARI-2.4.2.0/centos6/2.4.2.0-136/  </span><br><span class="line">http://192.168.110.150/AMBARI-2.4.2.0/centos6/2.4.2.0-136/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins</span><br></pre></td></tr></tbody></table></figure>
-<p> HDP base URL and gpgkey:  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">http://192.168.110.150/hdp/HDP/centos6/2.x/updates/2.4.3.0</span><br><span class="line">http://192.168.110.150/hdp/HDP/centos6/2.x/updates/2.4.3.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins</span><br></pre></td></tr></tbody></table></figure>
-<p> HDP-UTILS base URL and gpgkey(gpgkey file same with HDP gpgkey file):  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">http://192.168.110.150/hdp/HDP-UTILS-1.1.0.20/repos/centos6</span><br><span class="line">http://192.168.110.150/hdp/HDP/centos6/2.x/updates/2.4.3.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Copy repository config files.<br> ambari repo file:</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">wget -nv http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.4.3.0/ambari.repo -O /etc/yum.repos.d/ambari.repo</span><br></pre></td></tr></tbody></table></figure>
-<p> hdp repo file:	</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /var/www/html/hdp/HDP/centos6/2.x/updates/2.4.3.0/hdp.repo /etc/yum.repos.d/</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Update repository config files.<br> You ought to renew base URL and gpgkey URL in your ambari.repo and hdp.repo files.</p>
-</li>
-</ol>
-<h3 id="3-Ambari-server-setup-on-master-server"><a href="#3-Ambari-server-setup-on-master-server" class="headerlink" title="3. Ambari-server setup on master server"></a>3. Ambari-server setup on master server</h3><ol>
-<li><p>Install ambari server </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install /var/www/html/AMBARI-2.4.2.0/centos6/2.4.2.0-136/ambari/ambari-server-2.4.2.0-136.x86_64.rpm</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Run command for ambari setup.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-server setup</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>If you do not disable the SELinux, you need to press “y”.</p>
-</li>
-<li><p>If your Ambari server under user root, you just need to press “n”.</p>
-</li>
-<li><p>If you do not disable iptalbes, you need to press “y” to continue.</p>
-</li>
-<li><p>Select the JDK version, then follow steps to install it.<br> <strong>If you use a custom JDK, you will maybe meet some troubles that will happen within Ambari Installation. So, choosing option one for the recommendation.</strong></p>
-</li>
-<li><p>Choose database type<br> You can choose embedded the database. If you choose MySQL, you need to install the MySQL database on the master server and input info for the Ambari setup. Then put a MySQL connector into a specific path and run the command below to specify the path of the connector.  </p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-server setup --jdbc-db=mysql --jdbc-driver=/usr/share/java/mysql-connector-java.jar</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Run ambari-server</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-server start</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<h3 id="4-Ambari-agent-setup-on-slave-servers"><a href="#4-Ambari-agent-setup-on-slave-servers" class="headerlink" title="4. Ambari-agent setup on slave servers."></a>4. Ambari-agent setup on slave servers.</h3><ol>
-<li><p>Copy ambari-agent rpm file to slave servers.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">scp /var/www/html/AMBARI-2.4.2.0/centos6/2.4.2.0-136/ambari/ambari-agent-2.4.2.0-136.x86_64.rpm root@slave_server_ip:~</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Install ambari-agent.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install ~/ambari-agent-2.4.2.0-136.x86_64.rpm</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Renew ambari-server URL in config file.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/ambari-agent/ambari.ini</span><br></pre></td></tr></tbody></table></figure>
-<p> Renew ambari-server URL below: </p>
- <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">[server]</span><br><span class="line">hostname = master1.bigdata.com</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>Run ambari-agent.</p>
- <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-agent start</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Before you launch the Ambari installation web UI, you ought to ensure things below.</p>
-<ol>
-<li><p>Start the service httpd.</p>
-</li>
-<li><p>Stop the service iptables.  </p>
-</li>
-<li><p>Start the ambari-server on the master server and ambari-agent on slave servers.<br> If you want to start quickly, it is advisable to choose default options.</p>
-</li>
-<li><p>Open your browser, then access to the WebUI and click the item (“Launch Install Wizard”)<br> URL: 192.168.110.150:8080<br> Account: admin<br> Password: admin<br> <img src="/blog/posts/7f0f012a/ai_1.png" alt="login"><br> <img src="/blog/posts/7f0f012a/ai_2.png" alt="login_success">  </p>
-</li>
-<li><p>Get Started<br> <img src="/blog/posts/7f0f012a/ai_3.png" alt="Get Started">  </p>
-</li>
-<li><p>Select Version<br> Choose local repository, then input base URL of HDP and HDP-UTILS.<br> <img src="/blog/posts/7f0f012a/ai_4.png" alt="Select Version">  </p>
-</li>
-<li><p>Install Options<br> Input your master’s hostname and slaves’ hostnames. Then copy your master’s ssh private key into the item.<br> <img src="/blog/posts/7f0f012a/ai_5.png" alt="Install Options">  </p>
-</li>
-<li><p>Confirm Hosts<br> <img src="/blog/posts/7f0f012a/ai_6.png" alt="Confirm Hosts"> </p>
-<p> Just click “ok” to continue.<br> <img src="/blog/posts/7f0f012a/ai_7.png" alt="click ok"> </p>
-</li>
-<li><p>Choose Services<br> Choose what service you want to add to your system. You can add new services to your system later on.<br> <img src="/blog/posts/7f0f012a/ai_8.png" alt="Choose Services"> </p>
-<p> Just click “ok” to continue.<br> <img src="/blog/posts/7f0f012a/ai_9.png" alt="click ok"> </p>
-</li>
-<li><p>Assign Masters<br><img src="/blog/posts/7f0f012a/ai_10.png" alt="Assign Masters"> </p>
-</li>
-<li><p>Assign Slaves and Clients<br><img src="/blog/posts/7f0f012a/ai_11.png" alt="Assign Slaves and Clients"> </p>
-</li>
-<li><p>Customize Services<br>You just need to input info for items with a red exclamation mark.<br><img src="/blog/posts/7f0f012a/ai_12.png" alt="Customize Services"> </p>
-</li>
-<li><p>Review<br><img src="/blog/posts/7f0f012a/ai_13.png" alt="Review"> </p>
-</li>
-<li><p>Install, Start and Test<br>If you get to this step successfully, you can drink a cup of coffee and enjoy this time.<br><img src="/blog/posts/7f0f012a/ai_14.png" alt="Install, Start and Test"> </p>
-</li>
-<li><p>Summary<br>So now, say hello world to Ambari.<br><img src="/blog/posts/7f0f012a/ai_15.png" alt="Install, Start and Test"></p>
-</li>
-</ol>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">beeline</span><br><span class="line"></span><br><span class="line">!connect jdbc:hive2://bigdata.com:10001/sephora;transportMode=http;httpPath=cliservice;principal=hive/bigdata.com@CONNEXT.COM</span><br></pre></td></tr></tbody></table></figure>
+
+<p>We can get parameter values by visiting Ambari UI and checking the configuration of Hive.</p>
+<p><img src="/blog/posts/87dabd80/hive-connect-thrift-url.png" alt="jdbc url by using thrift"></p>
+<p>Just like using zookeeper, we also encounter that bug. So, just click “Enter” two times.</p>
+<p><img src="/blog/posts/87dabd80/hive-connect-thrift.png" alt="thrift"></p>
 ]]></content>
       <categories>
         <category>Back-end</category>
@@ -6742,6 +6540,7 @@ The authenticator which encrypted by TGS session key contains:
       <tags>
         <tag>BigData</tag>
         <tag>Ambari</tag>
+        <tag>Hive</tag>
       </tags>
   </entry>
   <entry>
@@ -7071,53 +6870,6 @@ The authenticator which encrypted by TGS session key contains:
       </tags>
   </entry>
   <entry>
-    <title>The Two Ways of Connecting Hive For Developing or Testing</title>
-    <url>/blog/posts/87dabd80.html</url>
-    <content><![CDATA[<p><img src="/blog/posts/87dabd80/hive.jpg" alt="hive"></p>
-<span id="more"></span>
-
-<h2 id="Hive-CLI"><a href="#Hive-CLI" class="headerlink" title="Hive CLI"></a>Hive CLI</h2><p>Hive CLI a legacy tool that had two main use cases. The first is that it served as a thick client for SQL on Hadoop. And the second is that it served as a command-line tool for Hiver Server. Hive Server had been deprecated and removed from Hive. So, it is not an ideal way to connect Hive by using Hive CLI.</p>
-<p>Command below for using Hive CLI.</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">hive</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="Beeline-CLI"><a href="#Beeline-CLI" class="headerlink" title="Beeline CLI"></a>Beeline CLI</h2><p>It is a client tool for connecting Hive Server2 through JDBC. Then you can use SQL to obtain or process data.<br>Because of using JDBC, there are two tunnels for transmitting data. The first way is zookeeper which is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. The second way is the apache thrift server which is RPC framework for scalable cross-language service development.</p>
-<p>Before we use beeline, we need to get TGT from TGS for using hive service when your Hadoop clusters using Kerberos authorization. After that, you can use Hive directly.</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">kinit -kt [your hive service keytab file path] [your hive service principal]</span><br></pre></td></tr></tbody></table></figure>
-
-<p>You can checkout your kerberos.csv file to get a specific service keytab file path and service principal.</p>
-<ol>
-<li>Zookeeper</li>
-</ol>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">beeline </span><br><span class="line"></span><br><span class="line">!connect jdbc:hive2://bigdata.com:2181/sephora;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;principal=hive/bigdata.com@CONNEXT.COM</span><br></pre></td></tr></tbody></table></figure>
-
-<p>So, you maybe want to get your own JDBC connection URL by using zookeeper. You can visit your own Ambari UI, then click “[Services]-&gt;[Hive]”. In your hive dashboard, you can get your own URL.</p>
-<p><img src="/blog/posts/87dabd80/hive-connect-zookeeper-url.png" alt="JDBC URL by using zookeeper"></p>
-<p>After this, we may be encounter a bug that needs to input username and password. So, just click “Enter” two times because of owning the authorization for hive service.</p>
-<blockquote>
-<p><a href="https://issues.apache.org/jira/browse/HIVE-9144">https://issues.apache.org/jira/browse/HIVE-9144</a></p>
-</blockquote>
-<p><img src="/blog/posts/87dabd80/hive-connect-zookeeper.png" alt="zookeeper"></p>
-<ol start="2">
-<li>Thrift Server</li>
-</ol>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">beeline</span><br><span class="line"></span><br><span class="line">!connect jdbc:hive2://bigdata.com:10001/sephora;transportMode=http;httpPath=cliservice;principal=hive/bigdata.com@CONNEXT.COM</span><br></pre></td></tr></tbody></table></figure>
-
-<p>We can get parameter values by visiting Ambari UI and checking the configuration of Hive.</p>
-<p><img src="/blog/posts/87dabd80/hive-connect-thrift-url.png" alt="jdbc url by using thrift"></p>
-<p>Just like using zookeeper, we also encounter that bug. So, just click “Enter” two times.</p>
-<p><img src="/blog/posts/87dabd80/hive-connect-thrift.png" alt="thrift"></p>
-]]></content>
-      <categories>
-        <category>Back-end</category>
-        <category>BigData</category>
-      </categories>
-      <tags>
-        <tag>BigData</tag>
-        <tag>Ambari</tag>
-        <tag>Hive</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Using Flume in Ambari with Kerberos</title>
     <url>/blog/posts/a833198.html</url>
     <content><![CDATA[<p><img src="/blog/posts/a833198/flume.jpeg" alt="flume"></p>
@@ -7331,6 +7083,254 @@ The authenticator which encrypted by TGS session key contains:
       </categories>
       <tags>
         <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Step by Step Tutorial for Ambari Installation</title>
+    <url>/blog/posts/7f0f012a.html</url>
+    <content><![CDATA[<p><img src="/blog/posts/7f0f012a/features.png" alt="features"> </p>
+<h2 id="System-Requirements"><a href="#System-Requirements" class="headerlink" title="System Requirements"></a>System Requirements</h2><p>At first, we need to think about the setups of VMs. So, I list a table for VMs below.</p>
+<table>
+<thead>
+<tr>
+<th align="center">hostname</th>
+<th align="center">ip</th>
+<th align="center">operating system</th>
+<th align="center">RAM</th>
+<th align="center">disk space</th>
+<th align="center">package</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">master1.bigdata.com</td>
+<td align="center">192.168.110.150</td>
+<td align="center">centos6.5 64 位</td>
+<td align="center"> 16g</td>
+<td align="center">50g</td>
+<td align="center">ambari-server<br>namenode</td>
+</tr>
+<tr>
+<td align="center">slave1.bigdata.com</td>
+<td align="center">192.168.110.151</td>
+<td align="center">centos6.5 64 位</td>
+<td align="center"> 16g</td>
+<td align="center">50g</td>
+<td align="center">ambari-agent<br>datanode</td>
+</tr>
+<tr>
+<td align="center">slave2.bigdata.com</td>
+<td align="center">192.168.110.152</td>
+<td align="center">centos6.5 64 位</td>
+<td align="center"> 16g</td>
+<td align="center">50g</td>
+<td align="center">ambari-agent<br>datanode</td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+<h2 id="VM-Deployment"><a href="#VM-Deployment" class="headerlink" title="VM Deployment"></a>VM Deployment</h2><ol>
+<li><p>Login VMware vsphere client system</p>
+</li>
+<li><p>Create 3 VMs with specific system requirements</p>
+</li>
+<li><p>Set the name of VM  </p>
+</li>
+<li><p>Choose data storage  </p>
+</li>
+<li><p>Choose hardware configuration  </p>
+</li>
+<li><p>Load centos6 ios file into CD-ROM when booting<br> You can use the minimum version of the centos. Then you need to click the option “Running system installation with system booting”.</p>
+</li>
+<li><p>Configuration complete  </p>
+</li>
+<li><p>Operating system installation  </p>
+</li>
+<li><p>Power on the VM</p>
+<ol start="2">
+<li>Choose the first one.<br><img src="/blog/posts/7f0f012a/li_1.png" alt="Choose the first one"></li>
+</ol>
+</li>
+<li><p>Click “skip” to continue.<br>  <img src="/blog/posts/7f0f012a/li_2.png" alt="Click &quot;skip&quot; to continue"></p>
+</li>
+<li><p>Choose language, keyborad and timezone.<br><img src="/blog/posts/7f0f012a/li_3.png" alt="Choose language"><br>  <img src="/blog/posts/7f0f012a/li_4.png" alt="Choose keyboard"><br>  <img src="/blog/posts/7f0f012a/li_5.png" alt="Choose timezone"></p>
+</li>
+<li><p>Set root password.<br>  <img src="/blog/posts/7f0f012a/li_6.png" alt="Set root password">  </p>
+</li>
+<li><p>Click “Using entire drive” to continue.<br><img src="/blog/posts/7f0f012a/li_7.png" alt="Click &quot;Using entire drive&quot; to continue">  </p>
+</li>
+<li><p>Choose “Write changes to disk” to continue.<br> <img src="/blog/posts/7f0f012a/li_8.png" alt="Choose &quot;Write changes to disk&quot; to continue">  </p>
+</li>
+<li><p>Reboot.<br><img src="/blog/posts/7f0f012a/li_9.png" alt="Reboot"></p>
+</li>
+</ol>
+<h2 id="VM-Preparation"><a href="#VM-Preparation" class="headerlink" title="VM Preparation"></a>VM Preparation</h2><h3 id="1-Configuration-and-Installation-for-VMs-master-and-slave-servers"><a href="#1-Configuration-and-Installation-for-VMs-master-and-slave-servers" class="headerlink" title="1. Configuration and Installation for VMs(master and slave servers)"></a>1. Configuration and Installation for VMs(master and slave servers)</h3><ol>
+<li><p>Install java.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install java</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>Enable network adapter.  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth0</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth1</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth2</span><br></pre></td></tr></tbody></table></figure>
+<p> Then, enable it to run after system booting</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ONBOOT=<span class="built_in">yes</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Using tool ping to check the status of accessing public network and local network.   </p>
+</li>
+<li><p>Change the system’s hostname on all servers.</p>
+<ol>
+<li><p>Update file(/etc/sysctl.conf), add a item </p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">kernel.domainname=master1.bigdata.com</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Update file(/etc/hosts), add doamins.</p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">192.168.110.150 master1.bigdata.com master1</span><br><span class="line">192.168.110.151 slave1.bigdata.com slave1</span><br><span class="line">192.168.110.152 slave2.bigdata.com slave2</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Update file(/etc/sysconfig/network)</p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=master1.bigdata.com</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Reboot systems</p>
+</li>
+<li><p>Check the correction of hostname</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hostname</span><br><span class="line">hostname -f</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</li>
+<li><p>Set up password-less SSH on all servers</p>
+<ol>
+<li><p>Disable SELinux</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/selinux/config</span><br></pre></td></tr></tbody></table></figure>
+<p> Set disabled for SELinux:</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">SELINUX=disabled</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Enable access for using public key.<br> <strong>Warning: Filename is sshd_config, not ssh_config.</strong>  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></tbody></table></figure>
+<p> Delete comment signal(“#”) blow:  </p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">RSAAuthentication yes</span><br><span class="line">PubkeyAuthentication yes</span><br><span class="line">AuthorizedKeysFile .ssh/authorized_keys</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Generate public key and private key on master server.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></tbody></table></figure>
+<p> Then, click the default option for configuration.</p>
+</li>
+<li><p>Create directories and copy the public key to slave servers.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">slave$ <span class="built_in">mkdir</span> ~/.ssh</span><br><span class="line">slave$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">slave$ <span class="built_in">touch</span> authorized_keys</span><br></pre></td></tr></tbody></table></figure>
+<p> Login to master server, then copy public key:  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">maseter$ scp ~/.ssh/id_rsa.pub root@slave1:~/.ssh</span><br></pre></td></tr></tbody></table></figure>
+<p> Login to slave server, then copy content from public key to a file(authorized_keys):  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">slave$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span><br></pre></td></tr></tbody></table></figure>
+<p> <strong>Notice: You need to copy your content of local ssh public key to your local authorized_keys if you use standalone mode.</strong></p>
+</li>
+</ol>
+</li>
+<li><p>Install ntpd on all servers.</p>
+<ol>
+<li><p>Check to see if you have installed ntpd.   </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">rpm -qa | grep ntp   </span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>If not, install ntpd  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install ntp </span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</li>
+<li><p>Close transparent huge page on all servers.</p>
+<ol>
+<li><p>Append code block to file(/etc/rc.local) for closing transparent huge page. 		</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/rc.local</span><br></pre></td></tr></tbody></table></figure>
+<p> code block:  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -f /sys/kernel/mm/transparent_hugepage/enabled; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> never &gt; /sys/kernel/mm/transparent_hugepage/enabled</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -f /sys/kernel/mm/transparent_hugepage/defrag; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> never &gt; /sys/kernel/mm/transparent_hugepage/defrag</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Reboot operating system.</p>
+</li>
+<li><p>Check the status of the transparent huge page to ensure the status is “never”.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> /sys/kernel/mm/transparent_hugepage/enabled</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</li>
+</ol>
+<h3 id="2-Set-up-a-local-repository-on-master-server"><a href="#2-Set-up-a-local-repository-on-master-server" class="headerlink" title="2. Set up a local repository on master server."></a>2. Set up a local repository on master server.</h3><ol>
+<li><p>Install local repository tool.  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install yum-utils createrepo</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Install the http service.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install httpd</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Start the http service.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">service httpd start</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Install tool wget.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install wget</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Download Ambari &amp; HDP package files to the master server.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">wget http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.4.2.0/ambari-2.4.2.0-centos6.tar.gz</span><br><span class="line">wget http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.20/repos/centos6/HDP-UTILS-1.1.0.20-centos6.tar.gz</span><br><span class="line">wget http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.4.3.0/HDP-2.4.3.0-centos6-rpm.tar.gz</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Copy Ambari and HDP packages to http dir, then untar them.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /var/www/html</span><br><span class="line"><span class="built_in">mkdir</span> hdp</span><br><span class="line">tar -xvf ambari-2.4.2.0-centos6.tar.gz -C /var/www/html</span><br><span class="line">tar -xvf HDP-2.4.3.0-centos6-rpm.tar.gz -C /var/www/html/hdp</span><br><span class="line">tar -xvf HDP-UTILS-1.1.0.20-centos6.tar.gz -C /var/www/html/hdp</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Check repository address for next step.</p>
+<p> Ambari base URL and gpgkey:  </p>
+ <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">http://192.168.110.150/AMBARI-2.4.2.0/centos6/2.4.2.0-136/  </span><br><span class="line">http://192.168.110.150/AMBARI-2.4.2.0/centos6/2.4.2.0-136/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins</span><br></pre></td></tr></tbody></table></figure>
+<p> HDP base URL and gpgkey:  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">http://192.168.110.150/hdp/HDP/centos6/2.x/updates/2.4.3.0</span><br><span class="line">http://192.168.110.150/hdp/HDP/centos6/2.x/updates/2.4.3.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins</span><br></pre></td></tr></tbody></table></figure>
+<p> HDP-UTILS base URL and gpgkey(gpgkey file same with HDP gpgkey file):  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">http://192.168.110.150/hdp/HDP-UTILS-1.1.0.20/repos/centos6</span><br><span class="line">http://192.168.110.150/hdp/HDP/centos6/2.x/updates/2.4.3.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Copy repository config files.<br> ambari repo file:</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">wget -nv http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.4.3.0/ambari.repo -O /etc/yum.repos.d/ambari.repo</span><br></pre></td></tr></tbody></table></figure>
+<p> hdp repo file:	</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /var/www/html/hdp/HDP/centos6/2.x/updates/2.4.3.0/hdp.repo /etc/yum.repos.d/</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Update repository config files.<br> You ought to renew base URL and gpgkey URL in your ambari.repo and hdp.repo files.</p>
+</li>
+</ol>
+<h3 id="3-Ambari-server-setup-on-master-server"><a href="#3-Ambari-server-setup-on-master-server" class="headerlink" title="3. Ambari-server setup on master server"></a>3. Ambari-server setup on master server</h3><ol>
+<li><p>Install ambari server </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install /var/www/html/AMBARI-2.4.2.0/centos6/2.4.2.0-136/ambari/ambari-server-2.4.2.0-136.x86_64.rpm</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Run command for ambari setup.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-server setup</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>If you do not disable the SELinux, you need to press “y”.</p>
+</li>
+<li><p>If your Ambari server under user root, you just need to press “n”.</p>
+</li>
+<li><p>If you do not disable iptalbes, you need to press “y” to continue.</p>
+</li>
+<li><p>Select the JDK version, then follow steps to install it.<br> <strong>If you use a custom JDK, you will maybe meet some troubles that will happen within Ambari Installation. So, choosing option one for the recommendation.</strong></p>
+</li>
+<li><p>Choose database type<br> You can choose embedded the database. If you choose MySQL, you need to install the MySQL database on the master server and input info for the Ambari setup. Then put a MySQL connector into a specific path and run the command below to specify the path of the connector.  </p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-server setup --jdbc-db=mysql --jdbc-driver=/usr/share/java/mysql-connector-java.jar</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Run ambari-server</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-server start</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<h3 id="4-Ambari-agent-setup-on-slave-servers"><a href="#4-Ambari-agent-setup-on-slave-servers" class="headerlink" title="4. Ambari-agent setup on slave servers."></a>4. Ambari-agent setup on slave servers.</h3><ol>
+<li><p>Copy ambari-agent rpm file to slave servers.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">scp /var/www/html/AMBARI-2.4.2.0/centos6/2.4.2.0-136/ambari/ambari-agent-2.4.2.0-136.x86_64.rpm root@slave_server_ip:~</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Install ambari-agent.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yum install ~/ambari-agent-2.4.2.0-136.x86_64.rpm</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Renew ambari-server URL in config file.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/ambari-agent/ambari.ini</span><br></pre></td></tr></tbody></table></figure>
+<p> Renew ambari-server URL below: </p>
+ <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">[server]</span><br><span class="line">hostname = master1.bigdata.com</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>Run ambari-agent.</p>
+ <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">ambari-agent start</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Before you launch the Ambari installation web UI, you ought to ensure things below.</p>
+<ol>
+<li><p>Start the service httpd.</p>
+</li>
+<li><p>Stop the service iptables.  </p>
+</li>
+<li><p>Start the ambari-server on the master server and ambari-agent on slave servers.<br> If you want to start quickly, it is advisable to choose default options.</p>
+</li>
+<li><p>Open your browser, then access to the WebUI and click the item (“Launch Install Wizard”)<br> URL: 192.168.110.150:8080<br> Account: admin<br> Password: admin<br> <img src="/blog/posts/7f0f012a/ai_1.png" alt="login"><br> <img src="/blog/posts/7f0f012a/ai_2.png" alt="login_success">  </p>
+</li>
+<li><p>Get Started<br> <img src="/blog/posts/7f0f012a/ai_3.png" alt="Get Started">  </p>
+</li>
+<li><p>Select Version<br> Choose local repository, then input base URL of HDP and HDP-UTILS.<br> <img src="/blog/posts/7f0f012a/ai_4.png" alt="Select Version">  </p>
+</li>
+<li><p>Install Options<br> Input your master’s hostname and slaves’ hostnames. Then copy your master’s ssh private key into the item.<br> <img src="/blog/posts/7f0f012a/ai_5.png" alt="Install Options">  </p>
+</li>
+<li><p>Confirm Hosts<br> <img src="/blog/posts/7f0f012a/ai_6.png" alt="Confirm Hosts"> </p>
+<p> Just click “ok” to continue.<br> <img src="/blog/posts/7f0f012a/ai_7.png" alt="click ok"> </p>
+</li>
+<li><p>Choose Services<br> Choose what service you want to add to your system. You can add new services to your system later on.<br> <img src="/blog/posts/7f0f012a/ai_8.png" alt="Choose Services"> </p>
+<p> Just click “ok” to continue.<br> <img src="/blog/posts/7f0f012a/ai_9.png" alt="click ok"> </p>
+</li>
+<li><p>Assign Masters<br><img src="/blog/posts/7f0f012a/ai_10.png" alt="Assign Masters"> </p>
+</li>
+<li><p>Assign Slaves and Clients<br><img src="/blog/posts/7f0f012a/ai_11.png" alt="Assign Slaves and Clients"> </p>
+</li>
+<li><p>Customize Services<br>You just need to input info for items with a red exclamation mark.<br><img src="/blog/posts/7f0f012a/ai_12.png" alt="Customize Services"> </p>
+</li>
+<li><p>Review<br><img src="/blog/posts/7f0f012a/ai_13.png" alt="Review"> </p>
+</li>
+<li><p>Install, Start and Test<br>If you get to this step successfully, you can drink a cup of coffee and enjoy this time.<br><img src="/blog/posts/7f0f012a/ai_14.png" alt="Install, Start and Test"> </p>
+</li>
+<li><p>Summary<br>So now, say hello world to Ambari.<br><img src="/blog/posts/7f0f012a/ai_15.png" alt="Install, Start and Test"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Back-end</category>
+        <category>BigData</category>
+      </categories>
+      <tags>
+        <tag>BigData</tag>
+        <tag>Ambari</tag>
       </tags>
   </entry>
   <entry>
