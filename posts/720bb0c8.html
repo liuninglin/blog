@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"liuninglin.github.io","root":"/blog/","images":"/blog/images/blog","scheme":"Muse","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/blog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/blog/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"liuninglin.github.io","root":"/blog/","images":"/blog/images/blog","scheme":"Muse","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/blog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/blog/js/config.js"></script>
 
     <meta property="og:type" content="article">
 <meta property="og:title" content="Comparison between Hortonworks and Alibaba">
@@ -207,6 +207,7 @@
     <span>0%</span>
   </div>
   <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
   <a href="https://github.com/liuninglin" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
@@ -310,68 +311,68 @@
 <thead>
 <tr>
 <th>公司</th>
-<th>Hortonworks</th>
+<th> Hortonworks</th>
 <th>Alibaba</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>大数据产品</td>
-<td>Ambari (提供Hadoop生态的管理、运维、升级等功能)<br>HDP (提供大部分Hadoop相关开源组件)<br>HDF (提供数据流相关的开源组件)</td>
-<td>Dataworks (大数据开发平台，提供在线编辑工具)<br>Dataphin (新一代大数据平台，为阿里的数据中台业务中台铺路)<br>QuickBI (提供全面的报表展示服务，为Martech助力)</td>
+<td> 大数据产品</td>
+<td> Ambari (提供 Hadoop 生态的管理、运维、升级等功能)<br>HDP (提供大部分 Hadoop 相关开源组件)<br>HDF (提供数据流相关的开源组件)</td>
+<td>Dataworks (大数据开发平台，提供在线编辑工具)<br>Dataphin (新一代大数据平台，为阿里的数据中台业务中台铺路)<br>QuickBI (提供全面的报表展示服务，为 Martech 助力)</td>
 </tr>
 <tr>
-<td>市场占有率</td>
-<td>国际市场的三驾马车之一（Cloudera, MapR），18年底完成与Cloudera公司的合并</td>
-<td>国际市场占有率低（有一部分Flink的原因，Flink16年出现）</td>
+<td> 市场占有率</td>
+<td>国际市场的三驾马车之一（Cloudera, MapR），18 年底完成与 Cloudera 公司的合并</td>
+<td>国际市场占有率低（有一部分 Flink 的原因，Flink16 年出现）</td>
 </tr>
 <tr>
 <td>收费模式</td>
-<td>100%开源，提供收费技术支持及培训</td>
+<td> 100% 开源，提供收费技术支持及培训</td>
 <td>具体需要联系售前</td>
 </tr>
 <tr>
 <td>产品特点</td>
-<td>100%开源，使用不受任何限制</td>
+<td> 100% 开源，使用不受任何限制</td>
 <td>基础架构及上层服务均需要全套阿里产品，同时数据留存在阿里</td>
 </tr>
 <tr>
 <td>技术栈</td>
-<td>Hadoop<br>HDFS<br>Yarn<br>Spark2(DataFrame + SQL)<br>Nifi<br>Kafka<br>Kerberos<br>ZooKeeper<br>Ranger<br>Oozie<br>….</td>
-<td>MaxCompute(阿里大数据处理引擎，基于Hadoop早期版本定制)<br>Blink(基于Flink的定制版，做batch及streaming处理)<br></td>
+<td> Hadoop<br>HDFS<br>Yarn<br>Spark2(DataFrame + SQL)<br>Nifi<br>Kafka<br>Kerberos<br>ZooKeeper<br>Ranger<br>Oozie<br>….</td>
+<td>MaxCompute (阿里大数据处理引擎，基于 Hadoop 早期版本定制)<br>Blink (基于 Flink 的定制版，做 batch 及 streaming 处理)<br></td>
 </tr>
 <tr>
 <td>主要开发语言</td>
-<td>Java, Scala, SQL, 部分可视化拖拽（Nifi）</td>
-<td>可视化拖拽, SQL</td>
+<td> Java, Scala, SQL, 部分可视化拖拽（Nifi）</td>
+<td>可视化拖拽，SQL</td>
 </tr>
 <tr>
-<td>开发成本</td>
-<td>高(需要部署开发环境，同时需要IDE开发工具)</td>
-<td>低(配置+SQL，所有开发均在阿里在线开发环境完成)</td>
+<td> 开发成本</td>
+<td>高 (需要部署开发环境，同时需要 IDE 开发工具)</td>
+<td> 低 (配置 + SQL，所有开发均在阿里在线开发环境完成)</td>
 </tr>
 <tr>
-<td>运维成本</td>
-<td>高(对Hadoop生态的优化需要自己完成)</td>
-<td>低</td>
+<td> 运维成本</td>
+<td>高 (对 Hadoop 生态的优化需要自己完成)</td>
+<td> 低</td>
 </tr>
 <tr>
-<td>第三方服务&#x2F;系统对接</td>
+<td>第三方服务 / 系统对接</td>
 <td>容易实现</td>
 <td>需要看阿里是否支持</td>
 </tr>
 <tr>
 <td>技术支持</td>
-<td>有成熟的社区及非常完善的文档，基本上遇到的问题都能解决<br>同时Ambari还提供智能支持的收费服务，也有收费培训等</td>
+<td>有成熟的社区及非常完善的文档，基本上遇到的问题都能解决<br>同时 Ambari 还提供智能支持的收费服务，也有收费培训等</td>
 <td>具体暂不清楚，应该会有对应的技术工程师提供完备的服务，省去了花时间自己找解决方案</td>
 </tr>
 <tr>
 <td>数据安全</td>
-<td>Kerberos+Ranger</td>
-<td>阿里产品</td>
+<td> Kerberos+Ranger</td>
+<td> 阿里产品</td>
 </tr>
 <tr>
 <td>部署方式</td>
-<td>基于虚机&#x2F;Docker的部署，微软Azure提供深度支持</td>
+<td>基于虚机 / Docker 的部署，微软 Azure 提供深度支持</td>
 <td>独立部署（需要有千万级数据的体量）<br>多租户方式 (适于小体量同时价格便宜)</td>
 </tr>
 </tbody></table>
@@ -465,7 +466,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script><script src="/blog/js/bookmark.js"></script>
 
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
